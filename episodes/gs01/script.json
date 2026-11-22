@@ -1,0 +1,192 @@
+{
+ "id": "gs01",
+ "format": "tutorial-short",
+ "kind": "short",
+ "title": "This one file makes Claude remember how you work",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude forgets how you like things done.",
+    "Every new chat starts from zero.",
+    "Your tone, your format, your rules. You explain them again and again."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Claude forgets",
+    "line2": "how you work",
+    "sub": ""
+   },
+   "red": [
+    "forgets",
+    "zero"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "A skill fixes that. It is one text file.",
+    "Make a folder. Add a file called SKILL dot M D.",
+    "Claude reads it at the start of every task, so you never repeat yourself."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "mkdir post-autopsy",
+      "beat": 1
+     },
+     {
+      "k": "cmd",
+      "t": "touch post-autopsy/SKILL.md",
+      "beat": 1
+     },
+     {
+      "k": "cmd",
+      "t": "ls post-autopsy",
+      "beat": 1
+     },
+     {
+      "k": "out",
+      "t": "SKILL.md",
+      "beat": 1
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "one folder, one file",
+     "beat": 1
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Write one line: what it does, and when to use it.",
+    "Write the steps. Numbered. Plain words.",
+    "Add a rule: never invent numbers."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "numbers": true,
+    "lines": [
+     {
+      "k": "file",
+      "t": "---",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "name: post-autopsy",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "description: Reads post stats and says which posts flopped and why. Use when the user shares analytics.",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "---",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "1. Find the median views.",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "2. Sort hits and misses.",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "3. Give 3 changes.",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "- Never invent numbers.",
+      "beat": 2,
+      "c": "accent"
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "what it does + when to use it",
+     "beat": 0
+    },
+    {
+     "text": "never invent numbers",
+     "beat": 2,
+     "tone": "green"
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Test it on a real task. Fix what breaks.",
+    "Paste real stats, and see if it follows your steps.",
+    "If it slips, fix one line, and run it again."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "run a post autopsy",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Using the post-autopsy skill",
+      "beat": 0,
+      "c": "accent"
+     },
+     {
+      "k": "claude",
+      "t": "Median views: 1,760",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "5 hits, 5 misses",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Hits all promise something specific.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "The full walkthrough, and a free skill, are linked in the description.",
+    "Follow for more Claude tutorials."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Free skill",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "LINK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ]
+}

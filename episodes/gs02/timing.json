@@ -1,0 +1,537 @@
+{
+ "id": "gs02",
+ "engine": "eleven",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Your Claude skill is not broken.",
+     "file": "gs02/vo/a_b1_el4cfccb0b_mc4b58.mp3",
+     "dur": 1.977,
+     "words": [
+      {
+       "w": "your",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "Claude",
+       "t": 0.06,
+       "e": 0.24
+      },
+      {
+       "w": "skill",
+       "t": 0.24,
+       "e": 0.54
+      },
+      {
+       "w": "is",
+       "t": 0.54,
+       "e": 0.82
+      },
+      {
+       "w": "not",
+       "t": 0.82,
+       "e": 1.0
+      },
+      {
+       "w": "broken.",
+       "t": 1.0,
+       "e": 1.28
+      }
+     ]
+    },
+    {
+     "text": "Its description is.",
+     "file": "gs02/vo/a_b2_el0dca8fe0_mc4b58.mp3",
+     "dur": 1.533,
+     "words": [
+      {
+       "w": "Its",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "description",
+       "t": 0.14,
+       "e": 0.44
+      },
+      {
+       "w": "is.",
+       "t": 0.44,
+       "e": 0.88
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Claude reads the description, to decide when to use your skill.",
+     "file": "gs02/vo/b_b1_el3895821c_mc4b58.mp3",
+     "dur": 3.208,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "reads",
+       "t": 0.18,
+       "e": 0.38
+      },
+      {
+       "w": "the",
+       "t": 0.38,
+       "e": 0.58
+      },
+      {
+       "w": "description",
+       "t": 0.58,
+       "e": 0.88
+      },
+      {
+       "w": "to",
+       "t": 0.88,
+       "e": 1.28
+      },
+      {
+       "w": "decide",
+       "t": 1.28,
+       "e": 1.52
+      },
+      {
+       "w": "when",
+       "t": 1.52,
+       "e": 1.84
+      },
+      {
+       "w": "to",
+       "t": 1.84,
+       "e": 1.98
+      },
+      {
+       "w": "use",
+       "t": 1.98,
+       "e": 2.14
+      },
+      {
+       "w": "your",
+       "t": 2.14,
+       "e": 2.32
+      },
+      {
+       "w": "skill.",
+       "t": 2.32,
+       "e": 2.56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Bad: helps with posts.",
+     "file": "gs02/vo/c_b1_elf462bd9c_mc4b58.mp3",
+     "dur": 1.805,
+     "words": [
+      {
+       "w": "Bad",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "helps",
+       "t": 0.2,
+       "e": 0.52
+      },
+      {
+       "w": "with",
+       "t": 0.52,
+       "e": 0.78
+      },
+      {
+       "w": "posts.",
+       "t": 0.78,
+       "e": 1.02
+      }
+     ]
+    },
+    {
+     "text": "That tells Claude nothing.",
+     "file": "gs02/vo/c_b2_el9926529a_mc4b58.mp3",
+     "dur": 1.392,
+     "words": [
+      {
+       "w": "That",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "tells",
+       "t": 0.06,
+       "e": 0.22
+      },
+      {
+       "w": "Claude",
+       "t": 0.22,
+       "e": 0.48
+      },
+      {
+       "w": "nothing.",
+       "t": 0.48,
+       "e": 0.76
+      }
+     ]
+    },
+    {
+     "text": "Good: reads post stats, and says which posts flopped and why.",
+     "file": "gs02/vo/c_b3_el46e0826f_mc4b58.mp3",
+     "dur": 3.999,
+     "words": [
+      {
+       "w": "Good,",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "reads",
+       "t": 0.38,
+       "e": 0.46
+      },
+      {
+       "w": "post",
+       "t": 0.46,
+       "e": 0.72
+      },
+      {
+       "w": "stats",
+       "t": 0.72,
+       "e": 1.1
+      },
+      {
+       "w": "and",
+       "t": 1.1,
+       "e": 1.44
+      },
+      {
+       "w": "says",
+       "t": 1.44,
+       "e": 1.64
+      },
+      {
+       "w": "which",
+       "t": 1.64,
+       "e": 1.94
+      },
+      {
+       "w": "post",
+       "t": 1.94,
+       "e": 2.24
+      },
+      {
+       "w": "flopped",
+       "t": 2.24,
+       "e": 2.8
+      },
+      {
+       "w": "and",
+       "t": 2.8,
+       "e": 2.92
+      },
+      {
+       "w": "why.",
+       "t": 2.92,
+       "e": 3.22
+      }
+     ]
+    },
+    {
+     "text": "Use when the user shares analytics.",
+     "file": "gs02/vo/c_b4_el947eee31_mc4b58.mp3",
+     "dur": 2.467,
+     "words": [
+      {
+       "w": "Use",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "when",
+       "t": 0.2,
+       "e": 0.34
+      },
+      {
+       "w": "the",
+       "t": 0.34,
+       "e": 0.44
+      },
+      {
+       "w": "user",
+       "t": 0.44,
+       "e": 0.7
+      },
+      {
+       "w": "shares",
+       "t": 0.7,
+       "e": 1.12
+      },
+      {
+       "w": "analytics.",
+       "t": 1.12,
+       "e": 1.58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Say what it does, and when to use it.",
+     "file": "gs02/vo/d_b1_el769606ee_mc4b58.mp3",
+     "dur": 2.21,
+     "words": [
+      {
+       "w": "Say",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "what",
+       "t": 0.18,
+       "e": 0.32
+      },
+      {
+       "w": "it",
+       "t": 0.32,
+       "e": 0.4
+      },
+      {
+       "w": "does",
+       "t": 0.4,
+       "e": 0.62
+      },
+      {
+       "w": "and",
+       "t": 0.62,
+       "e": 0.96
+      },
+      {
+       "w": "when",
+       "t": 0.96,
+       "e": 1.16
+      },
+      {
+       "w": "to",
+       "t": 1.16,
+       "e": 1.34
+      },
+      {
+       "w": "use",
+       "t": 1.34,
+       "e": 1.56
+      },
+      {
+       "w": "it.",
+       "t": 1.56,
+       "e": 1.72
+      }
+     ]
+    },
+    {
+     "text": "Both halves. Every time.",
+     "file": "gs02/vo/d_b2_el2611ef20_mc4b58.mp3",
+     "dur": 1.789,
+     "words": [
+      {
+       "w": "Both",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "halves",
+       "t": 0.18,
+       "e": 0.38
+      },
+      {
+       "w": "every",
+       "t": 0.38,
+       "e": 0.78
+      },
+      {
+       "w": "time.",
+       "t": 0.78,
+       "e": 1.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    {
+     "text": "Fix the description, and run it again.",
+     "file": "gs02/vo/e_b1_el2390bde2_mc4b58.mp3",
+     "dur": 2.324,
+     "words": [
+      {
+       "w": "Fix",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "the",
+       "t": 0.16,
+       "e": 0.3
+      },
+      {
+       "w": "description",
+       "t": 0.3,
+       "e": 0.58
+      },
+      {
+       "w": "and",
+       "t": 0.58,
+       "e": 1.04
+      },
+      {
+       "w": "run",
+       "t": 1.04,
+       "e": 1.18
+      },
+      {
+       "w": "it",
+       "t": 1.18,
+       "e": 1.3
+      },
+      {
+       "w": "again.",
+       "t": 1.3,
+       "e": 1.6
+      }
+     ]
+    },
+    {
+     "text": "Now it fires.",
+     "file": "gs02/vo/e_b2_el50d02d81_mc4b58.mp3",
+     "dur": 1.304,
+     "words": [
+      {
+       "w": "Now",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "it",
+       "t": 0.12,
+       "e": 0.22
+      },
+      {
+       "w": "fires.",
+       "t": 0.22,
+       "e": 0.56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "The full build is in the video linked below.",
+     "file": "gs02/vo/end_b1_el19fe130b_mc4b58.mp3",
+     "dur": 2.443,
+     "words": [
+      {
+       "w": "The",
+       "t": 0.0,
+       "e": 0.04
+      },
+      {
+       "w": "full",
+       "t": 0.04,
+       "e": 0.2
+      },
+      {
+       "w": "build",
+       "t": 0.2,
+       "e": 0.52
+      },
+      {
+       "w": "is",
+       "t": 0.52,
+       "e": 0.66
+      },
+      {
+       "w": "in",
+       "t": 0.66,
+       "e": 0.78
+      },
+      {
+       "w": "the",
+       "t": 0.78,
+       "e": 0.86
+      },
+      {
+       "w": "video",
+       "t": 0.86,
+       "e": 1.14
+      },
+      {
+       "w": "linked",
+       "t": 1.14,
+       "e": 1.34
+      },
+      {
+       "w": "below.",
+       "t": 1.34,
+       "e": 1.68
+      }
+     ]
+    },
+    {
+     "text": "Follow for more Claude tutorials.",
+     "file": "gs02/vo/end_b2_elb6095306_mc4b58.mp3",
+     "dur": 2.195,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "for",
+       "t": 0.2,
+       "e": 0.42
+      },
+      {
+       "w": "more",
+       "t": 0.42,
+       "e": 0.62
+      },
+      {
+       "w": "claw",
+       "t": 0.62,
+       "e": 0.88
+      },
+      {
+       "w": "tutorials.",
+       "t": 0.88,
+       "e": 1.44
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

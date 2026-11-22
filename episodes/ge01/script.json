@@ -1,0 +1,1260 @@
+{
+ "id": "ge01",
+ "format": "tutorial-long",
+ "kind": "long",
+ "title": "Build Your First Claude Skill in 10 Minutes (Free Download)",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "s01a",
+   "beats": [
+    "Every time you open Claude, you explain the same things again.",
+    "How you like your work done. What to avoid. What format you want."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "write it in my tone. short. bullets. no hashtags.",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Done. Here is your draft.",
+      "beat": 0
+     },
+     {
+      "k": "dim",
+      "t": "...next day...",
+      "beat": 1
+     },
+     {
+      "k": "user",
+      "t": "write it in my tone. short. bullets. no hashtags.",
+      "beat": 1
+     },
+     {
+      "k": "claude",
+      "t": "Sure. Could you tell me about your tone?",
+      "beat": 1
+     }
+    ]
+   },
+   "chapter": "Why skills",
+   "pills": [
+    {
+     "text": "same instructions, every day",
+     "beat": 1,
+     "tone": "red"
+    }
+   ]
+  },
+  {
+   "id": "s01b",
+   "beats": [
+    "A skill fixes that.",
+    "It is one small file. Claude reads it, and follows it, every time.",
+    "In the next ten minutes, you will build one from scratch.",
+    "You will test it on a real task, and download a finished one to keep.",
+    "The link is in the description."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE SKILLS  -  STEP BY STEP",
+    "line1": "Build your first",
+    "line2": "Claude skill",
+    "sub": "10 minutes  -  free download"
+   },
+   "pills": [
+    {
+     "text": "Free skill: link in the description",
+     "beat": 4
+    }
+   ],
+   "red": [
+    "skill",
+    "file"
+   ]
+  },
+  {
+   "id": "s02a",
+   "beats": [
+    "A skill is a folder with one file in it.",
+    "The file is called SKILL dot M D.",
+    "At the top is a name, and a one line description.",
+    "Below that, plain instructions, written like a checklist.",
+    "Claude reads only the description at first.",
+    "That keeps things light. Many skills can sit there, and only the one that matches is loaded in full.",
+    "When your request matches it, Claude loads the full instructions, and follows them."
+   ],
+   "card": {
+    "type": "flow",
+    "nodes": [
+     {
+      "t": "post-autopsy/",
+      "s": "a folder",
+      "beat": 0
+     },
+     {
+      "t": "SKILL.md",
+      "s": "one file",
+      "beat": 1
+     },
+     {
+      "t": "name + description",
+      "s": "the trigger",
+      "beat": 2
+     },
+     {
+      "t": "instructions",
+      "s": "a checklist",
+      "beat": 3
+     }
+    ]
+   },
+   "chapter": "What a skill is",
+   "pills": [
+    {
+     "text": "Claude reads the description first",
+     "beat": 4
+    },
+    {
+     "text": "match = load the instructions",
+     "beat": 6
+    }
+   ]
+  },
+  {
+   "id": "s02b",
+   "beats": [
+    "There is no code. There are no plugins to install.",
+    "If you can write a checklist, you can write a skill.",
+    "Here is what we are building: a skill called post autopsy.",
+    "You give it your social post stats.",
+    "It tells you which posts flopped, why, and what to change."
+   ],
+   "card": {
+    "type": "list",
+    "title": "post-autopsy",
+    "items": [
+     {
+      "t": "No code",
+      "beat": 0
+     },
+     {
+      "t": "No plugins",
+      "beat": 0
+     },
+     {
+      "t": "In: your post stats",
+      "beat": 3
+     },
+     {
+      "t": "Out: what flopped, why, what to change",
+      "beat": 4
+     }
+    ]
+   },
+   "red": [
+    "checklist"
+   ]
+  },
+  {
+   "id": "s02c",
+   "beats": [
+    "Skills live in one of two places.",
+    "Personal skills go in dot claude, then skills, inside your home folder. They work in every project.",
+    "Project skills go in dot claude, then skills, inside one project folder. Anyone who opens that project gets them.",
+    "We will make a personal one."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Where skills live",
+    "items": [
+     {
+      "t": "Personal: ~/.claude/skills  (every project)",
+      "beat": 1
+     },
+     {
+      "t": "Project: .claude/skills  (shared with the team)",
+      "beat": 2
+     },
+     {
+      "t": "Ours: personal",
+      "beat": 3,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "s03",
+   "beats": [
+    "Step one. Make the folder.",
+    "Open your terminal, and go to your Claude skills folder.",
+    "On most setups, that is dot claude, then skills, inside your home folder.",
+    "On Windows, it is the dot claude folder inside your user folder. Same name, same layout.",
+    "Make a new folder called post autopsy, with M K dir.",
+    "Then C D into it.",
+    "Now create an empty file named SKILL dot M D.",
+    "That is the whole setup. A folder, and one file.",
+    "You can also ask Claude Code to create it for you. But doing it by hand once shows you how simple it is."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "cd ~/.claude/skills",
+      "beat": 1
+     },
+     {
+      "k": "cmd",
+      "t": "mkdir post-autopsy",
+      "beat": 4
+     },
+     {
+      "k": "cmd",
+      "t": "cd post-autopsy",
+      "beat": 5
+     },
+     {
+      "k": "cmd",
+      "t": "touch SKILL.md",
+      "beat": 6
+     },
+     {
+      "k": "cmd",
+      "t": "ls",
+      "beat": 7
+     },
+     {
+      "k": "out",
+      "t": "SKILL.md",
+      "beat": 7
+     }
+    ]
+   },
+   "chapter": "Step 1: Make the folder",
+   "step": {
+    "n": 1,
+    "title": "Make the folder"
+   },
+   "pills": [
+    {
+     "text": "~/.claude/skills = where Claude looks",
+     "beat": 2
+    },
+    {
+     "text": "1 folder + 1 file",
+     "beat": 7
+    }
+   ]
+  },
+  {
+   "id": "s03b",
+   "beats": [
+    "Here is how it looks on disk.",
+    "One folder named after the skill. One file inside it."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "tree",
+    "lines": [
+     {
+      "k": "out",
+      "t": "~/.claude/skills/",
+      "beat": 0,
+      "c": "dim"
+     },
+     {
+      "k": "tree",
+      "t": "|-- post-autopsy/",
+      "beat": 0
+     },
+     {
+      "k": "tree",
+      "t": "    |-- SKILL.md",
+      "beat": 1,
+      "c": "accent"
+     }
+    ]
+   },
+   "step": {
+    "n": 1,
+    "title": "Make the folder"
+   }
+  },
+  {
+   "id": "s04",
+   "beats": [
+    "Step two. Write the description.",
+    "Open SKILL dot M D in any text editor.",
+    "The file starts with three dashes, then two fields.",
+    "The first field is name. Ours is post autopsy, all lowercase, with a dash.",
+    "Lowercase letters, numbers, and dashes only. No spaces.",
+    "The second field is description, and it is the most important line in the file.",
+    "The description is the trigger. It tells Claude when to use the skill.",
+    "So write what the skill does, and when to use it.",
+    "Ours says: reads your social post stats, and tells you which posts flopped, why, and what to change.",
+    "Then a second sentence: use when the user shares post analytics.",
+    "Close the block with three more dashes."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "lines": [
+     {
+      "k": "file",
+      "t": "---",
+      "beat": 2
+     },
+     {
+      "k": "file",
+      "t": "name: post-autopsy",
+      "beat": 3
+     },
+     {
+      "k": "file",
+      "t": "description: Reads your social post stats and tells you which posts flopped, why, and what to change.",
+      "beat": 8
+     },
+     {
+      "k": "file",
+      "t": "  Use when the user shares post analytics.",
+      "beat": 9
+     },
+     {
+      "k": "file",
+      "t": "---",
+      "beat": 10
+     }
+    ],
+    "numbers": true
+   },
+   "chapter": "Step 2: Write the description",
+   "step": {
+    "n": 2,
+    "title": "Write the description"
+   },
+   "pills": [
+    {
+     "text": "description = the trigger",
+     "beat": 6
+    },
+    {
+     "text": "what it does + when to use it",
+     "beat": 7
+    }
+   ]
+  },
+  {
+   "id": "s04b",
+   "beats": [
+    "Be specific. A vague description is the number one reason a skill never fires.",
+    "Helps with posts. That tells Claude nothing.",
+    "Reads post stats, and says which posts flopped and why. Use when the user shares analytics. That is a trigger.",
+    "Use the words you would actually say. Post stats. Analytics. Why is this not working.",
+    "Those are the phrases Claude matches your request against.",
+    "Keep it to one or two sentences."
+   ],
+   "card": {
+    "type": "compare",
+    "bad": {
+     "t": "helps with posts",
+     "beat": 1,
+     "label": "VAGUE"
+    },
+    "good": {
+     "t": "Reads post stats and says which posts flopped and why. Use when the user shares analytics.",
+     "beat": 2,
+     "label": "SPECIFIC"
+    }
+   },
+   "step": {
+    "n": 2,
+    "title": "Write the description"
+   },
+   "red": [
+    "vague",
+    "specific"
+   ]
+  },
+  {
+   "id": "s05a",
+   "beats": [
+    "Step three. Write the steps.",
+    "Under the front matter, add a heading with the skill name.",
+    "Then a section called steps, with a numbered list.",
+    "Step one: find the median views across all the posts.",
+    "The median is the middle value, so one viral post cannot skew the picture.",
+    "Here is why. Say nine posts get four hundred views, and one gets forty thousand.",
+    "The average says four thousand three hundred sixty. The median says four hundred, which is what a normal post does.",
+    "Step two: sort the posts into hits and misses. Hits are above the median. Misses are below it.",
+    "Step three: look for patterns, using only the data. Length, topic, format, and posting day.",
+    "Step four: give three changes, and tie each one to evidence from the posts.",
+    "That last step matters most. Compare two answers.",
+    "One says, post more often.",
+    "The other says, posts with a number in the title averaged four thousand four hundred views.",
+    "Only the second one is something you can check."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "s04",
+    "lines": [
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "# Post Autopsy",
+      "beat": 1
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 2
+     },
+     {
+      "k": "file",
+      "t": "## Steps",
+      "beat": 2
+     },
+     {
+      "k": "file",
+      "t": "1. Find the median views across all posts.",
+      "beat": 3
+     },
+     {
+      "k": "file",
+      "t": "2. Sort posts into hits (above the median) and misses (below it).",
+      "beat": 7
+     },
+     {
+      "k": "file",
+      "t": "3. Find patterns using only the data: length, topic, format, posting day.",
+      "beat": 8
+     },
+     {
+      "k": "file",
+      "t": "4. Give three changes. Tie each one to evidence from the posts.",
+      "beat": 9
+     }
+    ],
+    "numbers": true
+   },
+   "chapter": "Step 3: Write the steps",
+   "step": {
+    "n": 3,
+    "title": "Write the steps"
+   },
+   "pills": [
+    {
+     "text": "median = the middle value",
+     "beat": 4
+    },
+    {
+     "text": "evidence for every change",
+     "beat": 10
+    }
+   ]
+  },
+  {
+   "id": "s05b",
+   "beats": [
+    "Now add a section called rules.",
+    "Rule one: use only the numbers I give you.",
+    "Rule two: keep the answer under three hundred words.",
+    "Rules are where your guardrails go. Anything you keep correcting by hand belongs here."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "s05a",
+    "lines": [
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "## Rules",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "- Use only the numbers I give you.",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "- Keep the answer under 300 words.",
+      "beat": 2
+     }
+    ],
+    "numbers": true
+   },
+   "step": {
+    "n": 3,
+    "title": "Write the steps"
+   },
+   "pills": [
+    {
+     "text": "rules = guardrails",
+     "beat": 0
+    }
+   ]
+  },
+  {
+   "id": "s05c",
+   "beats": [
+    "Notice the style. Every line is short, concrete, and testable.",
+    "You could check any one of them, and say yes, it did that, or no, it did not.",
+    "If a line is fuzzy, like make it good, Claude has nothing to follow.",
+    "Rewrite it until you could check it.",
+    "Save the file. That is the entire skill."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Good lines are",
+    "items": [
+     {
+      "t": "Short: one idea per line",
+      "beat": 0
+     },
+     {
+      "t": "Concrete: names something you can see",
+      "beat": 0
+     },
+     {
+      "t": "Testable: you can answer yes or no",
+      "beat": 1
+     },
+     {
+      "t": "\"make it good\"",
+      "beat": 2,
+      "x": true
+     },
+     {
+      "t": "File saved. That is the whole skill.",
+      "beat": 4
+     }
+    ]
+   },
+   "step": {
+    "n": 3,
+    "title": "Write the steps"
+   }
+  },
+  {
+   "id": "s06a",
+   "beats": [
+    "Step four. Test it on a real task.",
+    "Open Claude Code in any folder.",
+    "Paste in ten of your own posts, with their view counts.",
+    "Here is a sample. Ten posts, one line each: the title, then the views.",
+    "Now type: run a post autopsy."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "claude",
+      "beat": 1
+     },
+     {
+      "k": "out",
+      "t": "* Welcome to Claude Code",
+      "beat": 1,
+      "c": "accent"
+     },
+     {
+      "k": "user",
+      "t": "Here are my last 10 posts, with views:",
+      "beat": 2
+     },
+     {
+      "k": "paste",
+      "t": "1. 3 mistakes new creators make      4,200",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "2. My morning routine                  610",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "3. How I got my first 1k followers  3,900",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "4. Behind the scenes                   480",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "5. 5 tools I use every day          5,100",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "6. Random thought                     350",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "7. Why I quit posting daily         2,800",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "8. Q and A                             720",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "9. Free template inside             6,300",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "paste",
+      "t": "10. Weekend update                     410",
+      "beat": 3,
+      "fast": true
+     },
+     {
+      "k": "user",
+      "t": "run a post autopsy",
+      "beat": 4
+     }
+    ]
+   },
+   "chapter": "Step 4: Test it",
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   },
+   "pills": [
+    {
+     "text": "10 real posts + views",
+     "beat": 3
+    }
+   ]
+  },
+  {
+   "id": "s06b",
+   "beats": [
+    "Watch what Claude does. It should tell you it loaded the skill.",
+    "Here is the result. Median views: one thousand seven hundred sixty.",
+    "Five hits, five misses.",
+    "The pattern: every hit promises something specific. A number, a result, or a free thing.",
+    "Every miss is a vague update, with no promise in it.",
+    "Then three changes, each with the numbers behind it."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "Using the post-autopsy skill",
+      "beat": 0,
+      "c": "accent"
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 1
+     },
+     {
+      "k": "claude",
+      "t": "Median views: 1,760",
+      "beat": 1
+     },
+     {
+      "k": "claude",
+      "t": "Hits (5): 6,300  5,100  4,200  3,900  2,800",
+      "beat": 2
+     },
+     {
+      "k": "claude",
+      "t": "Misses (5): 720  610  480  410  350",
+      "beat": 2
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 3
+     },
+     {
+      "k": "claude",
+      "t": "Pattern: every hit promises something specific (a number, a result, a free thing). Every miss is a vague update.",
+      "beat": 3
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 5
+     },
+     {
+      "k": "claude",
+      "t": "1. Put a number or a result in the first line.",
+      "beat": 5
+     },
+     {
+      "k": "claude",
+      "t": "2. Turn \"Q and A\" into \"3 questions I get every week\".",
+      "beat": 5
+     },
+     {
+      "k": "claude",
+      "t": "3. Offer one free thing a week. \"Free template inside\" is your top post at 6,300.",
+      "beat": 5
+     }
+    ]
+   },
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   },
+   "pills": [
+    {
+     "text": "median 1,760",
+     "beat": 1
+    },
+    {
+     "text": "5 hits / 5 misses",
+     "beat": 2
+    },
+    {
+     "text": "every claim has a number",
+     "beat": 5
+    }
+   ]
+  },
+  {
+   "id": "s06e",
+   "beats": [
+    "If nothing happens, do not guess. Ask Claude: what skills do you have available?",
+    "It lists every skill it can see.",
+    "If post autopsy is missing, the folder is in the wrong place, or the three dashes at the top are broken.",
+    "If it is listed, but never fires, your description is too vague. Go back to step two."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "what skills do you have available?",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "post-autopsy: Reads your social post stats and tells you which posts flopped, why, and what to change.",
+      "beat": 1
+     },
+     {
+      "k": "dim",
+      "t": "(not in the list? check the folder path and the --- lines)",
+      "beat": 2,
+      "c": "red"
+     }
+    ]
+   },
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   },
+   "pills": [
+    {
+     "text": "missing = wrong folder or broken ---",
+     "beat": 2,
+     "tone": "red"
+    },
+    {
+     "text": "listed but silent = vague description",
+     "beat": 3
+    }
+   ]
+  },
+  {
+   "id": "s06c",
+   "beats": [
+    "Now be a tough reviewer. Does it follow the steps, in order? Did it invent any number?",
+    "Check the averages. The hits average four thousand four hundred sixty views.",
+    "The misses average five hundred fourteen.",
+    "Both are right. Every number traces back to the ten posts you pasted."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Review checklist",
+    "items": [
+     {
+      "t": "Steps followed in order?",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Any invented number? No",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Hits average: 4,460",
+      "beat": 1,
+      "ok": true
+     },
+     {
+      "t": "Misses average: 514",
+      "beat": 2,
+      "ok": true
+     },
+     {
+      "t": "Every number traces to your data",
+      "beat": 3,
+      "ok": true
+     }
+    ]
+   },
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   }
+  },
+  {
+   "id": "s06d",
+   "beats": [
+    "But say it had made up a number. Maybe a click rate you never gave it.",
+    "Do not rewrite the whole skill. Add one line to the rules.",
+    "Never invent numbers. If a number is missing, say so.",
+    "Save, and run it again.",
+    "Skills get good by testing, not by writing more."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "s05b",
+    "lines": [
+     {
+      "k": "file",
+      "t": "- Never invent numbers. If a number is missing, say so.",
+      "beat": 2,
+      "c": "accent"
+     }
+    ],
+    "numbers": true
+   },
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   },
+   "pills": [
+    {
+     "text": "found a bug? add ONE rule",
+     "beat": 1
+    },
+    {
+     "text": "test, fix, test again",
+     "beat": 4
+    }
+   ]
+  },
+  {
+   "id": "s06f",
+   "beats": [
+    "Then break it on purpose.",
+    "Paste only three posts. Paste a post with zero views. Paste a messy list with extra text in it.",
+    "Each one shows you a rule you forgot to write."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Break it on purpose",
+    "items": [
+     {
+      "t": "Only three posts",
+      "beat": 1
+     },
+     {
+      "t": "A post with zero views",
+      "beat": 1
+     },
+     {
+      "t": "A messy list with extra text",
+      "beat": 1
+     },
+     {
+      "t": "Each failure = one new rule",
+      "beat": 2,
+      "ok": true
+     }
+    ]
+   },
+   "step": {
+    "n": 4,
+    "title": "Test it on a real task"
+   }
+  },
+  {
+   "id": "s07a",
+   "beats": [
+    "Step five. Make it better. Three upgrades.",
+    "Upgrade one: add an example of a good answer.",
+    "Claude copies the shape and the tone of an example far better than it follows a description of them.",
+    "Keep the example short. Three or four lines is enough.",
+    "Upgrade two: add a rule for what it should refuse.",
+    "Ours says: if I share fewer than five posts, say the sample is too small, and ask for more.",
+    "That one rule stops confident nonsense from a tiny sample.",
+    "Upgrade three: add a final question.",
+    "End every run by asking: which change do you want to test first?",
+    "Now every run ends with a next step, instead of just a report."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "s06d",
+    "lines": [
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "## Example answer",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "Median: [number]. Hits: [n]. Misses: [n].",
+      "beat": 2
+     },
+     {
+      "k": "file",
+      "t": "Pattern: [one sentence, from the data].",
+      "beat": 2
+     },
+     {
+      "k": "file",
+      "t": "Change 1: [change] ([number that proves it]).",
+      "beat": 2
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 4
+     },
+     {
+      "k": "file",
+      "t": "## If the sample is too small",
+      "beat": 4
+     },
+     {
+      "k": "file",
+      "t": "- If I share fewer than 5 posts, say the sample is too small and ask for more.",
+      "beat": 5
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 7
+     },
+     {
+      "k": "file",
+      "t": "## Finish",
+      "beat": 7
+     },
+     {
+      "k": "file",
+      "t": "- End with: Which change do you want to test first?",
+      "beat": 8
+     }
+    ],
+    "numbers": true
+   },
+   "chapter": "Step 5: Make it better",
+   "step": {
+    "n": 5,
+    "title": "Make it better"
+   },
+   "pills": [
+    {
+     "text": "1  example answer",
+     "beat": 1
+    },
+    {
+     "text": "2  refuse rule",
+     "beat": 4
+    },
+    {
+     "text": "3  final question",
+     "beat": 7
+    }
+   ]
+  },
+  {
+   "id": "s07b",
+   "beats": [
+    "Save, and test again.",
+    "Use the same ten posts first. Then paste in only three.",
+    "With three, it should refuse, and ask for more. If it does, the rule works."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "run a post autopsy  (3 posts pasted)",
+      "beat": 1
+     },
+     {
+      "k": "claude",
+      "t": "Using the post-autopsy skill",
+      "beat": 1,
+      "c": "accent"
+     },
+     {
+      "k": "claude",
+      "t": "Three posts is too small a sample to find real patterns. Paste at least five and I will run it.",
+      "beat": 2
+     }
+    ]
+   },
+   "step": {
+    "n": 5,
+    "title": "Make it better"
+   },
+   "pills": [
+    {
+     "text": "refuses: the rule works",
+     "beat": 2,
+     "tone": "green"
+    }
+   ]
+  },
+  {
+   "id": "s07c",
+   "beats": [
+    "One more tip. Keep the file short.",
+    "If it grows past a few hundred lines, split it.",
+    "Put long reference material in a second file, in the same folder.",
+    "Then tell Claude, inside SKILL dot M D, when to open it."
+   ],
+   "card": {
+    "type": "flow",
+    "nodes": [
+     {
+      "t": "SKILL.md",
+      "s": "short instructions",
+      "beat": 0
+     },
+     {
+      "t": "reference.md",
+      "s": "long details",
+      "beat": 2
+     },
+     {
+      "t": "opened only when needed",
+      "s": "named in SKILL.md",
+      "beat": 3
+     }
+    ]
+   },
+   "step": {
+    "n": 5,
+    "title": "Make it better"
+   }
+  },
+  {
+   "id": "s08a",
+   "beats": [
+    "The finished version of this skill is free. The link is in the description.",
+    "The finished one goes a little further. It sets a clear baseline for hits and misses, and shows a small table.",
+    "It rewrites your two worst titles, and warns you when the sample is small.",
+    "Download the zip, and unzip it.",
+    "Drop the folder, named post autopsy, into your skills folder.",
+    "Open Claude Code, and say: run a post autopsy."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "cd ~/Downloads",
+      "beat": 3
+     },
+     {
+      "k": "cmd",
+      "t": "unzip free-post-autopsy.zip",
+      "beat": 3
+     },
+     {
+      "k": "cmd",
+      "t": "mv post-autopsy ~/.claude/skills/",
+      "beat": 4
+     },
+     {
+      "k": "cmd",
+      "t": "claude",
+      "beat": 5
+     },
+     {
+      "k": "user",
+      "t": "run a post autopsy",
+      "beat": 5
+     }
+    ]
+   },
+   "chapter": "Download and plug in",
+   "pills": [
+    {
+     "text": "free-post-autopsy.zip",
+     "beat": 0
+    },
+    {
+     "text": "baseline + table + 2 rewrites + sample check",
+     "beat": 1
+    }
+   ]
+  },
+  {
+   "id": "s08b",
+   "beats": [
+    "If it does not run, check two things.",
+    "The folder name, and the three dashes at the top of the file.",
+    "If you added the folder while Claude Code was open, restart it once.",
+    "And if you use the Claude app instead of the terminal, zip the folder, and upload it under settings, capabilities, skills."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Not running? Check",
+    "items": [
+     {
+      "t": "Folder name matches the skill",
+      "beat": 1
+     },
+     {
+      "t": "Three dashes at the top of SKILL.md",
+      "beat": 1
+     },
+     {
+      "t": "Restart Claude Code once",
+      "beat": 2
+     },
+     {
+      "t": "Claude app: zip it, then Settings > Capabilities > Skills > Upload",
+      "beat": 3
+     }
+    ]
+   }
+  },
+  {
+   "id": "s08c",
+   "beats": [
+    "Quick recap.",
+    "One: make the folder, with one file named SKILL dot M D.",
+    "Two: write a description that says what it does, and when to use it.",
+    "Three: write short, numbered steps, and a few rules.",
+    "Four: test it on real data, and fix what breaks, one line at a time.",
+    "Five: add an example, a refusal rule, and a closing question.",
+    "That is the whole loop. Write, test, fix."
+   ],
+   "card": {
+    "type": "list",
+    "title": "The whole loop",
+    "items": [
+     {
+      "t": "1  Folder + SKILL.md",
+      "beat": 1
+     },
+     {
+      "t": "2  Description = the trigger",
+      "beat": 2
+     },
+     {
+      "t": "3  Steps + rules",
+      "beat": 3
+     },
+     {
+      "t": "4  Test on real data",
+      "beat": 4
+     },
+     {
+      "t": "5  Example, refusal, final question",
+      "beat": 5
+     }
+    ]
+   },
+   "chapter": "Recap"
+  },
+  {
+   "id": "s09",
+   "beats": [
+    "If you want the full set, I packaged six skills.",
+    "Hook lab. Caption rewrite. Weekly review. Content calendar. Repurpose to Shorts. And this one, post autopsy.",
+    "There is also a prompt pack.",
+    "Together, that is the Creator Autopilot Pack. The link is in the description.",
+    "Next video: how to plug Claude, ChatGPT and Grok into your other tools.",
+    "Subscribe, so you do not miss it."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Free skill + the full pack",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "LINK IN THE DESCRIPTION",
+    "items": [
+     {
+      "t": "Hook lab",
+      "beat": 1
+     },
+     {
+      "t": "Caption rewrite",
+      "beat": 1
+     },
+     {
+      "t": "Weekly review",
+      "beat": 1
+     },
+     {
+      "t": "Content calendar",
+      "beat": 1
+     },
+     {
+      "t": "Repurpose to Shorts",
+      "beat": 1
+     },
+     {
+      "t": "Post autopsy",
+      "beat": 1
+     }
+    ]
+   },
+   "chapter": "What is next",
+   "hold": 1.0
+  }
+ ]
+}

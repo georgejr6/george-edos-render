@@ -1,0 +1,143 @@
+name: render
+
+# Free render for the George Edos tutorial channel (and any studio composition).
+#   gh workflow run render.yml -f episode=gs01            (Short, one job)
+#   gh workflow run render.yml -f episode=ge01 -f chunks=4 (long, 4 parallel 2-vCPU jobs, joined with ffmpeg)
+# Narration is NOT in git it is a release asset "vo-<episode>" (vo-<ep>.tgz of public/<ep>/vo).
+# Output: artifact "<episode>-final" and release asset "render-<episode>" / <episode>.mp4 (mastered to -14 LUFS).
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "episode id, e.g. ge01, gs01, gs02, gs03"
+        required: true
+      chunks:
+        description: "parallel video chunks (1 for Shorts, 3-5 for a 10-minute long)"
+        required: true
+        default: "1"
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.p.outputs.matrix }}
+      total: ${{ steps.p.outputs.total }}
+      comp: ${{ steps.p.outputs.comp }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: p
+        working-directory: .
+        run: |
+          EP="${{ inputs.episode }}"
+          TOTAL=$(python3 tools/ge_total.py "$EP")
+          N=${{ inputs.chunks }}
+          python3 - "$TOTAL" "$N" >> "$GITHUB_OUTPUT" <<'EOF'
+          import json, sys
+          total, n = int(sys.argv[1]), int(sys.argv[2])
+          size = -(-total // n)
+          m = [{"i": i, "a": i * size, "b": min(total, (i + 1) * size) - 1} for i in range(n) if i * size < total]
+          print("matrix=" + json.dumps({"include": m}))
+          print("total=" + str(total))
+          EOF
+          echo "comp=$(echo "$EP" | tr a-z A-Z)" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Browser deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 >/dev/null
+      - name: Narration asset
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release download "vo-${{ inputs.episode }}" -p "*.tgz" -D /tmp/vo --repo "$GITHUB_REPOSITORY"
+          mkdir -p public/${{ inputs.episode }} && tar -xzf /tmp/vo/*.tgz -C public/${{ inputs.episode }}
+          ls public/${{ inputs.episode }}/vo | wc -l
+      - name: Install
+        working-directory: .
+        run: npm ci --silent
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.remotion
+          key: remotion-browser-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: Render frames ${{ matrix.a }}-${{ matrix.b }} (muted)
+        working-directory: .
+        run: |
+          mkdir -p out
+          START=$(date +%s)
+          npx remotion render ${{ needs.plan.outputs.comp }} out/chunk_${{ matrix.i }}.mp4 --frames=${{ matrix.a }}-${{ matrix.b }} --muted --concurrency=4 --log=error
+          echo "chunk ${{ matrix.i }} wall seconds: $(( $(date +%s) - START ))"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chunk-${{ matrix.i }}
+          path: out/chunk_${{ matrix.i }}.mp4
+          retention-days: 2
+
+  finish:
+    needs: [plan, render]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Browser deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 libxkbcommon-dev libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2 >/dev/null
+      - name: Narration asset
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release download "vo-${{ inputs.episode }}" -p "*.tgz" -D /tmp/vo --repo "$GITHUB_REPOSITORY"
+          mkdir -p public/${{ inputs.episode }} && tar -xzf /tmp/vo/*.tgz -C public/${{ inputs.episode }}
+      - name: Install
+        working-directory: .
+        run: npm ci --silent
+      - uses: actions/cache@v4
+        with:
+          path: node_modules/.remotion
+          key: remotion-browser-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: chunk-*
+          path: out/chunks
+          merge-multiple: true
+      - name: Audio mix (Remotion audio-only render)
+        working-directory: .
+        run: npx remotion render ${{ needs.plan.outputs.comp }} out/audio.mp3 --codec=mp3 --concurrency=4 --log=error
+      - name: Join chunks, mux, master to -14 LUFS
+        working-directory: .
+        run: |
+          EP=${{ inputs.episode }}
+          for f in $(ls out/chunks/chunk_*.mp4 | sort -V); do echo "file '$PWD/$f'"; done > out/list.txt
+          ffmpeg -hide_banner -loglevel error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
+          ffmpeg -hide_banner -loglevel error -y -i out/video.mp4 -i out/audio.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest out/${EP}_raw.mp4
+          python3 tools/master.py out/${EP}_raw.mp4 out/${EP}.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/${EP}.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.episode }}-final
+          path: out/${{ inputs.episode }}.mp4
+          retention-days: 14
+      - name: Release asset
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release view "render-${{ inputs.episode }}" >/dev/null 2>&1 || gh release create "render-${{ inputs.episode }}" --title "render ${{ inputs.episode }}" --notes "rendered by Actions" --prerelease
+          gh release upload "render-${{ inputs.episode }}" out/${{ inputs.episode }}.mp4 --clobber

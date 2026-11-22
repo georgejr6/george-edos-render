@@ -1,0 +1,23 @@
+{
+  "name": "george-edos-render",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Novam YouTube card kit + episodes (Remotion)",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:cf01": "remotion render CF01 out/cf01.mp4 --concurrency=2",
+    "render:kit": "remotion render KitDemo out/kit-demo.mp4 --concurrency=2",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "@remotion/google-fonts": "4.0.540",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "typescript": "5.8.3"
+  }
+}

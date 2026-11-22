@@ -1,0 +1,169 @@
+{
+ "id": "gs03",
+ "format": "tutorial-short",
+ "kind": "short",
+ "title": "3 rules that stop Claude making up numbers",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude will invent stats, if you let it.",
+    "Made up percentages, with nothing behind them.",
+    "Guesses that sound confident."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "how did my posts do?",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Your engagement rate is 4.2%, up 31% this month.",
+      "beat": 0,
+      "c": "red"
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "you never gave it those numbers",
+     "beat": 1,
+     "tone": "red"
+    }
+   ],
+   "red": [
+    "invent"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Rule one: use only the numbers I give you."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "numbers": true,
+    "lines": [
+     {
+      "k": "file",
+      "t": "## Rules",
+      "beat": 0
+     },
+     {
+      "k": "file",
+      "t": "- Use only the numbers I give you.",
+      "beat": 0
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "RULE 1",
+     "beat": 0
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Rule two: if the sample is small, say it is early signal."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "b",
+    "numbers": true,
+    "lines": [
+     {
+      "k": "file",
+      "t": "- If the sample is small, say it is early signal.",
+      "beat": 0
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "RULE 2",
+     "beat": 0
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Rule three: quote the number behind every claim."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "SKILL.md",
+    "carry": "c",
+    "numbers": true,
+    "lines": [
+     {
+      "k": "file",
+      "t": "- Quote the number behind every claim.",
+      "beat": 0
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "RULE 3",
+     "beat": 0
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Put these in your skill, not in every prompt.",
+    "Write them once, and they apply every time.",
+    "Now every answer has to point back to your own data."
+   ],
+   "card": {
+    "type": "list",
+    "title": "In the skill, once",
+    "items": [
+     {
+      "t": "Only my numbers",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Small sample = early signal",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Quote the number",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "A free skill with all three built in is linked in the description.",
+    "Follow for more Claude tutorials."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Free skill",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "LINK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ]
+}

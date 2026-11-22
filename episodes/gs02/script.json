@@ -1,0 +1,150 @@
+{
+ "id": "gs02",
+ "format": "tutorial-short",
+ "kind": "short",
+ "title": "The #1 reason your Claude skill never runs",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Your Claude skill is not broken.",
+    "Its description is.",
+    "You wrote the steps. You saved the file. And nothing happens."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE SKILLS",
+    "line1": "It is not broken.",
+    "line2": "The description is.",
+    "sub": ""
+   },
+   "red": [
+    "description"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Claude reads the description, to decide when to use your skill."
+   ],
+   "card": {
+    "type": "flow",
+    "nodes": [
+     {
+      "t": "your request",
+      "s": "",
+      "beat": 0
+     },
+     {
+      "t": "description match?",
+      "s": "",
+      "beat": 0
+     },
+     {
+      "t": "skill loads",
+      "s": "",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Bad: helps with posts.",
+    "That tells Claude nothing. It cannot tell when to use it.",
+    "Good: reads post stats, and says which posts flopped and why.",
+    "Use when the user shares analytics."
+   ],
+   "card": {
+    "type": "compare",
+    "bad": {
+     "t": "helps with posts",
+     "beat": 0,
+     "label": "BAD"
+    },
+    "good": {
+     "t": "Reads post stats and says which posts flopped and why. Use when the user shares analytics.",
+     "beat": 2,
+     "label": "GOOD"
+    }
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Say what it does, and when to use it.",
+    "Both halves. Every time."
+   ],
+   "card": {
+    "type": "list",
+    "title": "A good description says",
+    "items": [
+     {
+      "t": "What it does",
+      "beat": 0
+     },
+     {
+      "t": "When to use it",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Fix the description, and run it again.",
+    "Now it fires.",
+    "One sentence, fixed, and the skill runs every time."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "here are my post stats",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Using the post-autopsy skill",
+      "beat": 1,
+      "c": "accent"
+     },
+     {
+      "k": "claude",
+      "t": "Median views: 1,760",
+      "beat": 1
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "it fires",
+     "beat": 1,
+     "tone": "green"
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    "The full build is in the video linked below.",
+    "Follow for more Claude tutorials."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Full build + free skill",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "LINK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ]
+}
