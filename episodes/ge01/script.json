@@ -1103,6 +1103,36 @@
     "title": "terminal",
     "lines": [
      {
+      "k": "dim",
+      "t": "post-autopsy (the finished version) adds:",
+      "beat": 0
+     },
+     {
+      "k": "ok",
+      "t": "a clear baseline: hit = 1.5x the median, miss = under half",
+      "beat": 1
+     },
+     {
+      "k": "ok",
+      "t": "a small table: title, views, verdict",
+      "beat": 1
+     },
+     {
+      "k": "ok",
+      "t": "a rewrite of your 2 worst titles",
+      "beat": 2
+     },
+     {
+      "k": "ok",
+      "t": "a warning when the sample is small",
+      "beat": 2
+     },
+     {
+      "k": "blank",
+      "t": "",
+      "beat": 3
+     },
+     {
       "k": "cmd",
       "t": "cd ~/Downloads",
       "beat": 3
