@@ -1,0 +1,121 @@
+{
+ "id": "gs008",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "ChatGPT Memory in Action",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "ChatGPT forgets almost everything after your chat ends.",
+    "You can make it remember facts between sessions.",
+    "Save something once and use it later."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Save Facts",
+    "line2": "With Memory",
+    "sub": ""
+   },
+   "red": [
+    "forgets"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "To save a fact, type: remember that my dog’s name is Luna.",
+    "Say remember that, followed by a fact, and ChatGPT can save it to memory."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "remember that my dog's name is Luna.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Saved memories are used in later chats.",
+    "ChatGPT uses your saved facts when you chat again."
+   ],
+   "card": {
+    "type": "list",
+    "title": "How Memory Works",
+    "items": [
+     {
+      "t": "Type 'remember that' + fact",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Saved memories used in later chats",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Open settings to view or delete your memories.",
+    "Go to Personalization to view or delete memories."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Manage Memories",
+    "items": [
+     {
+      "t": "Open settings",
+      "beat": 0
+     },
+     {
+      "t": "Go to Personalization",
+      "beat": 1
+     },
+     {
+      "t": "View or delete memories",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "ChatGPT memory",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

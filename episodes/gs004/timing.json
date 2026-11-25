@@ -1,0 +1,551 @@
+{
+ "id": "gs004",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Claude forgets your project every single time.",
+     "file": "gs004/vo/a_b1_a7e6999093_p105.mp3",
+     "dur": 2.835,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "forgets",
+       "t": 0.24,
+       "e": 0.7
+      },
+      {
+       "w": "your",
+       "t": 0.7,
+       "e": 0.84
+      },
+      {
+       "w": "project,",
+       "t": 0.84,
+       "e": 1.22
+      },
+      {
+       "w": "every",
+       "t": 1.58,
+       "e": 1.76
+      },
+      {
+       "w": "single",
+       "t": 1.76,
+       "e": 2.04
+      },
+      {
+       "w": "time.",
+       "t": 2.04,
+       "e": 2.34
+      }
+     ]
+    },
+    {
+     "text": "You waste time repeating build steps and rules.",
+     "file": "gs004/vo/a_b2_10824705f7_p105.mp3",
+     "dur": 3.145,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "waste",
+       "t": 0.12,
+       "e": 0.32
+      },
+      {
+       "w": "time",
+       "t": 0.32,
+       "e": 0.76
+      },
+      {
+       "w": "repeating",
+       "t": 0.76,
+       "e": 1.34
+      },
+      {
+       "w": "build",
+       "t": 1.34,
+       "e": 1.74
+      },
+      {
+       "w": "steps",
+       "t": 1.74,
+       "e": 2.02
+      },
+      {
+       "w": "and",
+       "t": 2.02,
+       "e": 2.32
+      },
+      {
+       "w": "rules.",
+       "t": 2.32,
+       "e": 2.58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open Claude Code in your project folder.",
+     "file": "gs004/vo/b_b1_9c2dd01890_p105.mp3",
+     "dur": 2.6,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "Cloud",
+       "t": 0.24,
+       "e": 0.56
+      },
+      {
+       "w": "Code",
+       "t": 0.56,
+       "e": 1.08
+      },
+      {
+       "w": "in",
+       "t": 1.08,
+       "e": 1.44
+      },
+      {
+       "w": "your",
+       "t": 1.44,
+       "e": 1.54
+      },
+      {
+       "w": "project",
+       "t": 1.54,
+       "e": 1.84
+      },
+      {
+       "w": "folder.",
+       "t": 1.84,
+       "e": 2.12
+      }
+     ]
+    },
+    {
+     "text": "Type slash init to scan your project.",
+     "file": "gs004/vo/b_b2_483149ff51_p105.mp3",
+     "dur": 3.302,
+     "words": [
+      {
+       "w": "type",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "slash",
+       "t": 0.28,
+       "e": 0.96
+      },
+      {
+       "w": "init",
+       "t": 0.96,
+       "e": 1.3
+      },
+      {
+       "w": "to",
+       "t": 1.3,
+       "e": 1.92
+      },
+      {
+       "w": "scan",
+       "t": 1.92,
+       "e": 2.16
+      },
+      {
+       "w": "your",
+       "t": 2.16,
+       "e": 2.44
+      },
+      {
+       "w": "project.",
+       "t": 2.44,
+       "e": 2.78
+      }
+     ]
+    },
+    {
+     "text": "This creates a CLAUDE dot M D file for you.",
+     "file": "gs004/vo/b_b3_06b54474fb_p105.mp3",
+     "dur": 3.746,
+     "words": [
+      {
+       "w": "This",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "creates",
+       "t": 0.24,
+       "e": 0.7
+      },
+      {
+       "w": "a",
+       "t": 0.7,
+       "e": 1.1
+      },
+      {
+       "w": "claud",
+       "t": 1.1,
+       "e": 1.46
+      },
+      {
+       "w": ".md",
+       "t": 1.46,
+       "e": 2.36
+      },
+      {
+       "w": "file",
+       "t": 2.36,
+       "e": 2.9
+      },
+      {
+       "w": "for",
+       "t": 2.9,
+       "e": 3.16
+      },
+      {
+       "w": "you.",
+       "t": 3.16,
+       "e": 3.34
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Edit CLAUDE dot M D to add your build commands, code style, and project rules.",
+     "file": "gs004/vo/c_b1_9a94d9ddd9_p105.mp3",
+     "dur": 5.622,
+     "words": [
+      {
+       "w": "Edit",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "Claude",
+       "t": 0.16,
+       "e": 0.74
+      },
+      {
+       "w": ".md",
+       "t": 0.74,
+       "e": 1.54
+      },
+      {
+       "w": "to",
+       "t": 1.54,
+       "e": 2.26
+      },
+      {
+       "w": "add",
+       "t": 2.26,
+       "e": 2.44
+      },
+      {
+       "w": "your",
+       "t": 2.44,
+       "e": 2.6
+      },
+      {
+       "w": "build",
+       "t": 2.6,
+       "e": 2.8
+      },
+      {
+       "w": "commands,",
+       "t": 2.8,
+       "e": 3.04
+      },
+      {
+       "w": "code",
+       "t": 3.56,
+       "e": 3.7
+      },
+      {
+       "w": "style,",
+       "t": 3.7,
+       "e": 4.04
+      },
+      {
+       "w": "and",
+       "t": 4.44,
+       "e": 4.48
+      },
+      {
+       "w": "project",
+       "t": 4.48,
+       "e": 4.7
+      },
+      {
+       "w": "rules.",
+       "t": 4.7,
+       "e": 5.1
+      }
+     ]
+    },
+    {
+     "text": "For example, write build colon npm run build or style colon use single quotes.",
+     "file": "gs004/vo/c_b2_6e444a24a6_p105.mp3",
+     "dur": 6.738,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "example,",
+       "t": 0.06,
+       "e": 0.32
+      },
+      {
+       "w": "write",
+       "t": 0.82,
+       "e": 0.94
+      },
+      {
+       "w": "build",
+       "t": 0.94,
+       "e": 1.6
+      },
+      {
+       "w": "colon",
+       "t": 1.6,
+       "e": 2.12
+      },
+      {
+       "w": "npm",
+       "t": 2.12,
+       "e": 2.6
+      },
+      {
+       "w": "run",
+       "t": 2.6,
+       "e": 2.98
+      },
+      {
+       "w": "build",
+       "t": 2.98,
+       "e": 3.22
+      },
+      {
+       "w": "or",
+       "t": 3.22,
+       "e": 3.9
+      },
+      {
+       "w": "style",
+       "t": 3.9,
+       "e": 4.16
+      },
+      {
+       "w": "colon",
+       "t": 4.16,
+       "e": 5.1
+      },
+      {
+       "w": "use",
+       "t": 5.1,
+       "e": 5.56
+      },
+      {
+       "w": "single",
+       "t": 5.56,
+       "e": 5.86
+      },
+      {
+       "w": "quotes",
+       "t": 5.86,
+       "e": 6.18
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Claude reads CLAUDE dot M D every session in this folder.",
+     "file": "gs004/vo/d_b1_8193018f24_p105.mp3",
+     "dur": 4.507,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "reads,",
+       "t": 0.28,
+       "e": 0.58
+      },
+      {
+       "w": "Claude",
+       "t": 1.06,
+       "e": 1.3
+      },
+      {
+       "w": ".md,",
+       "t": 1.3,
+       "e": 2.3
+      },
+      {
+       "w": "every",
+       "t": 2.84,
+       "e": 3.14
+      },
+      {
+       "w": "session",
+       "t": 3.14,
+       "e": 3.38
+      },
+      {
+       "w": "in",
+       "t": 3.38,
+       "e": 3.7
+      },
+      {
+       "w": "this",
+       "t": 3.7,
+       "e": 3.8
+      },
+      {
+       "w": "folder.",
+       "t": 3.8,
+       "e": 4.04
+      }
+     ]
+    },
+    {
+     "text": "Now Claude remembers your commands, style, and rules automatically.",
+     "file": "gs004/vo/d_b2_8b75cd64b1_p105.mp3",
+     "dur": 4.759,
+     "words": [
+      {
+       "w": "Now,",
+       "t": 0.0,
+       "e": 0.3
+      },
+      {
+       "w": "Claude",
+       "t": 0.56,
+       "e": 0.82
+      },
+      {
+       "w": "remembers",
+       "t": 0.82,
+       "e": 1.22
+      },
+      {
+       "w": "your",
+       "t": 1.22,
+       "e": 1.58
+      },
+      {
+       "w": "commands.",
+       "t": 1.58,
+       "e": 1.78
+      },
+      {
+       "w": "Style",
+       "t": 2.72,
+       "e": 2.72
+      },
+      {
+       "w": "and",
+       "t": 2.72,
+       "e": 3.0
+      },
+      {
+       "w": "rules",
+       "t": 3.0,
+       "e": 3.28
+      },
+      {
+       "w": "automatically.",
+       "t": 3.28,
+       "e": 4.04
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs004/vo/end_b1_8acd70267c_p105.mp3",
+     "dur": 2.608,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "for",
+       "t": 0.18,
+       "e": 0.42
+      },
+      {
+       "w": "a",
+       "t": 0.42,
+       "e": 0.5
+      },
+      {
+       "w": "new",
+       "t": 0.5,
+       "e": 0.66
+      },
+      {
+       "w": "cloud",
+       "t": 0.66,
+       "e": 0.94
+      },
+      {
+       "w": "tutorial",
+       "t": 0.94,
+       "e": 1.44
+      },
+      {
+       "w": "every",
+       "t": 1.44,
+       "e": 1.96
+      },
+      {
+       "w": "day.",
+       "t": 1.96,
+       "e": 2.18
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

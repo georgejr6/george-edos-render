@@ -1,0 +1,133 @@
+{
+ "id": "gs004",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "CLAUDE.md Project Memory",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude forgets your project every single time.",
+    "You waste time repeating build steps and rules."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "CLAUDE dot M D",
+    "line2": "remembers your project",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "Project rules lost",
+     "beat": 0,
+     "tone": "red"
+    }
+   ],
+   "red": [
+    "forgets"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open Claude Code in your project folder.",
+    "Type slash init to scan your project.",
+    "This creates a CLAUDE dot M D file for you."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "/init",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Edit CLAUDE dot M D to add your build commands, code style, and project rules.",
+    "For example, write build colon npm run build or style colon use single quotes."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "CLAUDE.md",
+    "lines": [
+     {
+      "k": "file",
+      "t": "build: npm run build",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "style: use single quotes",
+      "beat": 1
+     },
+     {
+      "k": "file",
+      "t": "rule: commit messages required",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Claude reads CLAUDE dot M D every session in this folder.",
+    "Now Claude remembers your commands, style, and rules automatically."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What Claude Remembers",
+    "items": [
+     {
+      "t": "Your build commands",
+      "beat": 1
+     },
+     {
+      "t": "Your code style",
+      "beat": 1
+     },
+     {
+      "t": "Your project rules",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "CLAUDE.md project memory in Claude Code",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

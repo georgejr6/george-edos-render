@@ -1,0 +1,561 @@
+{
+ "id": "gs008",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "ChatGPT forgets almost everything after your chat ends.",
+     "file": "gs008/vo/a_b1_3479dbd155_p105.mp3",
+     "dur": 3.531,
+     "words": [
+      {
+       "w": "Chat",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "GPT",
+       "t": 0.16,
+       "e": 0.66
+      },
+      {
+       "w": "forgets",
+       "t": 0.66,
+       "e": 1.2
+      },
+      {
+       "w": "almost",
+       "t": 1.2,
+       "e": 1.48
+      },
+      {
+       "w": "everything",
+       "t": 1.48,
+       "e": 1.9
+      },
+      {
+       "w": "after",
+       "t": 1.9,
+       "e": 2.42
+      },
+      {
+       "w": "your",
+       "t": 2.42,
+       "e": 2.58
+      },
+      {
+       "w": "chat",
+       "t": 2.58,
+       "e": 2.78
+      },
+      {
+       "w": "ends.",
+       "t": 2.78,
+       "e": 3.06
+      }
+     ]
+    },
+    {
+     "text": "You can make it remember facts between sessions.",
+     "file": "gs008/vo/a_b2_33e5e51eba_p105.mp3",
+     "dur": 2.687,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.1
+      },
+      {
+       "w": "can",
+       "t": 0.1,
+       "e": 0.22
+      },
+      {
+       "w": "make",
+       "t": 0.22,
+       "e": 0.38
+      },
+      {
+       "w": "it",
+       "t": 0.38,
+       "e": 0.54
+      },
+      {
+       "w": "remember",
+       "t": 0.54,
+       "e": 0.7
+      },
+      {
+       "w": "facts",
+       "t": 0.7,
+       "e": 1.2
+      },
+      {
+       "w": "between",
+       "t": 1.2,
+       "e": 1.7
+      },
+      {
+       "w": "sessions.",
+       "t": 1.7,
+       "e": 2.08
+      }
+     ]
+    },
+    {
+     "text": "Save something once and use it later.",
+     "file": "gs008/vo/a_b3_758f74bc4b_p105.mp3",
+     "dur": 2.257,
+     "words": [
+      {
+       "w": "Save",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "something",
+       "t": 0.2,
+       "e": 0.48
+      },
+      {
+       "w": "once",
+       "t": 0.48,
+       "e": 0.92
+      },
+      {
+       "w": "and",
+       "t": 0.92,
+       "e": 1.22
+      },
+      {
+       "w": "use",
+       "t": 1.22,
+       "e": 1.38
+      },
+      {
+       "w": "it",
+       "t": 1.38,
+       "e": 1.54
+      },
+      {
+       "w": "later.",
+       "t": 1.54,
+       "e": 1.78
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "To save a fact, type: remember that my dog\u2019s name is Luna.",
+     "file": "gs008/vo/b_b1_c0abb1ed37_p105.mp3",
+     "dur": 4.203,
+     "words": [
+      {
+       "w": "To",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "save",
+       "t": 0.06,
+       "e": 0.26
+      },
+      {
+       "w": "a",
+       "t": 0.26,
+       "e": 0.36
+      },
+      {
+       "w": "fact,",
+       "t": 0.36,
+       "e": 0.64
+      },
+      {
+       "w": "type,",
+       "t": 0.96,
+       "e": 1.2
+      },
+      {
+       "w": "remember",
+       "t": 1.7,
+       "e": 1.92
+      },
+      {
+       "w": "that",
+       "t": 1.92,
+       "e": 2.38
+      },
+      {
+       "w": "my",
+       "t": 2.38,
+       "e": 2.5
+      },
+      {
+       "w": "dog's",
+       "t": 2.5,
+       "e": 2.86
+      },
+      {
+       "w": "name",
+       "t": 2.86,
+       "e": 3.06
+      },
+      {
+       "w": "is",
+       "t": 3.06,
+       "e": 3.52
+      },
+      {
+       "w": "Luna.",
+       "t": 3.52,
+       "e": 3.7
+      }
+     ]
+    },
+    {
+     "text": "Say remember that, followed by a fact, and ChatGPT can save it to memory.",
+     "file": "gs008/vo/b_b2_74add5514b_p105.mp3",
+     "dur": 5.257,
+     "words": [
+      {
+       "w": "Say",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "remember",
+       "t": 0.22,
+       "e": 0.46
+      },
+      {
+       "w": "that,",
+       "t": 0.46,
+       "e": 0.94
+      },
+      {
+       "w": "followed",
+       "t": 1.42,
+       "e": 1.66
+      },
+      {
+       "w": "by",
+       "t": 1.66,
+       "e": 1.9
+      },
+      {
+       "w": "a",
+       "t": 1.9,
+       "e": 2.0
+      },
+      {
+       "w": "fact,",
+       "t": 2.0,
+       "e": 2.3
+      },
+      {
+       "w": "and",
+       "t": 2.86,
+       "e": 2.98
+      },
+      {
+       "w": "chat",
+       "t": 2.98,
+       "e": 3.16
+      },
+      {
+       "w": "GPT",
+       "t": 3.16,
+       "e": 3.64
+      },
+      {
+       "w": "can",
+       "t": 3.64,
+       "e": 4.08
+      },
+      {
+       "w": "save",
+       "t": 4.08,
+       "e": 4.32
+      },
+      {
+       "w": "it",
+       "t": 4.32,
+       "e": 4.46
+      },
+      {
+       "w": "to",
+       "t": 4.46,
+       "e": 4.56
+      },
+      {
+       "w": "memory.",
+       "t": 4.56,
+       "e": 4.74
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Saved memories are used in later chats.",
+     "file": "gs008/vo/c_b1_8524776ffa_p105.mp3",
+     "dur": 2.626,
+     "words": [
+      {
+       "w": "Saved",
+       "t": 0.0,
+       "e": 0.38
+      },
+      {
+       "w": "memories",
+       "t": 0.38,
+       "e": 0.6
+      },
+      {
+       "w": "are",
+       "t": 0.6,
+       "e": 1.18
+      },
+      {
+       "w": "used",
+       "t": 1.18,
+       "e": 1.4
+      },
+      {
+       "w": "in",
+       "t": 1.4,
+       "e": 1.58
+      },
+      {
+       "w": "later",
+       "t": 1.58,
+       "e": 1.82
+      },
+      {
+       "w": "chats.",
+       "t": 1.82,
+       "e": 2.06
+      }
+     ]
+    },
+    {
+     "text": "ChatGPT uses your saved facts when you chat again.",
+     "file": "gs008/vo/c_b2_fc8fdae98b_p105.mp3",
+     "dur": 3.507,
+     "words": [
+      {
+       "w": "Chat",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "GPT",
+       "t": 0.2,
+       "e": 0.66
+      },
+      {
+       "w": "uses",
+       "t": 0.66,
+       "e": 1.2
+      },
+      {
+       "w": "your",
+       "t": 1.2,
+       "e": 1.42
+      },
+      {
+       "w": "Saved",
+       "t": 1.42,
+       "e": 1.88
+      },
+      {
+       "w": "Facts",
+       "t": 1.88,
+       "e": 2.1
+      },
+      {
+       "w": "when",
+       "t": 2.1,
+       "e": 2.52
+      },
+      {
+       "w": "you",
+       "t": 2.52,
+       "e": 2.64
+      },
+      {
+       "w": "chat",
+       "t": 2.64,
+       "e": 2.78
+      },
+      {
+       "w": "again.",
+       "t": 2.78,
+       "e": 3.06
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Open settings to view or delete your memories.",
+     "file": "gs008/vo/d_b1_f5bd26c414_p105.mp3",
+     "dur": 3.203,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "Settings",
+       "t": 0.22,
+       "e": 0.52
+      },
+      {
+       "w": "to",
+       "t": 0.52,
+       "e": 1.08
+      },
+      {
+       "w": "view",
+       "t": 1.08,
+       "e": 1.28
+      },
+      {
+       "w": "or",
+       "t": 1.28,
+       "e": 1.86
+      },
+      {
+       "w": "delete",
+       "t": 1.86,
+       "e": 2.06
+      },
+      {
+       "w": "your",
+       "t": 2.06,
+       "e": 2.38
+      },
+      {
+       "w": "memories.",
+       "t": 2.38,
+       "e": 2.62
+      }
+     ]
+    },
+    {
+     "text": "Go to Personalization to view or delete memories.",
+     "file": "gs008/vo/d_b2_497a1b42fc_p105.mp3",
+     "dur": 3.339,
+     "words": [
+      {
+       "w": "Go",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "to",
+       "t": 0.2,
+       "e": 0.36
+      },
+      {
+       "w": "Personalization,",
+       "t": 0.36,
+       "e": 1.08
+      },
+      {
+       "w": "to",
+       "t": 1.52,
+       "e": 1.62
+      },
+      {
+       "w": "view",
+       "t": 1.62,
+       "e": 1.82
+      },
+      {
+       "w": "or",
+       "t": 1.82,
+       "e": 2.14
+      },
+      {
+       "w": "delete",
+       "t": 2.14,
+       "e": 2.34
+      },
+      {
+       "w": "memories.",
+       "t": 2.34,
+       "e": 2.74
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new AI tutorial every day.",
+     "file": "gs008/vo/end_b1_5e0395d60f_p105.mp3",
+     "dur": 2.557,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "for",
+       "t": 0.2,
+       "e": 0.44
+      },
+      {
+       "w": "a",
+       "t": 0.44,
+       "e": 0.54
+      },
+      {
+       "w": "new",
+       "t": 0.54,
+       "e": 0.68
+      },
+      {
+       "w": "AI",
+       "t": 0.68,
+       "e": 0.96
+      },
+      {
+       "w": "tutorial",
+       "t": 0.96,
+       "e": 1.28
+      },
+      {
+       "w": "every",
+       "t": 1.28,
+       "e": 1.86
+      },
+      {
+       "w": "day.",
+       "t": 1.86,
+       "e": 2.12
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

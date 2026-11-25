@@ -1,0 +1,125 @@
+{
+ "id": "gs007",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Use Plan Mode in Claude",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Plan mode makes Claude propose steps before changing files.",
+    "You review a plan before Claude edits anything."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Plan Mode in",
+    "line2": "Claude Code",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "In Claude Code, press Shift plus Tab.",
+    "Cycle through modes until you reach plan mode."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Shift+Tab until plan mode",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Type your coding request.",
+    "For example, add a dark mode toggle."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Add a dark mode toggle.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Claude researches and proposes a step-by-step plan.",
+    "Review the plan Claude suggests."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "1. Add toggle button. 2. Update styles.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Approve the plan to let Claude start making changes.",
+    "With plan mode, you control what happens before files are changed."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Plan Mode Steps",
+    "items": [
+     {
+      "t": "Cycle to plan mode",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Submit your request",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Approve Claude's plan",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Plan mode in Claude Code",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

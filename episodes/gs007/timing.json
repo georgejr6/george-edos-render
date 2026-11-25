@@ -1,0 +1,538 @@
+{
+ "id": "gs007",
+ "engine": "eleven",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Plan mode makes Claude propose steps before changing files.",
+     "file": "gs007/vo/a_b1_el1428e25f_mc4b58.mp3",
+     "dur": 3.48,
+     "words": [
+      {
+       "w": "Plan",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "mode",
+       "t": 0.12,
+       "e": 0.38
+      },
+      {
+       "w": "makes",
+       "t": 0.38,
+       "e": 0.64
+      },
+      {
+       "w": "Claude",
+       "t": 0.64,
+       "e": 0.9
+      },
+      {
+       "w": "propose",
+       "t": 0.9,
+       "e": 1.2
+      },
+      {
+       "w": "steps",
+       "t": 1.2,
+       "e": 1.62
+      },
+      {
+       "w": "before",
+       "t": 1.62,
+       "e": 2.0
+      },
+      {
+       "w": "changing",
+       "t": 2.0,
+       "e": 2.36
+      },
+      {
+       "w": "files.",
+       "t": 2.36,
+       "e": 2.7
+      }
+     ]
+    },
+    {
+     "text": "You review a plan before Claude edits anything.",
+     "file": "gs007/vo/a_b2_ela584a705_mc4b58.mp3",
+     "dur": 2.744,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "review",
+       "t": 0.12,
+       "e": 0.34
+      },
+      {
+       "w": "a",
+       "t": 0.34,
+       "e": 0.5
+      },
+      {
+       "w": "plan",
+       "t": 0.5,
+       "e": 0.7
+      },
+      {
+       "w": "before",
+       "t": 0.7,
+       "e": 1.02
+      },
+      {
+       "w": "Claude",
+       "t": 1.02,
+       "e": 1.34
+      },
+      {
+       "w": "edits",
+       "t": 1.34,
+       "e": 1.56
+      },
+      {
+       "w": "anything.",
+       "t": 1.56,
+       "e": 2.06
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "In Claude Code, press Shift plus Tab.",
+     "file": "gs007/vo/b_b1_eldd113e9c_mc4b58.mp3",
+     "dur": 2.823,
+     "words": [
+      {
+       "w": "In",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "Cloud",
+       "t": 0.08,
+       "e": 0.26
+      },
+      {
+       "w": "Code,",
+       "t": 0.26,
+       "e": 0.62
+      },
+      {
+       "w": "press",
+       "t": 0.86,
+       "e": 1.02
+      },
+      {
+       "w": "Shift",
+       "t": 1.02,
+       "e": 1.32
+      },
+      {
+       "w": "plus",
+       "t": 1.32,
+       "e": 1.64
+      },
+      {
+       "w": "Tab.",
+       "t": 1.64,
+       "e": 2.04
+      }
+     ]
+    },
+    {
+     "text": "Cycle through modes until you reach plan mode.",
+     "file": "gs007/vo/b_b2_el89521d7a_mc4b58.mp3",
+     "dur": 2.675,
+     "words": [
+      {
+       "w": "Cycle",
+       "t": 0.0,
+       "e": 0.32
+      },
+      {
+       "w": "through",
+       "t": 0.32,
+       "e": 0.52
+      },
+      {
+       "w": "modes",
+       "t": 0.52,
+       "e": 0.78
+      },
+      {
+       "w": "until",
+       "t": 0.78,
+       "e": 1.14
+      },
+      {
+       "w": "you",
+       "t": 1.14,
+       "e": 1.3
+      },
+      {
+       "w": "reach",
+       "t": 1.3,
+       "e": 1.46
+      },
+      {
+       "w": "plan",
+       "t": 1.46,
+       "e": 1.78
+      },
+      {
+       "w": "mode.",
+       "t": 1.78,
+       "e": 2.12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Type your coding request.",
+     "file": "gs007/vo/c_b1_el77216476_mc4b58.mp3",
+     "dur": 1.66,
+     "words": [
+      {
+       "w": "type",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "your",
+       "t": 0.16,
+       "e": 0.3
+      },
+      {
+       "w": "coding",
+       "t": 0.3,
+       "e": 0.54
+      },
+      {
+       "w": "request.",
+       "t": 0.54,
+       "e": 0.96
+      }
+     ]
+    },
+    {
+     "text": "For example, add a dark mode toggle.",
+     "file": "gs007/vo/c_b2_elc70f7007_mc4b58.mp3",
+     "dur": 2.391,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "example,",
+       "t": 0.06,
+       "e": 0.26
+      },
+      {
+       "w": "add",
+       "t": 0.7,
+       "e": 0.78
+      },
+      {
+       "w": "a",
+       "t": 0.78,
+       "e": 0.88
+      },
+      {
+       "w": "dark",
+       "t": 0.88,
+       "e": 1.12
+      },
+      {
+       "w": "mode",
+       "t": 1.12,
+       "e": 1.36
+      },
+      {
+       "w": "toggle.",
+       "t": 1.36,
+       "e": 1.68
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Claude researches and proposes a step-by-step plan.",
+     "file": "gs007/vo/d_b1_el16ae190b_mc4b58.mp3",
+     "dur": 3.103,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "researches",
+       "t": 0.14,
+       "e": 0.72
+      },
+      {
+       "w": "and",
+       "t": 0.72,
+       "e": 0.88
+      },
+      {
+       "w": "proposes",
+       "t": 0.88,
+       "e": 1.18
+      },
+      {
+       "w": "a",
+       "t": 1.18,
+       "e": 1.54
+      },
+      {
+       "w": "step",
+       "t": 1.54,
+       "e": 1.78
+      },
+      {
+       "w": "-by",
+       "t": 1.78,
+       "e": 1.96
+      },
+      {
+       "w": "-step",
+       "t": 1.96,
+       "e": 2.16
+      },
+      {
+       "w": "plan.",
+       "t": 2.16,
+       "e": 2.48
+      }
+     ]
+    },
+    {
+     "text": "Review the plan Claude suggests.",
+     "file": "gs007/vo/d_b2_elad437410_mc4b58.mp3",
+     "dur": 1.977,
+     "words": [
+      {
+       "w": "Review",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "the",
+       "t": 0.22,
+       "e": 0.36
+      },
+      {
+       "w": "plan",
+       "t": 0.36,
+       "e": 0.56
+      },
+      {
+       "w": "clause",
+       "t": 0.56,
+       "e": 0.8
+      },
+      {
+       "w": "suggest.",
+       "t": 0.8,
+       "e": 1.24
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    {
+     "text": "Approve the plan to let Claude start making changes.",
+     "file": "gs007/vo/e_b1_el74607f48_mc4b58.mp3",
+     "dur": 2.811,
+     "words": [
+      {
+       "w": "Approve",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "the",
+       "t": 0.28,
+       "e": 0.36
+      },
+      {
+       "w": "plan",
+       "t": 0.36,
+       "e": 0.56
+      },
+      {
+       "w": "to",
+       "t": 0.56,
+       "e": 0.78
+      },
+      {
+       "w": "let",
+       "t": 0.78,
+       "e": 0.92
+      },
+      {
+       "w": "Claude",
+       "t": 0.92,
+       "e": 1.14
+      },
+      {
+       "w": "start",
+       "t": 1.14,
+       "e": 1.4
+      },
+      {
+       "w": "making",
+       "t": 1.4,
+       "e": 1.74
+      },
+      {
+       "w": "changes.",
+       "t": 1.74,
+       "e": 2.14
+      }
+     ]
+    },
+    {
+     "text": "With plan mode, you control what happens before files are changed.",
+     "file": "gs007/vo/e_b2_el703a2ebc_mc4b58.mp3",
+     "dur": 3.643,
+     "words": [
+      {
+       "w": "With",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "Plan",
+       "t": 0.08,
+       "e": 0.24
+      },
+      {
+       "w": "Mode,",
+       "t": 0.24,
+       "e": 0.6
+      },
+      {
+       "w": "you",
+       "t": 0.84,
+       "e": 0.88
+      },
+      {
+       "w": "control",
+       "t": 0.88,
+       "e": 1.14
+      },
+      {
+       "w": "what",
+       "t": 1.14,
+       "e": 1.44
+      },
+      {
+       "w": "happens",
+       "t": 1.44,
+       "e": 1.74
+      },
+      {
+       "w": "before",
+       "t": 1.74,
+       "e": 2.14
+      },
+      {
+       "w": "files",
+       "t": 2.14,
+       "e": 2.5
+      },
+      {
+       "w": "are",
+       "t": 2.5,
+       "e": 2.72
+      },
+      {
+       "w": "changed.",
+       "t": 2.72,
+       "e": 2.98
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs007/vo/end_b1_el45358d64_mc4b58.mp3",
+     "dur": 2.634,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "for",
+       "t": 0.24,
+       "e": 0.46
+      },
+      {
+       "w": "a",
+       "t": 0.46,
+       "e": 0.56
+      },
+      {
+       "w": "new",
+       "t": 0.56,
+       "e": 0.66
+      },
+      {
+       "w": "cloud",
+       "t": 0.66,
+       "e": 0.88
+      },
+      {
+       "w": "tutorial",
+       "t": 0.88,
+       "e": 1.38
+      },
+      {
+       "w": "every",
+       "t": 1.38,
+       "e": 1.78
+      },
+      {
+       "w": "day.",
+       "t": 1.78,
+       "e": 2.04
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

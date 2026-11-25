@@ -1,0 +1,118 @@
+{
+ "id": "gs006",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "grok",
+ "title": "Use DeepSearch in Grok",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Grok only searches its own memory by default.",
+    "DeepSearch makes Grok search the web and X before answering."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "GROK TIP",
+    "line1": "Use DeepSearch",
+    "line2": "Find Current Answers",
+    "sub": ""
+   },
+   "red": [
+    "default"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "In the Grok app, go to the message box.",
+    "Select DeepSearch before you send your question.",
+    "This tells Grok to search the web and X for answers."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Enable DeepSearch",
+    "items": [
+     {
+      "t": "Select DeepSearch in message box.",
+      "beat": 1,
+      "ok": true
+     },
+     {
+      "t": "Grok searches web and X.",
+      "beat": 2,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Type a question where a quick answer is not enough.",
+    "For example: Who won the last F1 race?"
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Who won the last F1 race?",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Grok returns a researched answer with its sources.",
+    "You get information found across the web and X."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What You Get",
+    "items": [
+     {
+      "t": "Researched answer",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Sources included",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Grok tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "DeepSearch in Grok",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}
