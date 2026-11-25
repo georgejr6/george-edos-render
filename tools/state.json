@@ -1,10 +1,12 @@
 {
- "next": 9,
+ "next": 10,
  "done": [
   "CLAUDE.md project memory in Claude Code|how-to",
   "DeepSearch in Grok|how-to",
   "Plan mode in Claude Code|how-to",
-  "ChatGPT memory|how-to"
+  "ChatGPT memory|how-to",
+  "/compact and /clear in Claude Code|how-to"
  ],
- "rot": 0
+ "rot": 1,
+ "fails": {}
 }

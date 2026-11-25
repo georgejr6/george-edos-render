@@ -1,0 +1,132 @@
+{
+ "id": "gs009",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Use Claude Code Compact And Clear",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude Code sessions fill up fast.",
+    "You lose track and run out of space."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE CODE TIP",
+    "line1": "Clean Up",
+    "line2": "With Compact & Clear",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Type slash compact to summarize your session.",
+    "Claude keeps going with the summary on screen."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "/compact",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "[Claude summarizes the full conversation.]",
+      "beat": 1
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "/compact",
+     "beat": 0
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    "To erase everything, type slash clear.",
+    "Your session resets in the same folder."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "/clear",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "[Claude clears the conversation.]",
+      "beat": 1
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "/clear",
+     "beat": 0,
+     "tone": "red"
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Now your Claude Code window is fresh or summarized.",
+    "You control what stays and what goes."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Two Ways to Manage Context",
+    "items": [
+     {
+      "t": "Summarize with /compact",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Erase all with /clear",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "/compact and /clear in Claude Code",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

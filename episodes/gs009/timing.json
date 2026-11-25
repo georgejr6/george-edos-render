@@ -1,0 +1,424 @@
+{
+ "id": "gs009",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Claude Code sessions fill up fast.",
+     "file": "gs009/vo/a_b1_add9021aef_p105.mp3",
+     "dur": 2.275,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "code",
+       "t": 0.24,
+       "e": 0.48
+      },
+      {
+       "w": "sessions",
+       "t": 0.48,
+       "e": 0.8
+      },
+      {
+       "w": "fill",
+       "t": 0.8,
+       "e": 1.24
+      },
+      {
+       "w": "up",
+       "t": 1.24,
+       "e": 1.42
+      },
+      {
+       "w": "fast.",
+       "t": 1.42,
+       "e": 1.74
+      }
+     ]
+    },
+    {
+     "text": "You lose track and run out of space.",
+     "file": "gs009/vo/a_b2_3378a315d6_p105.mp3",
+     "dur": 2.092,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "lose",
+       "t": 0.12,
+       "e": 0.32
+      },
+      {
+       "w": "track",
+       "t": 0.32,
+       "e": 0.58
+      },
+      {
+       "w": "and",
+       "t": 0.58,
+       "e": 0.9
+      },
+      {
+       "w": "run",
+       "t": 0.9,
+       "e": 1.08
+      },
+      {
+       "w": "out",
+       "t": 1.08,
+       "e": 1.24
+      },
+      {
+       "w": "of",
+       "t": 1.24,
+       "e": 1.32
+      },
+      {
+       "w": "space.",
+       "t": 1.32,
+       "e": 1.54
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Type slash compact to summarize your session.",
+     "file": "gs009/vo/b_b1_a2a9af4b2d_p105.mp3",
+     "dur": 3.448,
+     "words": [
+      {
+       "w": "type",
+       "t": 0.0,
+       "e": 0.26
+      },
+      {
+       "w": "slash",
+       "t": 0.26,
+       "e": 0.7
+      },
+      {
+       "w": "compact",
+       "t": 0.7,
+       "e": 1.18
+      },
+      {
+       "w": "to",
+       "t": 1.18,
+       "e": 1.92
+      },
+      {
+       "w": "summarize",
+       "t": 1.92,
+       "e": 2.16
+      },
+      {
+       "w": "your",
+       "t": 2.16,
+       "e": 2.66
+      },
+      {
+       "w": "session.",
+       "t": 2.66,
+       "e": 2.94
+      }
+     ]
+    },
+    {
+     "text": "Claude keeps going with the summary on screen.",
+     "file": "gs009/vo/b_b2_9b957398fa_p105.mp3",
+     "dur": 2.736,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.32
+      },
+      {
+       "w": "keeps",
+       "t": 0.32,
+       "e": 0.6
+      },
+      {
+       "w": "going",
+       "t": 0.6,
+       "e": 0.94
+      },
+      {
+       "w": "with",
+       "t": 0.94,
+       "e": 1.16
+      },
+      {
+       "w": "the",
+       "t": 1.16,
+       "e": 1.28
+      },
+      {
+       "w": "summary",
+       "t": 1.28,
+       "e": 1.58
+      },
+      {
+       "w": "on",
+       "t": 1.58,
+       "e": 1.92
+      },
+      {
+       "w": "screen.",
+       "t": 1.92,
+       "e": 2.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "To erase everything, type slash clear.",
+     "file": "gs009/vo/c_b1_5a1b1e86d7_p105.mp3",
+     "dur": 2.803,
+     "words": [
+      {
+       "w": "to",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "erase",
+       "t": 0.08,
+       "e": 0.22
+      },
+      {
+       "w": "everything,",
+       "t": 0.22,
+       "e": 0.8
+      },
+      {
+       "w": "type",
+       "t": 1.16,
+       "e": 1.4
+      },
+      {
+       "w": "slash",
+       "t": 1.4,
+       "e": 1.94
+      },
+      {
+       "w": "clear.",
+       "t": 1.94,
+       "e": 2.28
+      }
+     ]
+    },
+    {
+     "text": "Your session resets in the same folder.",
+     "file": "gs009/vo/c_b2_aba2252cb5_p105.mp3",
+     "dur": 2.394,
+     "words": [
+      {
+       "w": "Your",
+       "t": 0.0,
+       "e": 0.1
+      },
+      {
+       "w": "session",
+       "t": 0.1,
+       "e": 0.36
+      },
+      {
+       "w": "resets",
+       "t": 0.36,
+       "e": 0.98
+      },
+      {
+       "w": "in",
+       "t": 0.98,
+       "e": 1.24
+      },
+      {
+       "w": "the",
+       "t": 1.24,
+       "e": 1.32
+      },
+      {
+       "w": "same",
+       "t": 1.32,
+       "e": 1.54
+      },
+      {
+       "w": "folder.",
+       "t": 1.54,
+       "e": 1.86
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Now your Claude Code window is fresh or summarized.",
+     "file": "gs009/vo/d_b1_a5b2255af1_p105.mp3",
+     "dur": 3.148,
+     "words": [
+      {
+       "w": "Now",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "your",
+       "t": 0.22,
+       "e": 0.48
+      },
+      {
+       "w": "cloud",
+       "t": 0.48,
+       "e": 0.74
+      },
+      {
+       "w": "code",
+       "t": 0.74,
+       "e": 1.06
+      },
+      {
+       "w": "window",
+       "t": 1.06,
+       "e": 1.46
+      },
+      {
+       "w": "is",
+       "t": 1.46,
+       "e": 1.64
+      },
+      {
+       "w": "fresh",
+       "t": 1.64,
+       "e": 1.88
+      },
+      {
+       "w": "or",
+       "t": 1.88,
+       "e": 2.18
+      },
+      {
+       "w": "summarized.",
+       "t": 2.18,
+       "e": 2.58
+      }
+     ]
+    },
+    {
+     "text": "You control what stays and what goes.",
+     "file": "gs009/vo/d_b2_c42a6b91a5_p105.mp3",
+     "dur": 3.144,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "control",
+       "t": 0.2,
+       "e": 0.62
+      },
+      {
+       "w": "what",
+       "t": 0.62,
+       "e": 1.26
+      },
+      {
+       "w": "stays",
+       "t": 1.26,
+       "e": 1.62
+      },
+      {
+       "w": "and",
+       "t": 1.62,
+       "e": 2.14
+      },
+      {
+       "w": "what",
+       "t": 2.14,
+       "e": 2.32
+      },
+      {
+       "w": "goes.",
+       "t": 2.32,
+       "e": 2.58
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs009/vo/end_b1_8acd70267c_p105.mp3",
+     "dur": 2.643,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "for",
+       "t": 0.24,
+       "e": 0.5
+      },
+      {
+       "w": "a",
+       "t": 0.5,
+       "e": 0.58
+      },
+      {
+       "w": "new",
+       "t": 0.58,
+       "e": 0.72
+      },
+      {
+       "w": "cloud",
+       "t": 0.72,
+       "e": 0.98
+      },
+      {
+       "w": "tutorial",
+       "t": 0.98,
+       "e": 1.48
+      },
+      {
+       "w": "every",
+       "t": 1.48,
+       "e": 1.92
+      },
+      {
+       "w": "day.",
+       "t": 1.92,
+       "e": 2.18
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
