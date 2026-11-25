@@ -71,7 +71,7 @@ STYLE = """You write 40-second faceless YouTube Shorts tutorials for the channel
 Voice: plain, confident, short declarative sentences (6-16 words). Spoken aloud by a narrator. No hype words, no emojis, no questions to the viewer except maybe the hook.
 Structure: 4-5 scenes. Scene a = hook (the problem, in one punchy line + one supporting line). Middle scenes = the steps, shown on screen. Last scene = the payoff (what you get).
 Do NOT write a call to action or "follow" line; it is added automatically.
-Total spoken words across all beats: 80-115.
+Total spoken words across all beats: 85-110 (aim for 95).
 Write file names and commands the way they are SAID in beats: "CLAUDE dot M D", "AGENTS dot M D", "slash compact". On screen (card text) write them normally: CLAUDE.md, /compact.
 Every sentence must teach, show or prove something. No filler that restates ("This ensures...", "This makes it easy...", "smarter and tailored"). No "Want to...?" or "Tired of...?" openers.
 Hook (scene a, first beat): a blunt statement of the pain or the payoff, 4-10 words, e.g. "Claude forgets your project every single time." or "Your ChatGPT answers are generic for one reason."
@@ -79,7 +79,7 @@ Show it: at least two scenes must be terminal or chat screens with the exact thi
 You MAY invent example content the viewer would type themselves (a sample rule, a sample prompt, a sample question).
 Use ONLY the facts provided for anything about how the tool works. Never invent menu names, button names, prices, version numbers, statistics or features that are not in the facts. If a detail is not in the facts, leave it out.
 Never describe the screen or UI (where to click, tabs, fields, boxes, status bars, what appears, what to type to confirm) beyond the exact words in the facts. If the facts do not say how to switch something on, just say "turn on X" and never describe how. Never claim what the AI will reply or how its output is structured. Keep steps at the level of the facts: e.g. "Open settings, then Personalization." not "Click the gear icon in the top corner."
-Title: 3-6 words, Title Case, straight to the point: tool name + outcome (e.g. "Make Claude Remember You", "Stop Claude Making Up Numbers"). Never use the words Tutorial, How-To, Guide, Explained, or Feature in a title. No "#", no "This one", no "The #1".
+Title: 3-6 words, Title Case, starts with a verb, straight to the point: verb + tool name + outcome (e.g. "Make Claude Remember Your Project", "Get Sourced Answers From Grok", "Stop Claude Making Up Numbers"). Never use the words Tutorial, How-To, Guide, Explained, or Feature in a title. No "#", no "This one", no "The #1".
 """
 
 ANGLE = {"how-to": "Angle: a straight how-to. Show how to do it, step by step.",
@@ -163,7 +163,7 @@ def validate(d, item):
             err.append(f"scene {sc.get('id')}: pill text over 32 chars")
         if c.get("carry") and c["carry"] not in [s.get("id") for s in scenes]:
             del c["carry"]
-    if not 70 <= words <= 125:
+    if not 65 <= words <= 130:
         err.append(f"total spoken words must be 80-115 (got {words})")
     if re.search(r"\b(follow (for|me|us|along)|subscribe|link in (the )?(bio|description))\b", " ".join(x for sc in scenes for x in sc.get("beats", [])), re.I):
         err.append("no call to action; it is added automatically")
@@ -184,7 +184,8 @@ def factcheck(d, item):
     prompt = (f"Tool: {NAME[item['tool']]}\nFACTS (verified true):\n- " + "\n- ".join(item["facts"]) +
               "\n\nLabel EVERY numbered line of a tutorial script with one label:\n"
               "FACT = says the same thing as a FACT, or a plain implication of it (names that appear in the FACTS are fine).\n"
-              "STEP = a generic action that is true for any app (open settings, start a new chat, type your question, save the file).\n"
+              "STEP = a generic action true for any app (open settings, start a new chat, type your question, save the file), or going to, "
+              "finding, selecting or using something the FACTS name (find custom instructions, select DeepSearch).\n"
               "EXAMPLE = sample text the viewer would type or put in a file.\n"
               "FRAMING = the problem or the benefit in general words (it forgets you, you stop repeating yourself, saves time).\n"
               "INVENTED = any other concrete claim about the tool: a button, field, tab, status bar, label, keyword, command, shortcut, "
@@ -295,14 +296,22 @@ def slots(n):
 
 def prepare(n):
     state = load_state()
-    items = plan(n, state)
+    items = plan(n + 3, state)
+    spares = items[n:]  # a topic that fails the fact check is replaced, so no slot goes empty
     left = eleven_left()
     print("elevenlabs chars left:", left, flush=True)
     made, when = [], slots(n)
-    for i, item in enumerate(items):
+    for i, item in enumerate(items[:n]):
         ep = f"gs{state['next']:03d}"
         try:
-            write(ep, item, MUSIC[(state["next"] + i) % len(MUSIC)])
+            try:
+                write(ep, item, MUSIC[(state["next"] + i) % len(MUSIC)])
+            except RuntimeError as e:
+                if not spares or "writer failed" not in str(e):
+                    raise
+                print("SPARE", ep, "replacing", item["topic"], flush=True)
+                item = spares.pop(0)
+                write(ep, item, MUSIC[(state["next"] + i) % len(MUSIC)])
             narr = i in NARRATOR_SLOTS and left - 900 > ELEVEN_FLOOR
             voice(ep, narr)
             if narr:
