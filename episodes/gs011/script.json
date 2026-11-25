@@ -1,0 +1,108 @@
+{
+ "id": "gs011",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "grok",
+ "title": "Ask Grok About An X Post",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Grok explains confusing posts on X in seconds.",
+    "No need to guess what a post means anymore."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "GROK TIP",
+    "line1": "Ask About",
+    "line2": "Any X Post",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open X and scroll to a post that needs clarity.",
+    "Click reply under the post.",
+    "Get ready to ask Grok about it."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Find the Post on X",
+    "items": [
+     {
+      "t": "Scroll to the post",
+      "beat": 0
+     },
+     {
+      "t": "Click reply",
+      "beat": 1
+     },
+     {
+      "t": "Prepare your question",
+      "beat": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Type at grok in your reply: '@grok'.",
+    "Next, type your question. For example:",
+    "What does this mean for creators?",
+    "Send your reply to post it publicly."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "user",
+      "t": "@grok What does this mean for creators?",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Wait a moment for Grok to respond under your reply.",
+    "Grok uses the post and context to generate an answer.",
+    "You get a clear, context-aware explanation right on X."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "Grok explains the post using its context.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Grok tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Ask Grok about a post on X",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

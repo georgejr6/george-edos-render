@@ -1,0 +1,120 @@
+{
+ "id": "gs013",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Use Projects in ChatGPT",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Projects keep related chats and files together.",
+    "No more searching across scattered conversations."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Keep chats and",
+    "line2": "files together",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Start a new project in ChatGPT.",
+    "Add a name and description for your project."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Set Up Your Project",
+    "items": [
+     {
+      "t": "Start a new project",
+      "beat": 0
+     },
+     {
+      "t": "Add name and description",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Add project instructions that will apply to all chats in this project."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Summarize all uploaded research files.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Upload any files your project needs.",
+    "The files are available in every chat inside this project."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Add Project Files",
+    "items": [
+     {
+      "t": "Upload research.pdf",
+      "beat": 0
+     },
+     {
+      "t": "Access from any chat",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Now every chat and file stays linked to your project.",
+    "Your instructions apply everywhere in this workspace."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Draft an email using my project files.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Projects in ChatGPT",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

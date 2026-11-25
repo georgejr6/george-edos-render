@@ -1,0 +1,131 @@
+{
+ "id": "gs014",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Use Claude Projects for Context",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Switching chats loses important files and instructions.",
+    "Project context is scattered across conversations."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Keep project",
+    "line2": "context in one place",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "Scattered context",
+     "beat": 1,
+     "tone": "red"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open claude dot A I and create a new Project."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Go to claude dot A I",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Upload documents to Project knowledge.",
+    "Every chat in this Project can use them."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Upload data_sources dot PDF",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Add your project instructions once for all chats in the Project."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Paste project instructions here",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "All chats in the Project share the same files and instructions."
+   ],
+   "card": {
+    "type": "list",
+    "title": "With Claude Projects",
+    "items": [
+     {
+      "t": "Shared files for every chat",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Project instructions in one place",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Claude Projects",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

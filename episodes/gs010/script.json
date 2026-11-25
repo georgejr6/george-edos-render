@@ -1,0 +1,143 @@
+{
+ "id": "gs010",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Set ChatGPT Custom Instructions",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "ChatGPT forgets your style in every chat.",
+    "Custom instructions fix that in seconds."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Set Custom",
+    "line2": "Instructions",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "Forgets your style",
+     "beat": 0,
+     "tone": "red"
+    }
+   ],
+   "red": [
+    "forgets"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open ChatGPT settings.",
+    "Go to Personalization."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Open Settings",
+    "items": [
+     {
+      "t": "Open ChatGPT settings",
+      "beat": 0
+     },
+     {
+      "t": "Go to Personalization",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Find custom instructions.",
+    "Add information ChatGPT should know about you."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Add Custom Instructions",
+    "items": [
+     {
+      "t": "Find custom instructions",
+      "beat": 0
+     },
+     {
+      "t": "Tell ChatGPT what it should know",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Write how you want ChatGPT to respond.",
+    "For example: 'Always explain in simple steps.'"
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Always explain in simple steps.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Your instructions apply to every new chat.",
+    "ChatGPT now responds your way every time."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Your Custom ChatGPT",
+    "items": [
+     {
+      "t": "Instructions apply to every chat",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "ChatGPT responds your way",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "ChatGPT custom instructions",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

@@ -1,0 +1,458 @@
+{
+ "id": "gs010",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "ChatGPT forgets your style in every chat.",
+     "file": "gs010/vo/a_b1_782534f18e_p105.mp3",
+     "dur": 4.099,
+     "words": [
+      {
+       "w": "chat",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "GPT",
+       "t": 0.28,
+       "e": 1.04
+      },
+      {
+       "w": "forgets",
+       "t": 1.04,
+       "e": 1.9
+      },
+      {
+       "w": "your",
+       "t": 1.9,
+       "e": 2.04
+      },
+      {
+       "w": "style",
+       "t": 2.04,
+       "e": 2.46
+      },
+      {
+       "w": "in",
+       "t": 2.46,
+       "e": 2.94
+      },
+      {
+       "w": "every",
+       "t": 2.94,
+       "e": 3.28
+      },
+      {
+       "w": "chat.",
+       "t": 3.28,
+       "e": 3.62
+      }
+     ]
+    },
+    {
+     "text": "Custom instructions fix that in seconds.",
+     "file": "gs010/vo/a_b2_5c1d6d7aa1_p105.mp3",
+     "dur": 2.948,
+     "words": [
+      {
+       "w": "Custom",
+       "t": 0.0,
+       "e": 0.32
+      },
+      {
+       "w": "instructions.",
+       "t": 0.32,
+       "e": 0.7
+      },
+      {
+       "w": "Fix",
+       "t": 1.4,
+       "e": 1.5
+      },
+      {
+       "w": "that",
+       "t": 1.5,
+       "e": 1.72
+      },
+      {
+       "w": "in",
+       "t": 1.72,
+       "e": 2.02
+      },
+      {
+       "w": "seconds.",
+       "t": 2.02,
+       "e": 2.32
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open ChatGPT settings.",
+     "file": "gs010/vo/b_b1_d8ccdfa5b9_p105.mp3",
+     "dur": 1.953,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "ChatGPT",
+       "t": 0.24,
+       "e": 0.94
+      },
+      {
+       "w": "settings.",
+       "t": 0.94,
+       "e": 1.4
+      }
+     ]
+    },
+    {
+     "text": "Go to Personalization.",
+     "file": "gs010/vo/b_b2_a83c98a1ab_p105.mp3",
+     "dur": 1.83,
+     "words": [
+      {
+       "w": "Go",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "to",
+       "t": 0.18,
+       "e": 0.42
+      },
+      {
+       "w": "personalization.",
+       "t": 0.42,
+       "e": 1.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Find custom instructions.",
+     "file": "gs010/vo/c_b1_4d8dca8083_p105.mp3",
+     "dur": 1.826,
+     "words": [
+      {
+       "w": "Find",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "custom",
+       "t": 0.28,
+       "e": 0.66
+      },
+      {
+       "w": "instructions.",
+       "t": 0.66,
+       "e": 1.0
+      }
+     ]
+    },
+    {
+     "text": "Add information ChatGPT should know about you.",
+     "file": "gs010/vo/c_b2_e5a4bdea18_p105.mp3",
+     "dur": 3.045,
+     "words": [
+      {
+       "w": "Add",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "information",
+       "t": 0.2,
+       "e": 0.56
+      },
+      {
+       "w": "chat",
+       "t": 0.56,
+       "e": 1.08
+      },
+      {
+       "w": "GPT",
+       "t": 1.08,
+       "e": 1.54
+      },
+      {
+       "w": "should",
+       "t": 1.54,
+       "e": 1.92
+      },
+      {
+       "w": "know",
+       "t": 1.92,
+       "e": 2.12
+      },
+      {
+       "w": "about",
+       "t": 2.12,
+       "e": 2.38
+      },
+      {
+       "w": "you.",
+       "t": 2.38,
+       "e": 2.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Write how you want ChatGPT to respond.",
+     "file": "gs010/vo/d_b1_e9f3d9a562_p105.mp3",
+     "dur": 3.076,
+     "words": [
+      {
+       "w": "Right,",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "how",
+       "t": 0.66,
+       "e": 0.84
+      },
+      {
+       "w": "you",
+       "t": 0.84,
+       "e": 1.0
+      },
+      {
+       "w": "want",
+       "t": 1.0,
+       "e": 1.18
+      },
+      {
+       "w": "chat",
+       "t": 1.18,
+       "e": 1.42
+      },
+      {
+       "w": "GPT",
+       "t": 1.42,
+       "e": 1.86
+      },
+      {
+       "w": "to",
+       "t": 1.86,
+       "e": 2.22
+      },
+      {
+       "w": "respond.",
+       "t": 2.22,
+       "e": 2.52
+      }
+     ]
+    },
+    {
+     "text": "For example: 'Always explain in simple steps.'",
+     "file": "gs010/vo/d_b2_0801d631ac_p105.mp3",
+     "dur": 3.084,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "example,",
+       "t": 0.08,
+       "e": 0.4
+      },
+      {
+       "w": "always",
+       "t": 0.92,
+       "e": 1.32
+      },
+      {
+       "w": "explain",
+       "t": 1.32,
+       "e": 1.78
+      },
+      {
+       "w": "in",
+       "t": 1.78,
+       "e": 2.04
+      },
+      {
+       "w": "simple",
+       "t": 2.04,
+       "e": 2.24
+      },
+      {
+       "w": "steps.",
+       "t": 2.24,
+       "e": 2.54
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    {
+     "text": "Your instructions apply to every new chat.",
+     "file": "gs010/vo/e_b1_f1bd5a14bf_p105.mp3",
+     "dur": 2.698,
+     "words": [
+      {
+       "w": "Your",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "instructions",
+       "t": 0.16,
+       "e": 0.58
+      },
+      {
+       "w": "apply",
+       "t": 0.58,
+       "e": 1.1
+      },
+      {
+       "w": "to",
+       "t": 1.1,
+       "e": 1.38
+      },
+      {
+       "w": "every",
+       "t": 1.38,
+       "e": 1.74
+      },
+      {
+       "w": "new",
+       "t": 1.74,
+       "e": 1.96
+      },
+      {
+       "w": "chat.",
+       "t": 1.96,
+       "e": 2.2
+      }
+     ]
+    },
+    {
+     "text": "ChatGPT now responds your way every time.",
+     "file": "gs010/vo/e_b2_14fddb69a0_p105.mp3",
+     "dur": 3.395,
+     "words": [
+      {
+       "w": "Chat",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "GPT",
+       "t": 0.18,
+       "e": 0.7
+      },
+      {
+       "w": "now",
+       "t": 0.7,
+       "e": 1.24
+      },
+      {
+       "w": "responds",
+       "t": 1.24,
+       "e": 1.54
+      },
+      {
+       "w": "your",
+       "t": 1.54,
+       "e": 1.96
+      },
+      {
+       "w": "way,",
+       "t": 1.96,
+       "e": 2.24
+      },
+      {
+       "w": "every",
+       "t": 2.52,
+       "e": 2.68
+      },
+      {
+       "w": "time.",
+       "t": 2.68,
+       "e": 2.98
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new AI tutorial every day.",
+     "file": "gs010/vo/end_b1_5e0395d60f_p105.mp3",
+     "dur": 3.014,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.32
+      },
+      {
+       "w": "for",
+       "t": 0.32,
+       "e": 0.74
+      },
+      {
+       "w": "a",
+       "t": 0.74,
+       "e": 0.82
+      },
+      {
+       "w": "new",
+       "t": 0.82,
+       "e": 1.0
+      },
+      {
+       "w": "AI",
+       "t": 1.0,
+       "e": 1.26
+      },
+      {
+       "w": "tutorial",
+       "t": 1.26,
+       "e": 1.68
+      },
+      {
+       "w": "every",
+       "t": 1.68,
+       "e": 2.32
+      },
+      {
+       "w": "day.",
+       "t": 2.32,
+       "e": 2.58
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

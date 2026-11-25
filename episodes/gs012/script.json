@@ -1,0 +1,109 @@
+{
+ "id": "gs012",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Create Slash Commands In Claude",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Custom Claude commands run any prompt you want.",
+    "Just save a markdown file in your project."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Custom Slash",
+    "line2": "Commands In Claude",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open the .claude slash commands folder.",
+    "Add a markdown file, like review dot M D."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "cd your-project/.claude/commands/",
+      "beat": 0
+     },
+     {
+      "k": "cmd",
+      "t": "touch review.md",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Write your custom prompt in the file.",
+    "For example: Summarize all TODOs in this repo."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "review.md",
+    "lines": [
+     {
+      "k": "file",
+      "t": "Summarize all TODOs in this repo.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Now use slash review in Claude Code.",
+    "Claude runs your custom prompt instantly."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "/review",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Custom slash commands in Claude Code",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

@@ -1,0 +1,424 @@
+{
+ "id": "gs012",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Custom Claude commands run any prompt you want.",
+     "file": "gs012/vo/a_b1_701428565f_p105.mp3",
+     "dur": 3.287,
+     "words": [
+      {
+       "w": "Custom",
+       "t": 0.0,
+       "e": 0.3
+      },
+      {
+       "w": "Cloud",
+       "t": 0.3,
+       "e": 0.54
+      },
+      {
+       "w": "Commands,",
+       "t": 0.54,
+       "e": 0.82
+      },
+      {
+       "w": "Run",
+       "t": 1.5,
+       "e": 1.58
+      },
+      {
+       "w": "Any",
+       "t": 1.58,
+       "e": 1.9
+      },
+      {
+       "w": "Prompt",
+       "t": 1.9,
+       "e": 2.18
+      },
+      {
+       "w": "You",
+       "t": 2.18,
+       "e": 2.58
+      },
+      {
+       "w": "Want",
+       "t": 2.58,
+       "e": 2.84
+      }
+     ]
+    },
+    {
+     "text": "Just save a markdown file in your project.",
+     "file": "gs012/vo/a_b2_e3a7c697b9_p105.mp3",
+     "dur": 3.445,
+     "words": [
+      {
+       "w": "Just",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "save",
+       "t": 0.28,
+       "e": 0.68
+      },
+      {
+       "w": "a",
+       "t": 0.68,
+       "e": 1.18
+      },
+      {
+       "w": "markdown",
+       "t": 1.18,
+       "e": 1.6
+      },
+      {
+       "w": "file",
+       "t": 1.6,
+       "e": 1.94
+      },
+      {
+       "w": "in",
+       "t": 1.94,
+       "e": 2.48
+      },
+      {
+       "w": "your",
+       "t": 2.48,
+       "e": 2.6
+      },
+      {
+       "w": "project.",
+       "t": 2.6,
+       "e": 2.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open the .claude slash commands folder.",
+     "file": "gs012/vo/b_b1_c606fe28d2_p105.mp3",
+     "dur": 3.268,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.3
+      },
+      {
+       "w": "the",
+       "t": 0.3,
+       "e": 0.64
+      },
+      {
+       "w": ".Cloud",
+       "t": 0.64,
+       "e": 1.26
+      },
+      {
+       "w": "slash",
+       "t": 1.26,
+       "e": 1.98
+      },
+      {
+       "w": "commands",
+       "t": 1.98,
+       "e": 2.28
+      },
+      {
+       "w": "folder.",
+       "t": 2.28,
+       "e": 2.8
+      }
+     ]
+    },
+    {
+     "text": "Add a markdown file, like review dot M D.",
+     "file": "gs012/vo/b_b2_35c2a3b926_p105.mp3",
+     "dur": 3.403,
+     "words": [
+      {
+       "w": "Add",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "a",
+       "t": 0.12,
+       "e": 0.18
+      },
+      {
+       "w": "markdown",
+       "t": 0.18,
+       "e": 0.56
+      },
+      {
+       "w": "file",
+       "t": 0.56,
+       "e": 0.9
+      },
+      {
+       "w": "like",
+       "t": 0.9,
+       "e": 1.36
+      },
+      {
+       "w": "review",
+       "t": 1.36,
+       "e": 1.8
+      },
+      {
+       "w": ".md.",
+       "t": 1.8,
+       "e": 2.84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Write your custom prompt in the file.",
+     "file": "gs012/vo/c_b1_6540f19010_p105.mp3",
+     "dur": 2.097,
+     "words": [
+      {
+       "w": "Write",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "your",
+       "t": 0.14,
+       "e": 0.28
+      },
+      {
+       "w": "custom",
+       "t": 0.28,
+       "e": 0.54
+      },
+      {
+       "w": "prompt",
+       "t": 0.54,
+       "e": 0.82
+      },
+      {
+       "w": "in",
+       "t": 0.82,
+       "e": 1.36
+      },
+      {
+       "w": "the",
+       "t": 1.36,
+       "e": 1.46
+      },
+      {
+       "w": "file.",
+       "t": 1.46,
+       "e": 1.66
+      }
+     ]
+    },
+    {
+     "text": "For example: Summarize all TODOs in this repo.",
+     "file": "gs012/vo/c_b2_a936890892_p105.mp3",
+     "dur": 3.148,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "example,",
+       "t": 0.06,
+       "e": 0.34
+      },
+      {
+       "w": "summarize",
+       "t": 1.3,
+       "e": 1.3
+      },
+      {
+       "w": "all",
+       "t": 1.3,
+       "e": 1.68
+      },
+      {
+       "w": "two",
+       "t": 1.68,
+       "e": 1.86
+      },
+      {
+       "w": "do's",
+       "t": 1.86,
+       "e": 2.22
+      },
+      {
+       "w": "in",
+       "t": 2.22,
+       "e": 2.36
+      },
+      {
+       "w": "this",
+       "t": 2.36,
+       "e": 2.44
+      },
+      {
+       "w": "repo.",
+       "t": 2.44,
+       "e": 2.62
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Now use slash review in Claude Code.",
+     "file": "gs012/vo/d_b1_ba0174d143_p105.mp3",
+     "dur": 3.281,
+     "words": [
+      {
+       "w": "Now,",
+       "t": 0.0,
+       "e": 0.34
+      },
+      {
+       "w": "use",
+       "t": 0.62,
+       "e": 0.86
+      },
+      {
+       "w": "slash",
+       "t": 0.86,
+       "e": 1.2
+      },
+      {
+       "w": "review",
+       "t": 1.2,
+       "e": 1.6
+      },
+      {
+       "w": "in",
+       "t": 1.6,
+       "e": 2.08
+      },
+      {
+       "w": "claud",
+       "t": 2.08,
+       "e": 2.44
+      },
+      {
+       "w": "code.",
+       "t": 2.44,
+       "e": 2.92
+      }
+     ]
+    },
+    {
+     "text": "Claude runs your custom prompt instantly.",
+     "file": "gs012/vo/d_b2_3184653551_p105.mp3",
+     "dur": 2.591,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "runs",
+       "t": 0.24,
+       "e": 0.54
+      },
+      {
+       "w": "your",
+       "t": 0.54,
+       "e": 0.82
+      },
+      {
+       "w": "custom",
+       "t": 0.82,
+       "e": 1.14
+      },
+      {
+       "w": "prompt",
+       "t": 1.14,
+       "e": 1.36
+      },
+      {
+       "w": "instantly.",
+       "t": 1.36,
+       "e": 1.96
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs012/vo/end_b1_8acd70267c_p105.mp3",
+     "dur": 3.092,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "for",
+       "t": 0.22,
+       "e": 0.42
+      },
+      {
+       "w": "a",
+       "t": 0.42,
+       "e": 0.52
+      },
+      {
+       "w": "new",
+       "t": 0.52,
+       "e": 0.7
+      },
+      {
+       "w": "cloud",
+       "t": 0.7,
+       "e": 1.0
+      },
+      {
+       "w": "tutorial,",
+       "t": 1.0,
+       "e": 1.52
+      },
+      {
+       "w": "every",
+       "t": 1.94,
+       "e": 2.12
+      },
+      {
+       "w": "day.",
+       "t": 2.12,
+       "e": 2.34
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
