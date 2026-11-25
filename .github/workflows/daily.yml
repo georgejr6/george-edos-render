@@ -47,19 +47,26 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ELEVEN_PAID_KEY: ${{ secrets.ELEVEN_PAID_KEY }}
           GH_TOKEN: ${{ github.token }}
+          N: ${{ inputs.n || '5' }}
         run: |
-          python tools/daily.py prepare --n "${{ inputs.n || '5' }}"
-          for ep in $(python -c "import json;print(' '.join(x['ep'] for x in json.load(open('out_batch.json'))))"); do
-            tar -czf /tmp/vo-$ep.tgz -C public/$ep vo
-            gh release create "vo-$ep" --title "vo $ep" --notes "narration" --prerelease /tmp/vo-$ep.tgz
-          done
+          [[ "$N" =~ ^[1-5]$ ]] || { echo "n must be 1-5"; exit 1; }
+          python tools/daily.py prepare --n "$N"
+          EPS=$(python -c "import json;print(' '.join(x['ep'] for x in json.load(open('out_batch.json'))))")
+          # commit state FIRST (so a failure later never re-plans and re-pays for the same Shorts), rebase on any concurrent push
           git config user.name "george-edos-bot" && git config user.email "actions@users.noreply.github.com"
           git add episodes src/Root.tsx tools/state.json
-          git commit -qm "daily: $(python -c "import json;print(' '.join(x['ep'] for x in json.load(open('out_batch.json'))))")"
-          git push -q
+          git commit -qm "daily: ${EPS:-none made}"
+          for t in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          git fetch -q && [ "$(git rev-parse HEAD)" = "$(git rev-parse @{u})" ] || { echo "push failed"; exit 1; }
+          for ep in $EPS; do
+            tar -czf /tmp/vo-$ep.tgz -C public/$ep vo
+            gh release view "vo-$ep" >/dev/null 2>&1 || gh release create "vo-$ep" --title "vo $ep" --notes "narration" --prerelease
+            gh release upload "vo-$ep" /tmp/vo-$ep.tgz --clobber
+          done
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           echo "count=$(python -c "import json;print(len(json.load(open('out_batch.json'))))")" >> "$GITHUB_OUTPUT"
           echo "batch=$(python -c "import json;print(json.dumps({'include': json.load(open('out_batch.json'))}))")" >> "$GITHUB_OUTPUT"
+          [ -n "$EPS" ] || { echo "::error::no Shorts were made today"; exit 1; }
 
   render:
     needs: prepare

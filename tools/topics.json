@@ -32,7 +32,8 @@
   "facts": [
    "Save a markdown file in .claude/commands/ inside your project.",
    "The file name becomes a slash command, so review.md becomes /review.",
-   "The file holds the prompt Claude runs when you type the command."
+   "The file holds the prompt Claude runs when you type the command.",
+   "Claude Code skills can also add slash commands; the .claude/commands/ folder still works."
   ]
  },
  {
@@ -257,8 +258,7 @@
   "facts": [
    "Canvas opens your writing or code in a separate editor next to the chat.",
    "You can highlight one part and ask ChatGPT to change only that part.",
-   "It is useful for editing long drafts without regenerating everything.",
-   "You can ask ChatGPT to open your draft in canvas."
+   "It is useful for editing long drafts without regenerating everything."
   ]
  },
  {
@@ -268,7 +268,7 @@
    "Deep research runs a multi-step search on the web and writes a report.",
    "The report includes citations to its sources.",
    "It takes longer than a normal answer, so use it for real research questions.",
-   "Choose deep research from the tools in the ChatGPT message box, then type your question."
+   "Turn on deep research before you send your question."
   ]
  },
  {
@@ -291,15 +291,6 @@
  },
  {
   "tool": "chatgpt",
-  "topic": "Scheduled tasks in ChatGPT",
-  "facts": [
-   "ChatGPT tasks let you schedule a prompt to run later or on repeat.",
-   "For example, ask for a news summary every morning at 8.",
-   "ChatGPT sends you the result when the task runs."
-  ]
- },
- {
-  "tool": "chatgpt",
   "topic": "Install Codex CLI",
   "facts": [
    "Codex CLI is OpenAI's coding agent that runs in your terminal.",
@@ -314,15 +305,6 @@
    "Codex reads instructions from a file called AGENTS.md in your repository.",
    "Put build commands, test commands and code style rules in it.",
    "Codex follows those rules on every task in that repo."
-  ]
- },
- {
-  "tool": "chatgpt",
-  "topic": "Approval modes in Codex CLI",
-  "facts": [
-   "Codex CLI has approval modes that control what it can do without asking.",
-   "A cautious mode asks before running commands or editing files.",
-   "Use the stricter mode on code you care about, and loosen it only for throwaway work."
   ]
  },
  {
@@ -413,17 +395,7 @@
    "DeepSearch makes Grok search the web and X before answering.",
    "It returns a researched answer with its sources.",
    "Use it for questions where a quick answer is not enough.",
-   "In the Grok app, select DeepSearch in the message box before you send your question."
-  ]
- },
- {
-  "tool": "grok",
-  "topic": "Think mode in Grok",
-  "facts": [
-   "Think mode makes Grok reason through a problem before answering.",
-   "It is better for math, logic and planning questions.",
-   "It takes longer than a normal reply.",
-   "In the Grok app, select Think in the message box before you send your question."
+   "Turn on DeepSearch before you send your question."
   ]
  },
  {
@@ -448,7 +420,7 @@
   "tool": "grok",
   "topic": "Grok voice mode",
   "facts": [
-   "Grok has a voice mode in its mobile app.",
+   "Grok has a voice mode.",
    "You talk and Grok answers out loud.",
    "It is useful for hands-free questions or practicing a conversation."
   ]
@@ -457,7 +429,7 @@
   "tool": "grok",
   "topic": "Customize Grok's replies",
   "facts": [
-   "Grok's settings let you add custom instructions.",
+   "Grok lets you add custom instructions.",
    "Tell it how long its answers should be and what tone to use.",
    "The instructions apply to your future chats."
   ]

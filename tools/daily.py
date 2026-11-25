@@ -36,21 +36,28 @@ def load_state():
     return json.load(open(STATE)) if os.path.exists(STATE) else {"next": 4, "done": [], "rot": 0}
 
 
-def plan(n, state):
+MAX_FAILS = 2  # a topic|angle that fails this many days is retired
+
+
+def next_topic(tool, state, taken):
+    """First topic|angle for this tool that is not done, not retired and not already used today (how-to, then mistake, then tips)."""
     topics = json.load(open(os.path.join(TOOLS, "topics.json"), encoding="utf-8"))
-    done = set(state["done"])
+    done, fails = set(state["done"]), state.get("fails", {})
+    for angle in ANGLES:
+        for t in topics:
+            key = f"{t['topic']}|{angle}"
+            if t["tool"] == tool and key not in done and fails.get(key, 0) < MAX_FAILS and t["topic"] not in taken:
+                return dict(t, angle=angle)
+    return None
+
+
+def plan(n, state):
     out = []
     for k in range(n):
         tool = ROTATION[(state["rot"] + k) % len(ROTATION)]
-        pick = None
-        for angle in ANGLES:  # every topic gets the how-to first, then the mistake angle, then quick tips
-            pick = next((dict(t, angle=angle) for t in topics if t["tool"] == tool and f"{t['topic']}|{angle}" not in done
-                         and all(o["topic"] != t["topic"] for o in out)), None)
-            if pick:
-                break
+        pick = next_topic(tool, state, {o["topic"] for o in out})
         if not pick:
             sys.exit(f"topic bank exhausted for {tool}: add topics to tools/topics.json")
-        done.add(f"{pick['topic']}|{pick['angle']}")
         out.append(pick)
     return out
 
@@ -71,7 +78,7 @@ STYLE = """You write 40-second faceless YouTube Shorts tutorials for the channel
 Voice: plain, confident, short declarative sentences (6-16 words). Spoken aloud by a narrator. No hype words, no emojis, no questions to the viewer except maybe the hook.
 Structure: 4-5 scenes. Scene a = hook (the problem, in one punchy line + one supporting line). Middle scenes = the steps, shown on screen. Last scene = the payoff (what you get).
 Do NOT write a call to action or "follow" line; it is added automatically.
-Total spoken words across all beats: 85-110 (aim for 95).
+Total spoken words across all beats: 75-110 (aim for 90).
 Write file names and commands the way they are SAID in beats: "CLAUDE dot M D", "AGENTS dot M D", "slash compact". On screen (card text) write them normally: CLAUDE.md, /compact.
 Every sentence must teach, show or prove something. No filler that restates ("This ensures...", "This makes it easy...", "smarter and tailored"). No "Want to...?" or "Tired of...?" openers.
 Hook (scene a, first beat): a blunt statement of the pain or the payoff, 4-10 words, e.g. "Claude forgets your project every single time." or "Your ChatGPT answers are generic for one reason."
@@ -93,24 +100,23 @@ def chat(messages, models=None):
         key = os.environ.get(keyname)
         if not key:
             continue
-        body = {"model": model, "messages": messages, "temperature": 0.7, "response_format": {"type": "json_object"}, "max_tokens": 6000}
+        body = {"model": model, "messages": messages, "temperature": 0.7, "response_format": {"type": "json_object"}, "max_tokens": 3000}
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json", "User-Agent": "ge-daily/1.0"})
-        try:
-            with urllib.request.urlopen(req, timeout=180) as r:
-                return json.loads(r.read())["choices"][0]["message"]["content"], model
-        except urllib.error.HTTPError as e:
-            last = e
-            if e.code == 429 and url == GROQ[0]:
-                time.sleep(25)  # per-minute token cap: one wait, then retry this model once
-                try:
-                    with urllib.request.urlopen(req, timeout=180) as r:
-                        return json.loads(r.read())["choices"][0]["message"]["content"], model
-                except Exception as e2:  # noqa: BLE001
-                    last = e2
-            print("writer fallback:", model, getattr(last, "code", last), flush=True)
-        except (urllib.error.URLError, TimeoutError, KeyError) as e:
-            last = e
-            print("writer fallback:", model, getattr(e, "code", e), flush=True)
+        for attempt in range(2):
+            try:
+                with urllib.request.urlopen(req, timeout=180) as r:
+                    content = json.loads(r.read())["choices"][0]["message"]["content"]
+                if content and content.strip():
+                    return content, model
+                last = "empty reply"
+                break
+            except Exception as e:  # noqa: BLE001  any failure -> next model
+                last = e
+                if attempt == 0 and getattr(e, "code", None) == 429 and url == GROQ[0]:
+                    time.sleep(25)  # Groq per-minute token cap: one wait, then retry this model once
+                    continue
+                break
+        print("writer fallback:", model, getattr(last, "code", last), flush=True)
     raise RuntimeError(f"no writer model worked: {last}")
 
 
@@ -163,8 +169,8 @@ def validate(d, item):
             err.append(f"scene {sc.get('id')}: pill text over 32 chars")
         if c.get("carry") and c["carry"] not in [s.get("id") for s in scenes]:
             del c["carry"]
-    if not 65 <= words <= 130:
-        err.append(f"total spoken words must be 80-115 (got {words})")
+    if not 55 <= words <= 130:
+        err.append(f"total spoken words must be 75-110 (got {words})")
     if re.search(r"\b(follow (for|me|us|along)|subscribe|link in (the )?(bio|description))\b", " ".join(x for sc in scenes for x in sc.get("beats", [])), re.I):
         err.append("no call to action; it is added automatically")
     return err
@@ -178,26 +184,45 @@ def factcheck(d, item):
     lines = [x for sc in d["scenes"] for x in sc["beats"]]
     for sc in d["scenes"]:
         c = sc.get("card") or {}
-        lines += [l.get("t", "") for l in c.get("lines", []) if l.get("k") in ("claude", "out", "ok")]  # what the tool "shows"
-        lines += [it.get("t", "") for it in c.get("items", [])] + [p.get("text", "") for p in sc.get("pills", [])]
-    lines = [x for x in lines if x.strip()]
+        lines += [("SHOWN AS THE TOOL'S OWN OUTPUT: " if l.get("k") in ("claude", "out", "ok") else "TYPED: " if l.get("k") in ("cmd", "user") else "") + l.get("t", "")
+                  for l in c.get("lines", []) if l.get("k") != "file"]
+        lines += ["HEADING: " + c[k] for k in ("line1", "line2", "sub", "title") if isinstance(c.get(k), str) and c[k].strip()]
+        lines += [c[k].get("t", "") for k in ("bad", "good") if isinstance(c.get(k), dict)]
+        lines += ["HEADING: " + it.get("t", "") for it in c.get("items", []) + c.get("nodes", [])]
+        lines += ["HEADING: " + p.get("text", "") for p in sc.get("pills", [])]
+    lines = [x for x in lines if x.replace("HEADING: ", "").strip().lower() not in ("", "terminal", "claude", "chatgpt", "codex", "grok")]
+    # deterministic: every /command, --flag and *.md name must come from the facts
+    facts = " ".join(item["facts"]).lower()
+    det = [f'"{tok}" is not in the facts; remove it' for x in lines for tok in re.findall(r"(?<![\w.])(/[a-z][\w-]+|--[a-z][\w-]+|[A-Za-z_]+\.md)\b", x)
+           if tok.lower() not in facts]
+    if det:
+        return sorted(set(det))[:6]
     prompt = (f"Tool: {NAME[item['tool']]}\nFACTS (verified true):\n- " + "\n- ".join(item["facts"]) +
               "\n\nLabel EVERY numbered line of a tutorial script with one label:\n"
               "FACT = says the same thing as a FACT, or a plain implication of it (names that appear in the FACTS are fine).\n"
               "STEP = a generic action true for any app (open settings, start a new chat, type your question, save the file), or going to, "
               "finding, selecting or using something the FACTS name (find custom instructions, select DeepSearch).\n"
-              "EXAMPLE = sample text the viewer would type or put in a file.\n"
-              "FRAMING = the problem or the benefit in general words (it forgets you, you stop repeating yourself, saves time).\n"
+              "EXAMPLE = sample text the viewer would type or put in a file (lines marked TYPED). A line marked SHOWN AS THE TOOL'S OWN OUTPUT "
+              "is never EXAMPLE: it is FACT only if the FACTS say the tool shows or replies that, otherwise INVENTED.\n"
+              "FRAMING = the viewer's problem or the benefit in general words (you keep repeating yourself, saves time). FRAMING may NEVER "
+              "state what the tool does or fails to do by default (\"it forgets everything\", \"it only searches its memory\"): that is INVENTED "
+              "unless the FACTS say it.\n"
               "INVENTED = any other concrete claim about the tool: a button, field, tab, status bar, label, keyword, command, shortcut, "
               "how to confirm, what the tool replies or shows, how its output is structured, speed, accuracy, or a capability not in the FACTS.\n"
+              "HEADING lines are short on-screen labels that summarize the narration (\"Plan first\", \"Sources included\"): label them FRAMING "
+              "unless they present a specific button, menu, mode name or message as if it appears in the tool and the FACTS do not name it.\n"
+              "Plain restatements of what a FACT says the feature does (\"Plan mode shows you the plan before edits\") are FACT.\n"
               "When unsure between INVENTED and anything else, choose INVENTED.\n\nLINES:\n" +
               "\n".join(f"{i + 1}. {x}" for i, x in enumerate(lines)) +
               '\n\nReturn JSON: {"labels": [{"n": 1, "label": "FACT", "why": "short reason"}]}')
-    raw, _ = chat([{"role": "user", "content": prompt}], CHECKER)
     try:
-        bad = [x for x in json.loads(raw).get("labels", []) if str(x.get("label", "")).upper() == "INVENTED"]
-    except (json.JSONDecodeError, AttributeError):
-        return ["fact check could not be parsed; rewrite more plainly"]
+        raw, _ = chat([{"role": "user", "content": prompt}], CHECKER)
+        labels = json.loads(raw).get("labels", [])
+        bad = [x for x in labels if str(x.get("label", "")).upper() == "INVENTED"]
+    except (RuntimeError, json.JSONDecodeError, AttributeError):
+        return ["fact check unavailable; rewrite more plainly"]
+    if not isinstance(labels, list) or not labels:  # nothing labelled: fail closed
+        return ["fact check incomplete; rewrite more plainly"]
     return [f'line not supported by the facts, remove or reword it: "{lines[x["n"] - 1]}" ({x.get("why", "")})'
             for x in bad if isinstance(x.get("n"), int) and 0 < x["n"] <= len(lines)][:8]
 
@@ -295,31 +320,45 @@ def slots(n):
 
 
 def prepare(n):
+    n = max(1, min(n, len(SLOTS_UTC)))
     state = load_state()
-    items = plan(n + 3, state)
-    spares = items[n:]  # a topic that fails the fact check is replaced, so no slot goes empty
+    state.setdefault("fails", {})
+    items = plan(n, state)
     left = eleven_left()
     print("elevenlabs chars left:", left, flush=True)
-    made, when = [], slots(n)
-    for i, item in enumerate(items[:n]):
+    made, when, taken = [], slots(n), {it["topic"] for it in items}
+    for i, item in enumerate(items):
         ep = f"gs{state['next']:03d}"
+        music = MUSIC[(state["next"] + i) % len(MUSIC)]
         try:
+            for attempt in range(2):  # a topic that fails the checks is swapped for the next topic of the SAME tool
+                try:
+                    write(ep, item, music)
+                    break
+                except RuntimeError as e:
+                    key = f"{item['topic']}|{item['angle']}"
+                    state["fails"][key] = state["fails"].get(key, 0) + 1
+                    spare = next_topic(item["tool"], state, taken) if attempt == 0 else None
+                    if not spare:
+                        raise
+                    print("SPARE", ep, "replacing", item["topic"], "->", spare["topic"], "|", str(e)[:200], flush=True)
+                    item = spare
+                    taken.add(spare["topic"])
+            narr = i in NARRATOR_SLOTS and left - 1500 > ELEVEN_FLOOR
             try:
-                write(ep, item, MUSIC[(state["next"] + i) % len(MUSIC)])
-            except RuntimeError as e:
-                if not spares or "writer failed" not in str(e):
+                voice(ep, narr)
+            except RuntimeError:
+                if not narr:
                     raise
-                print("SPARE", ep, "replacing", item["topic"], flush=True)
-                item = spares.pop(0)
-                write(ep, item, MUSIC[(state["next"] + i) % len(MUSIC)])
-            narr = i in NARRATOR_SLOTS and left - 900 > ELEVEN_FLOOR
-            voice(ep, narr)
+                print("narrator failed, using the OpenAI voice", ep, flush=True)
+                narr = False
+                voice(ep, False)
             if narr:
-                left -= sum(len(b) for sc in json.load(open(os.path.join(ROOT, "episodes", ep, "script.json"), encoding="utf-8"))["scenes"] for b in sc["beats"])
+                left -= 2 * sum(len(b) for sc in json.load(open(os.path.join(ROOT, "episodes", ep, "script.json"), encoding="utf-8"))["scenes"] for b in sc["beats"])  # x2: retakes
             made.append({"ep": ep, "slot": when[i], "voice": "narrator" if narr else "openai"})
             state["done"].append(f"{item['topic']}|{item['angle']}")
         except Exception as e:  # noqa: BLE001  one bad Short never blocks the other four
-            print("SKIP", ep, e, flush=True)
+            print("SKIP", ep, str(e)[:300], flush=True)
         state["next"] += 1
     state["rot"] = (state["rot"] + n) % len(ROTATION)
     json.dump(state, open(STATE, "w"), indent=1)
