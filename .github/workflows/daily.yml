@@ -30,6 +30,7 @@ jobs:
     outputs:
       batch: ${{ steps.p.outputs.batch }}
       sha: ${{ steps.p.outputs.sha }}
+      count: ${{ steps.p.outputs.count }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -57,11 +58,12 @@ jobs:
           git commit -qm "daily: $(python -c "import json;print(' '.join(x['ep'] for x in json.load(open('out_batch.json'))))")"
           git push -q
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "count=$(python -c "import json;print(len(json.load(open('out_batch.json'))))")" >> "$GITHUB_OUTPUT"
           echo "batch=$(python -c "import json;print(json.dumps({'include': json.load(open('out_batch.json'))}))")" >> "$GITHUB_OUTPUT"
 
   render:
     needs: prepare
-    if: needs.prepare.outputs.batch != '{"include": []}'
+    if: needs.prepare.outputs.count != '0'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
