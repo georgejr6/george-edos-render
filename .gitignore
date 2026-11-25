@@ -1,3 +1,6 @@
 node_modules/
 out/
 *.log
+__pycache__/
+out_batch.json
+public/gs*/vo/

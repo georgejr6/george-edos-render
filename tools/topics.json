@@ -1,0 +1,546 @@
+[
+ {
+  "tool": "claude",
+  "topic": "CLAUDE.md project memory in Claude Code",
+  "facts": [
+   "In Claude Code, the /init command scans your project and writes a CLAUDE.md file.",
+   "Claude Code reads CLAUDE.md at the start of every session in that folder.",
+   "Put your build commands, code style and project rules in CLAUDE.md so you stop repeating them."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Plan mode in Claude Code",
+  "facts": [
+   "Press Shift+Tab in Claude Code to cycle modes until you reach plan mode.",
+   "In plan mode Claude researches and proposes a plan before it edits any files.",
+   "You approve the plan, then Claude starts making changes."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "/compact and /clear in Claude Code",
+  "facts": [
+   "Long Claude Code sessions fill up the context window.",
+   "/compact summarizes the conversation so far and keeps working with the summary.",
+   "/clear wipes the conversation and starts fresh in the same folder."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Custom slash commands in Claude Code",
+  "facts": [
+   "Save a markdown file in .claude/commands/ inside your project.",
+   "The file name becomes a slash command, so review.md becomes /review.",
+   "The file holds the prompt Claude runs when you type the command."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Claude Projects",
+  "facts": [
+   "On claude.ai, a Project groups chats with shared files and instructions.",
+   "Upload documents to the Project knowledge so every chat in it can use them.",
+   "Add project instructions once instead of pasting context into every chat."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Writing styles in Claude",
+  "facts": [
+   "Claude.ai lets you pick a style for how Claude writes, such as concise or explanatory.",
+   "You can create a custom style by giving Claude a sample of your own writing.",
+   "The style applies to the replies in your chats until you switch it."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Artifacts in Claude",
+  "facts": [
+   "Ask Claude to build something like a calculator, a quiz or a small web page.",
+   "Claude shows it as an artifact in a panel next to the chat, where you can use it.",
+   "Ask for changes in plain words and Claude updates the artifact."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Connect tools to Claude Code with MCP",
+  "facts": [
+   "MCP stands for Model Context Protocol, an open standard for connecting tools to AI apps.",
+   "In Claude Code you add a server with the command claude mcp add.",
+   "Once added, Claude can call that server's tools during a task."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Hooks in Claude Code",
+  "facts": [
+   "Hooks run your own shell command at set moments, like before or after Claude uses a tool.",
+   "They are configured in Claude Code's settings.json file.",
+   "A common use is running a code formatter automatically after every file edit."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Subagents in Claude Code",
+  "facts": [
+   "A subagent is a helper with its own instructions and its own context window.",
+   "You define one as a markdown file in .claude/agents/.",
+   "Claude can hand a focused job, like reviewing code, to that subagent."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Run Claude Code from scripts with claude -p",
+  "facts": [
+   "claude -p followed by a prompt runs one task and prints the answer, with no chat window.",
+   "That makes Claude Code usable inside scripts and scheduled jobs.",
+   "You can pipe a file into it, for example cat log.txt piped into claude -p with a question."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Resume a Claude Code session",
+  "facts": [
+   "claude --continue reopens your most recent conversation in that folder.",
+   "claude --resume shows a list of past sessions to pick from.",
+   "Your earlier context comes back, so you do not have to explain the task again."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Stop permission prompts in Claude Code",
+  "facts": [
+   "Claude Code asks before running commands or editing files.",
+   "The /permissions command lets you allow specific tools or commands you trust.",
+   "Allowed rules are saved in settings, so the same prompt stops coming back."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Interrupt and rewind Claude Code",
+  "facts": [
+   "Press Escape once to stop Claude in the middle of what it is doing.",
+   "Press Escape twice to go back to an earlier message and edit it.",
+   "This lets you correct the direction early instead of waiting for a wrong result."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Add files to context with @ in Claude Code",
+  "facts": [
+   "Type @ followed by a file path in Claude Code to point Claude at that file.",
+   "Claude reads the file before it answers.",
+   "Pointing at the exact file saves time compared with letting Claude search for it."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Claude web search for cited answers",
+  "facts": [
+   "Claude can search the web when web search is turned on.",
+   "Answers that use search include citations to the pages Claude read.",
+   "Ask it to cite sources so you can check each claim."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Connect Google Drive to Claude",
+  "facts": [
+   "Claude.ai has connectors for apps such as Google Drive, Gmail and Google Calendar.",
+   "Once connected, Claude can find and read your documents when you ask.",
+   "You can ask questions like summarize the latest proposal in my Drive."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Extended thinking in Claude",
+  "facts": [
+   "Extended thinking lets Claude reason step by step before it answers.",
+   "It helps on hard tasks like math, planning or tricky code.",
+   "Turn it on for hard problems and leave it off for quick questions."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Use XML tags in Claude prompts",
+  "facts": [
+   "Anthropic's prompting guide recommends XML tags to separate parts of a prompt.",
+   "For example, put the document inside document tags and the task outside them.",
+   "Clear separation stops Claude from mixing up your instructions and your data."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Give Claude examples",
+  "facts": [
+   "Showing Claude two or three examples of the output you want is called multishot prompting.",
+   "Examples teach format and tone better than a long description.",
+   "Make the examples varied so Claude does not copy one too closely."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Stop Claude guessing from documents",
+  "facts": [
+   "Tell Claude it may say I don't know when the answer is not in the document.",
+   "Ask it to quote the exact passage before it answers.",
+   "Quotes make every answer checkable against your own file."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Claude Code in VS Code",
+  "facts": [
+   "Claude Code has an extension for VS Code.",
+   "It runs Claude Code inside the editor, next to your files.",
+   "You can see Claude's proposed edits as diffs before you accept them."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Commit with Claude Code",
+  "facts": [
+   "Claude Code can run git commands for you in your project.",
+   "Ask it to look at your changes and write a clear commit message.",
+   "Review the message and the diff before you push."
+  ]
+ },
+ {
+  "tool": "claude",
+  "topic": "Skills with scripts",
+  "facts": [
+   "A Claude skill is a folder with a SKILL.md file.",
+   "The folder can also hold scripts or templates the skill uses.",
+   "The steps in SKILL.md tell Claude when to run each script."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "ChatGPT custom instructions",
+  "facts": [
+   "In ChatGPT settings, Personalization has custom instructions.",
+   "Tell ChatGPT what it should know about you and how it should respond.",
+   "The instructions apply to every new chat."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "ChatGPT memory",
+  "facts": [
+   "Say remember that, followed by a fact, and ChatGPT can save it to memory.",
+   "Saved memories are used in later chats.",
+   "You can view and delete memories in settings under Personalization."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Projects in ChatGPT",
+  "facts": [
+   "A ChatGPT Project keeps related chats and files together.",
+   "You can add project instructions that apply to every chat in the project.",
+   "Files uploaded to the project are available in all of its chats."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Build a custom GPT",
+  "facts": [
+   "A custom GPT is a version of ChatGPT with your own instructions and files.",
+   "You build it in the GPT builder by describing what it should do.",
+   "You can upload knowledge files and share the GPT with a link."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Canvas in ChatGPT",
+  "facts": [
+   "Canvas opens your writing or code in a separate editor next to the chat.",
+   "You can highlight one part and ask ChatGPT to change only that part.",
+   "It is useful for editing long drafts without regenerating everything.",
+   "You can ask ChatGPT to open your draft in canvas."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Deep research in ChatGPT",
+  "facts": [
+   "Deep research runs a multi-step search on the web and writes a report.",
+   "The report includes citations to its sources.",
+   "It takes longer than a normal answer, so use it for real research questions.",
+   "Choose deep research from the tools in the ChatGPT message box, then type your question."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Temporary chat in ChatGPT",
+  "facts": [
+   "A temporary chat does not appear in your chat history.",
+   "It does not use or create memories.",
+   "Use it for one-off questions you do not want saved."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Edit images by asking in ChatGPT",
+  "facts": [
+   "ChatGPT can create images from a text description.",
+   "After an image appears, ask for a specific change in plain words.",
+   "Be specific about what to keep and what to change."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Scheduled tasks in ChatGPT",
+  "facts": [
+   "ChatGPT tasks let you schedule a prompt to run later or on repeat.",
+   "For example, ask for a news summary every morning at 8.",
+   "ChatGPT sends you the result when the task runs."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Install Codex CLI",
+  "facts": [
+   "Codex CLI is OpenAI's coding agent that runs in your terminal.",
+   "Install it with npm install -g @openai/codex.",
+   "Run codex inside a project folder and describe the change you want."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "AGENTS.md for Codex",
+  "facts": [
+   "Codex reads instructions from a file called AGENTS.md in your repository.",
+   "Put build commands, test commands and code style rules in it.",
+   "Codex follows those rules on every task in that repo."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Approval modes in Codex CLI",
+  "facts": [
+   "Codex CLI has approval modes that control what it can do without asking.",
+   "A cautious mode asks before running commands or editing files.",
+   "Use the stricter mode on code you care about, and loosen it only for throwaway work."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "codex exec for scripts",
+  "facts": [
+   "codex exec followed by a task runs Codex without the interactive screen.",
+   "It is meant for scripts and automation.",
+   "It prints its progress and finishes when the task is done."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Codex cloud tasks and GitHub",
+  "facts": [
+   "Codex in ChatGPT can work on tasks in the cloud on your GitHub repositories.",
+   "You connect GitHub, pick a repo and describe the task.",
+   "Codex works in its own environment and can open a pull request for you to review."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Codex in VS Code",
+  "facts": [
+   "Codex has an extension for VS Code and similar editors.",
+   "It lets you chat with Codex next to your code.",
+   "It can read the open files and propose edits."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "The role, goal, format prompt",
+  "facts": [
+   "Start a prompt by telling ChatGPT who it should act as.",
+   "Then state the goal and who the answer is for.",
+   "End with the format you want, like a table or five bullet points."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Make ChatGPT ask questions first",
+  "facts": [
+   "Add: ask me any questions you need before you start.",
+   "ChatGPT will ask about missing details instead of guessing.",
+   "Your answers make the final result fit what you actually need."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Analyze a spreadsheet with ChatGPT",
+  "facts": [
+   "Upload a CSV or Excel file to ChatGPT.",
+   "Ask questions about it in plain words, like which month had the most sales.",
+   "ChatGPT can make charts from the data."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "ChatGPT search for current info",
+  "facts": [
+   "ChatGPT can search the web for recent information.",
+   "Answers from search include links to the sources.",
+   "Click the sources to check the facts before you use them."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "ChatGPT agent mode",
+  "facts": [
+   "ChatGPT agent can do multi-step tasks using its own virtual browser.",
+   "Examples are researching options and filling in a plan.",
+   "It asks for your confirmation before important actions."
+  ]
+ },
+ {
+  "tool": "chatgpt",
+  "topic": "Share a ChatGPT conversation",
+  "facts": [
+   "ChatGPT can create a share link for a conversation.",
+   "Anyone with the link can view the chat.",
+   "Later messages you send are not added to the shared copy."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "DeepSearch in Grok",
+  "facts": [
+   "DeepSearch makes Grok search the web and X before answering.",
+   "It returns a researched answer with its sources.",
+   "Use it for questions where a quick answer is not enough.",
+   "In the Grok app, select DeepSearch in the message box before you send your question."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Think mode in Grok",
+  "facts": [
+   "Think mode makes Grok reason through a problem before answering.",
+   "It is better for math, logic and planning questions.",
+   "It takes longer than a normal reply.",
+   "In the Grok app, select Think in the message box before you send your question."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Ask Grok about a post on X",
+  "facts": [
+   "On X you can ask Grok to explain a post.",
+   "You can also mention @grok in a reply with your question.",
+   "Grok answers using the post and its context."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Grok Imagine",
+  "facts": [
+   "Grok Imagine creates images and short videos from a text prompt.",
+   "Describe the subject, the setting and the style.",
+   "Generate a few versions and keep the best one."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Grok voice mode",
+  "facts": [
+   "Grok has a voice mode in its mobile app.",
+   "You talk and Grok answers out loud.",
+   "It is useful for hands-free questions or practicing a conversation."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Customize Grok's replies",
+  "facts": [
+   "Grok's settings let you add custom instructions.",
+   "Tell it how long its answers should be and what tone to use.",
+   "The instructions apply to your future chats."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Private chat in Grok",
+  "facts": [
+   "Grok has a private chat option.",
+   "Private chats are not saved to your chat history.",
+   "Use it for one-off questions you do not want kept."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Use the Grok API with the OpenAI SDK",
+  "facts": [
+   "xAI's API is compatible with the OpenAI SDK.",
+   "Set the base URL to https://api.x.ai/v1 and use your xAI API key.",
+   "Existing OpenAI code can then call Grok models with small changes."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Get a Grok API key",
+  "facts": [
+   "Developers get xAI API keys from the xAI console at console.x.ai.",
+   "Create a key and store it as an environment variable, not in your code.",
+   "Then send requests to the API at api.x.ai."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Summarize a long X thread with Grok",
+  "facts": [
+   "Paste a long thread or link into Grok, or ask Grok about it on X.",
+   "Ask for the main points in three bullets.",
+   "Then ask follow-up questions about the part you care about."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Ask Grok about a PDF",
+  "facts": [
+   "You can upload a file such as a PDF to Grok.",
+   "Ask questions about it in plain words.",
+   "Ask Grok to point to the part of the file each answer comes from."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Make Grok show sources",
+  "facts": [
+   "Ask Grok to include links to its sources.",
+   "Open the links and check that they say what Grok claims.",
+   "This catches mistakes before you repeat them."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Rewrite a post in your voice with Grok",
+  "facts": [
+   "Paste two or three of your own past posts into Grok as examples.",
+   "Ask it to rewrite a new draft in the same voice.",
+   "Examples work better than describing your style."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Fact-check a claim with Grok",
+  "facts": [
+   "Paste the claim and ask Grok to check it with DeepSearch.",
+   "Ask it to list sources that support and contradict the claim.",
+   "Read the sources yourself before deciding."
+  ]
+ },
+ {
+  "tool": "grok",
+  "topic": "Edit a photo with Grok",
+  "facts": [
+   "You can upload an image to Grok and ask for an edit.",
+   "Describe exactly what to change and what to keep.",
+   "Ask for another version if the first is not right."
+  ]
+ }
+]
