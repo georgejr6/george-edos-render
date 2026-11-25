@@ -25,7 +25,7 @@ export type TScene = {
   step?: { n: number; title: string }; pills?: Pill[];
   card: any;
 };
-export type TScript = { id: string; format: string; kind: "long" | "short"; title: string; music?: string; musicVol?: number; url?: string; scenes: TScene[] };
+export type TScript = { id: string; format: string; kind: "long" | "short"; title: string; tool?: "claude" | "chatgpt" | "grok"; music?: string; musicVol?: number; url?: string; scenes: TScene[] };
 
 type Word = { w: string; t: number; e: number };
 type Beat = { start: number; len: number; file: string; text: string; words: Word[] };
@@ -66,7 +66,7 @@ const ease = (f: number, at: number, dur = 14) => interpolate(f, [at, at + dur],
 
 /** spoken forms in the script text -> what the captions should show */
 const showText = (s: string) =>
-  s.replace(/SKILL dot M D/gi, "SKILL.md").replace(/M K dir/g, "mkdir").replace(/\bC D\b/g, "cd").replace(/dot claude/gi, ".claude");
+  s.replace(/SKILL dot M D/gi, "SKILL.md").replace(/([A-Za-z]+) dot M D/g, "$1.md").replace(/slash ([a-z]+)/gi, "/$1").replace(/M K dir/g, "mkdir").replace(/\bC D\b/g, "cd").replace(/dot claude/gi, ".claude");
 
 /* ------------------------------------------------------------------ terminal plan */
 type Plan = { line: TLine; rows: [number, number][]; colors: string[]; start: number; dur: number; printed: boolean; num: number };
@@ -144,17 +144,37 @@ const planTerminal = (carry: TLine[], lines: TLine[], b: number[], len: number, 
   return [];
 };
 
+/* ------------------------------------------------------------------ tools (Claude / ChatGPT+Codex / Grok) */
+// Non-Claude tools get a plain text wordmark (no third-party logo) and their own accent colour.
+const TOOLS: Record<string, { accent: string; word?: string }> = {
+  claude: { accent: "#D97757" },
+  chatgpt: { accent: "#3ecfb0", word: "ChatGPT" },
+  grok: { accent: "#b39dff", word: "Grok" },
+};
+let TOOL = "claude";
+const rgba = (hex: string, a: number) => `rgba(${parseInt(hex.slice(1, 3), 16)},${parseInt(hex.slice(3, 5), 16)},${parseInt(hex.slice(5, 7), 16)},${a})`;
+
 /* ------------------------------------------------------------------ pieces */
 export const ClaudeMark: React.FC<{ size: number; color?: string }> = ({ size, color = C.accent }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" style={{ display: "block" }}><path d={CLAUDE_PATH} fill={color} /></svg>
 );
+
+/** Claude mark for Claude videos; a text wordmark chip for ChatGPT/Codex and Grok */
+export const ToolMark: React.FC<{ size: number }> = ({ size }) => {
+  const t = TOOLS[TOOL] ?? TOOLS.claude;
+  if (!t.word) return <ClaudeMark size={size} />;
+  return (
+    <div style={{ height: size, display: "flex", alignItems: "center", padding: `0 ${size * 0.3}px`, borderRadius: size * 0.28, border: `${Math.max(2, size * 0.05)}px solid ${C.accent}`,
+      fontFamily: MONO, fontWeight: 700, color: C.accent, fontSize: size * 0.46, letterSpacing: 1, whiteSpace: "nowrap" }}>{t.word}</div>
+  );
+};
 
 const Background: React.FC<{ lay: Lay }> = ({ lay }) => {
   const f = useCurrentFrame();
   const dx = Math.sin(f / 170) * 60, dy = Math.cos(f / 210) * 40;
   return (
     <AbsoluteFill style={{ background: C.bg }}>
-      <AbsoluteFill style={{ background: `radial-gradient(60% 50% at ${30 + dx / 8}% ${28 + dy / 8}%, rgba(217,119,87,0.13), transparent 70%), radial-gradient(55% 45% at ${75 - dx / 9}% ${78 - dy / 8}%, rgba(122,167,255,0.09), transparent 70%)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(60% 50% at ${30 + dx / 8}% ${28 + dy / 8}%, ${rgba(C.accent, 0.13)}, transparent 70%), radial-gradient(55% 45% at ${75 - dx / 9}% ${78 - dy / 8}%, rgba(122,167,255,0.09), transparent 70%)` }} />
       <AbsoluteFill style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.055) 1.5px, transparent 1.5px)", backgroundSize: lay.long ? "46px 46px" : "54px 54px", backgroundPosition: `${(f * 0.25) % 54}px ${(f * 0.12) % 54}px`, opacity: 0.8 }} />
       <AbsoluteFill style={{ background: "radial-gradient(120% 100% at 50% 50%, transparent 55%, rgba(0,0,0,0.55) 100%)" }} />
     </AbsoluteFill>
@@ -167,7 +187,7 @@ const Header: React.FC<{ lay: Lay; step?: { n: number; title: string } }> = ({ l
   return (
     <div style={{ position: "absolute", left: lay.long ? 160 : 50, right: lay.long ? 160 : 50, top: lay.headY, display: "flex", alignItems: "center", justifyContent: "space-between", opacity: p, transform: `translateY(${(1 - p) * -12}px)` }}>
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-        <ClaudeMark size={lay.long ? 44 : 56} />
+        <ToolMark size={lay.long ? 44 : 56} />
         <div style={{ fontFamily: SANS, fontWeight: 700, letterSpacing: 5, color: C.text, fontSize: lay.long ? 26 : 32 }}>GEORGE EDOS</div>
       </div>
       {step && (
@@ -334,7 +354,7 @@ const TitleCard: React.FC<{ lay: Lay; card: any }> = ({ lay, card }) => {
   return (
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", textAlign: "center", paddingTop: lay.long ? 40 : 0 }}>
       <div style={{ transform: `scale(${0.6 + 0.4 * clamp01(s)}) rotate(${(1 - clamp01(s)) * -40}deg)`, opacity: clamp01(s), marginBottom: lay.long ? 30 : 50 }}>
-        <ClaudeMark size={lay.long ? 120 : 190} />
+        <ToolMark size={lay.long ? 120 : 150} />
       </div>
       <div style={{ opacity: a, fontFamily: MONO, color: C.accent, letterSpacing: 6, fontSize: lay.long ? 28 : 34, fontWeight: 600, transform: `translateY(${(1 - a) * 16}px)` }}>{card.kicker}</div>
       <div style={{ opacity: b, fontFamily: SANS, fontWeight: 700, color: "#fff", fontSize: big, lineHeight: 1.05, marginTop: 18, transform: `translateY(${(1 - b) * 24}px)` }}>{card.line1}</div>
@@ -424,7 +444,7 @@ const CtaCard: React.FC<{ lay: Lay; card: any; b: number[] }> = ({ lay, card, b 
   const pulse = 1 + 0.015 * Math.sin(f / 7);
   return (
     <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", textAlign: "center", paddingBottom: lay.long ? 0 : 200 }}>
-      <div style={{ transform: `scale(${clamp01(s)})`, marginBottom: 24 }}><ClaudeMark size={lay.long ? 90 : 140} /></div>
+      <div style={{ transform: `scale(${clamp01(s)})`, marginBottom: 24 }}><ToolMark size={lay.long ? 90 : 120} /></div>
       <div style={{ fontFamily: MONO, color: C.accent, letterSpacing: 6, fontWeight: 600, fontSize: lay.long ? 28 : 34, opacity: clamp01(s) }}>{card.tag}</div>
       <div style={{ fontFamily: SANS, fontWeight: 700, color: "#fff", fontSize: lay.long ? 92 : 92, margin: "16px 0 30px", lineHeight: 1.05, opacity: clamp01(s), padding: "0 40px" }}>{card.line1}</div>
       <div style={{ transform: `scale(${clamp01(u) * pulse})`, fontFamily: MONO, fontWeight: 600, color: C.bg, background: C.accent, borderRadius: 24, padding: lay.long ? "20px 48px" : "22px 34px", fontSize: lay.long ? 50 : 40 }}>{card.line2}</div>
@@ -494,6 +514,8 @@ export const makeTutorial = (script: TScript, timing: Timing) => {
   };
   const Comp: React.FC = () => {
     const { width, height } = useVideoConfig();
+    TOOL = script.tool ?? "claude";
+    C.accent = (TOOLS[TOOL] ?? TOOLS.claude).accent; // one composition per render, so a per-render accent is safe
     const lay = layout(width, height);
     const f = useCurrentFrame();
     return (
