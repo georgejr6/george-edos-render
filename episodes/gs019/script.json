@@ -1,0 +1,127 @@
+{
+ "id": "gs019",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Use Artifacts In Claude",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude can build real tools inside your chat.",
+    "You get a working app, not just code."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Build and Use",
+    "line2": "Artifacts in Chat",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Ask Claude to make a simple calculator.",
+    "Type: Build a calculator that adds two numbers."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Build a calculator that adds two numbers.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Claude creates the calculator as an artifact.",
+    "It appears next to your chat.",
+    "You can actually use it right there."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "[Calculator appears as an artifact]",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Want a change?",
+    "Type: Add a subtraction button.",
+    "Claude updates the artifact instantly."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Add a subtraction button.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "You get a working tool, updated on demand.",
+    "No extra steps, just chat and use."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Why Use Artifacts?",
+    "items": [
+     {
+      "t": "Instant working tools",
+      "beat": 0
+     },
+     {
+      "t": "Easy updates with plain language",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Artifacts in Claude",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

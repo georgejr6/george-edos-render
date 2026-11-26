@@ -1,0 +1,103 @@
+{
+ "id": "gs016",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "grok",
+ "title": "Use Grok Imagine For Images",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Grok Imagine creates images and short videos from your prompt.",
+    "Describe the subject, setting, and style you want.",
+    "You get a few versions—keep the best one."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "GROK TIP",
+    "line1": "Image Creation",
+    "line2": "With Grok Imagine",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "In Grok Imagine, type your idea as a prompt.",
+    "Mention the subject, then add the setting and style.",
+    "For example: watercolor, 3D, or cartoon."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "user",
+      "t": "A cat reading in a library, watercolor style.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Grok Imagine generates several versions from your prompt.",
+    "Look through each image or video created."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "[images and videos generated]",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Choose the version you like best.",
+    "Save it or use it for your project."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Keep The Best Version",
+    "items": [
+     {
+      "t": "Review all results",
+      "beat": 0
+     },
+     {
+      "t": "Select the best one",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Grok tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Grok Imagine",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

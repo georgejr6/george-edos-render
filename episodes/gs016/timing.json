@@ -1,0 +1,548 @@
+{
+ "id": "gs016",
+ "engine": "eleven",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Grok Imagine creates images and short videos from your prompt.",
+     "file": "gs016/vo/a_b1_el39f5e487_mc4b58.mp3",
+     "dur": 3.445,
+     "words": [
+      {
+       "w": "Groc",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "Imagine",
+       "t": 0.12,
+       "e": 0.34
+      },
+      {
+       "w": "creates",
+       "t": 0.34,
+       "e": 0.88
+      },
+      {
+       "w": "images",
+       "t": 0.88,
+       "e": 1.32
+      },
+      {
+       "w": "and",
+       "t": 1.32,
+       "e": 1.64
+      },
+      {
+       "w": "short",
+       "t": 1.64,
+       "e": 1.86
+      },
+      {
+       "w": "videos",
+       "t": 1.86,
+       "e": 2.2
+      },
+      {
+       "w": "from",
+       "t": 2.2,
+       "e": 2.5
+      },
+      {
+       "w": "your",
+       "t": 2.5,
+       "e": 2.62
+      },
+      {
+       "w": "prompt.",
+       "t": 2.62,
+       "e": 2.86
+      }
+     ]
+    },
+    {
+     "text": "Describe the subject, setting, and style you want.",
+     "file": "gs016/vo/a_b2_elb9655749_mc4b58.mp3",
+     "dur": 2.95,
+     "words": [
+      {
+       "w": "Describe",
+       "t": 0.0,
+       "e": 0.38
+      },
+      {
+       "w": "the",
+       "t": 0.38,
+       "e": 0.5
+      },
+      {
+       "w": "subject,",
+       "t": 0.5,
+       "e": 0.86
+      },
+      {
+       "w": "setting,",
+       "t": 1.16,
+       "e": 1.4
+      },
+      {
+       "w": "and",
+       "t": 1.68,
+       "e": 1.74
+      },
+      {
+       "w": "style",
+       "t": 1.74,
+       "e": 2.0
+      },
+      {
+       "w": "you",
+       "t": 2.0,
+       "e": 2.2
+      },
+      {
+       "w": "want.",
+       "t": 2.2,
+       "e": 2.42
+      }
+     ]
+    },
+    {
+     "text": "You get a few versions\u2014keep the best one.",
+     "file": "gs016/vo/a_b3_el656f7c5c_mc4b58.mp3",
+     "dur": 2.47,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "get",
+       "t": 0.06,
+       "e": 0.18
+      },
+      {
+       "w": "a",
+       "t": 0.18,
+       "e": 0.26
+      },
+      {
+       "w": "few",
+       "t": 0.26,
+       "e": 0.42
+      },
+      {
+       "w": "versions,",
+       "t": 0.42,
+       "e": 0.84
+      },
+      {
+       "w": "keep",
+       "t": 1.18,
+       "e": 1.3
+      },
+      {
+       "w": "the",
+       "t": 1.3,
+       "e": 1.46
+      },
+      {
+       "w": "best",
+       "t": 1.46,
+       "e": 1.64
+      },
+      {
+       "w": "one.",
+       "t": 1.64,
+       "e": 1.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "In Grok Imagine, type your idea as a prompt.",
+     "file": "gs016/vo/b_b1_el1e0b2ae1_mc4b58.mp3",
+     "dur": 2.949,
+     "words": [
+      {
+       "w": "In",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "GROC",
+       "t": 0.08,
+       "e": 0.32
+      },
+      {
+       "w": "Imagine,",
+       "t": 0.32,
+       "e": 0.78
+      },
+      {
+       "w": "type",
+       "t": 1.06,
+       "e": 1.2
+      },
+      {
+       "w": "your",
+       "t": 1.2,
+       "e": 1.36
+      },
+      {
+       "w": "idea",
+       "t": 1.36,
+       "e": 1.68
+      },
+      {
+       "w": "as",
+       "t": 1.68,
+       "e": 2.0
+      },
+      {
+       "w": "a",
+       "t": 2.0,
+       "e": 2.08
+      },
+      {
+       "w": "prompt.",
+       "t": 2.08,
+       "e": 2.3
+      }
+     ]
+    },
+    {
+     "text": "Mention the subject, then add the setting and style.",
+     "file": "gs016/vo/b_b2_el7349eebb_mc4b58.mp3",
+     "dur": 2.875,
+     "words": [
+      {
+       "w": "Mention",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "the",
+       "t": 0.2,
+       "e": 0.36
+      },
+      {
+       "w": "subject,",
+       "t": 0.36,
+       "e": 0.74
+      },
+      {
+       "w": "then",
+       "t": 1.08,
+       "e": 1.14
+      },
+      {
+       "w": "add",
+       "t": 1.14,
+       "e": 1.32
+      },
+      {
+       "w": "the",
+       "t": 1.32,
+       "e": 1.48
+      },
+      {
+       "w": "setting",
+       "t": 1.48,
+       "e": 1.74
+      },
+      {
+       "w": "and",
+       "t": 1.74,
+       "e": 1.9
+      },
+      {
+       "w": "style.",
+       "t": 1.9,
+       "e": 2.2
+      }
+     ]
+    },
+    {
+     "text": "For example: watercolor, 3D, or cartoon.",
+     "file": "gs016/vo/b_b3_el2d76b591_mc4b58.mp3",
+     "dur": 3.383,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "example,",
+       "t": 0.08,
+       "e": 0.38
+      },
+      {
+       "w": "watercolor,",
+       "t": 0.8,
+       "e": 1.32
+      },
+      {
+       "w": "3D,",
+       "t": 1.64,
+       "e": 1.98
+      },
+      {
+       "w": "or",
+       "t": 2.24,
+       "e": 2.3
+      },
+      {
+       "w": "cartoon.",
+       "t": 2.3,
+       "e": 2.62
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Grok Imagine generates several versions from your prompt.",
+     "file": "gs016/vo/c_b1_el351dbc4f_mc4b58.mp3",
+     "dur": 3.042,
+     "words": [
+      {
+       "w": "Grock,",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "imagine",
+       "t": 0.38,
+       "e": 0.54
+      },
+      {
+       "w": "generate",
+       "t": 0.54,
+       "e": 1.0
+      },
+      {
+       "w": "several",
+       "t": 1.0,
+       "e": 1.4
+      },
+      {
+       "w": "versions",
+       "t": 1.4,
+       "e": 1.84
+      },
+      {
+       "w": "from",
+       "t": 1.84,
+       "e": 2.12
+      },
+      {
+       "w": "your",
+       "t": 2.12,
+       "e": 2.26
+      },
+      {
+       "w": "prompt.",
+       "t": 2.26,
+       "e": 2.5
+      }
+     ]
+    },
+    {
+     "text": "Look through each image or video created.",
+     "file": "gs016/vo/c_b2_ela9e8399c_mc4b58.mp3",
+     "dur": 2.457,
+     "words": [
+      {
+       "w": "Look",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "through",
+       "t": 0.12,
+       "e": 0.3
+      },
+      {
+       "w": "each",
+       "t": 0.3,
+       "e": 0.5
+      },
+      {
+       "w": "image",
+       "t": 0.5,
+       "e": 0.82
+      },
+      {
+       "w": "or",
+       "t": 0.82,
+       "e": 1.06
+      },
+      {
+       "w": "video",
+       "t": 1.06,
+       "e": 1.32
+      },
+      {
+       "w": "created.",
+       "t": 1.32,
+       "e": 1.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Choose the version you like best.",
+     "file": "gs016/vo/d_b1_el80371204_mc4b58.mp3",
+     "dur": 2.058,
+     "words": [
+      {
+       "w": "Choose",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "the",
+       "t": 0.18,
+       "e": 0.34
+      },
+      {
+       "w": "version",
+       "t": 0.34,
+       "e": 0.54
+      },
+      {
+       "w": "you",
+       "t": 0.54,
+       "e": 0.78
+      },
+      {
+       "w": "like",
+       "t": 0.78,
+       "e": 0.96
+      },
+      {
+       "w": "best.",
+       "t": 0.96,
+       "e": 1.3
+      }
+     ]
+    },
+    {
+     "text": "Save it or use it for your project.",
+     "file": "gs016/vo/d_b2_ela2d6a876_mc4b58.mp3",
+     "dur": 2.085,
+     "words": [
+      {
+       "w": "Save",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "it",
+       "t": 0.24,
+       "e": 0.42
+      },
+      {
+       "w": "or",
+       "t": 0.42,
+       "e": 0.58
+      },
+      {
+       "w": "use",
+       "t": 0.58,
+       "e": 0.76
+      },
+      {
+       "w": "it",
+       "t": 0.76,
+       "e": 0.9
+      },
+      {
+       "w": "for",
+       "t": 0.9,
+       "e": 1.02
+      },
+      {
+       "w": "your",
+       "t": 1.02,
+       "e": 1.12
+      },
+      {
+       "w": "project.",
+       "t": 1.12,
+       "e": 1.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Grok tutorial every day.",
+     "file": "gs016/vo/end_b1_el2997b64f_mc4b58.mp3",
+     "dur": 2.539,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "for",
+       "t": 0.2,
+       "e": 0.42
+      },
+      {
+       "w": "a",
+       "t": 0.42,
+       "e": 0.5
+      },
+      {
+       "w": "new",
+       "t": 0.5,
+       "e": 0.64
+      },
+      {
+       "w": "Grog",
+       "t": 0.64,
+       "e": 0.88
+      },
+      {
+       "w": "tutorial",
+       "t": 0.88,
+       "e": 1.14
+      },
+      {
+       "w": "every",
+       "t": 1.14,
+       "e": 1.7
+      },
+      {
+       "w": "day.",
+       "t": 1.7,
+       "e": 1.94
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

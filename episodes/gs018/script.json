@@ -1,0 +1,131 @@
+{
+ "id": "gs018",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Edit Drafts Faster With ChatGPT Canvas",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Editing long drafts in ChatGPT is slow and repetitive.",
+    "Regenerating everything just to fix one part wastes your time."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Edit Long Drafts",
+    "line2": "With Canvas",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "Editing is slow",
+     "beat": 0,
+     "tone": "red"
+    }
+   ],
+   "red": [
+    "slow",
+    "wastes"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open Canvas next to your chat window.",
+    "Canvas loads your writing or code in a side-by-side editor.",
+    "You can now see your full draft while you work."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Open Canvas editor.",
+      "beat": 0
+     },
+     {
+      "k": "claude",
+      "t": "Canvas opened next to chat.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Highlight the exact section you want to change in Canvas.",
+    "Type your instruction for ChatGPT to focus on only that part.",
+    "Avoid unnecessary changes to the rest of your draft."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Highlight: The introduction needs a friendlier tone.",
+      "beat": 0
+     },
+     {
+      "k": "user",
+      "t": "Rewrite this section to sound friendly.",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "ChatGPT edits just the highlighted section as you asked.",
+    "The rest of your document stays untouched.",
+    "Use Canvas to edit, rewrite, or review long drafts without starting over."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Canvas Editing Benefits",
+    "items": [
+     {
+      "t": "Edit only what you select",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Keep the rest unchanged",
+      "beat": 1,
+      "ok": true
+     },
+     {
+      "t": "Work faster on big drafts",
+      "beat": 2,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Canvas in ChatGPT",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

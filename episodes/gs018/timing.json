@@ -1,0 +1,700 @@
+{
+ "id": "gs018",
+ "engine": "eleven",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Editing long drafts in ChatGPT is slow and repetitive.",
+     "file": "gs018/vo/a_b1_el9556c997_mc4b58.mp3",
+     "dur": 3.657,
+     "words": [
+      {
+       "w": "Editing",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "long",
+       "t": 0.22,
+       "e": 0.48
+      },
+      {
+       "w": "drafts",
+       "t": 0.48,
+       "e": 0.78
+      },
+      {
+       "w": "in",
+       "t": 0.78,
+       "e": 1.02
+      },
+      {
+       "w": "chat",
+       "t": 1.02,
+       "e": 1.18
+      },
+      {
+       "w": "GPT",
+       "t": 1.18,
+       "e": 1.74
+      },
+      {
+       "w": "is",
+       "t": 1.74,
+       "e": 2.08
+      },
+      {
+       "w": "slow",
+       "t": 2.08,
+       "e": 2.38
+      },
+      {
+       "w": "and",
+       "t": 2.38,
+       "e": 2.56
+      },
+      {
+       "w": "repetitive.",
+       "t": 2.56,
+       "e": 3.02
+      }
+     ]
+    },
+    {
+     "text": "Regenerating everything just to fix one part wastes your time.",
+     "file": "gs018/vo/a_b2_eld67ef64d_mc4b58.mp3",
+     "dur": 3.621,
+     "words": [
+      {
+       "w": "regenerating",
+       "t": 0.0,
+       "e": 0.5
+      },
+      {
+       "w": "everything",
+       "t": 0.5,
+       "e": 0.84
+      },
+      {
+       "w": "just",
+       "t": 0.84,
+       "e": 1.18
+      },
+      {
+       "w": "to",
+       "t": 1.18,
+       "e": 1.32
+      },
+      {
+       "w": "fix",
+       "t": 1.32,
+       "e": 1.5
+      },
+      {
+       "w": "one",
+       "t": 1.5,
+       "e": 1.78
+      },
+      {
+       "w": "part",
+       "t": 1.78,
+       "e": 2.1
+      },
+      {
+       "w": "wastes",
+       "t": 2.1,
+       "e": 2.4
+      },
+      {
+       "w": "your",
+       "t": 2.4,
+       "e": 2.74
+      },
+      {
+       "w": "time.",
+       "t": 2.74,
+       "e": 3.04
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open Canvas next to your chat window.",
+     "file": "gs018/vo/b_b1_elc62c27ed_mc4b58.mp3",
+     "dur": 2.281,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "canvas",
+       "t": 0.22,
+       "e": 0.46
+      },
+      {
+       "w": "next",
+       "t": 0.46,
+       "e": 0.82
+      },
+      {
+       "w": "to",
+       "t": 0.82,
+       "e": 1.04
+      },
+      {
+       "w": "your",
+       "t": 1.04,
+       "e": 1.12
+      },
+      {
+       "w": "chat",
+       "t": 1.12,
+       "e": 1.3
+      },
+      {
+       "w": "window.",
+       "t": 1.3,
+       "e": 1.66
+      }
+     ]
+    },
+    {
+     "text": "Canvas loads your writing or code in a side-by-side editor.",
+     "file": "gs018/vo/b_b2_el559c3f04_mc4b58.mp3",
+     "dur": 3.742,
+     "words": [
+      {
+       "w": "Canvas",
+       "t": 0.0,
+       "e": 0.3
+      },
+      {
+       "w": "loads",
+       "t": 0.3,
+       "e": 0.56
+      },
+      {
+       "w": "your",
+       "t": 0.56,
+       "e": 0.8
+      },
+      {
+       "w": "writing",
+       "t": 0.8,
+       "e": 1.04
+      },
+      {
+       "w": "or",
+       "t": 1.04,
+       "e": 1.28
+      },
+      {
+       "w": "code",
+       "t": 1.28,
+       "e": 1.58
+      },
+      {
+       "w": "in",
+       "t": 1.58,
+       "e": 1.88
+      },
+      {
+       "w": "a",
+       "t": 1.88,
+       "e": 1.98
+      },
+      {
+       "w": "side",
+       "t": 1.98,
+       "e": 2.26
+      },
+      {
+       "w": "-by",
+       "t": 2.26,
+       "e": 2.44
+      },
+      {
+       "w": "-side",
+       "t": 2.44,
+       "e": 2.76
+      },
+      {
+       "w": "editor.",
+       "t": 2.76,
+       "e": 3.08
+      }
+     ]
+    },
+    {
+     "text": "You can now see your full draft while you work.",
+     "file": "gs018/vo/b_b3_elbae84f6e_mc4b58.mp3",
+     "dur": 2.551,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "can",
+       "t": 0.06,
+       "e": 0.16
+      },
+      {
+       "w": "now",
+       "t": 0.16,
+       "e": 0.34
+      },
+      {
+       "w": "see",
+       "t": 0.34,
+       "e": 0.58
+      },
+      {
+       "w": "your",
+       "t": 0.58,
+       "e": 0.72
+      },
+      {
+       "w": "full",
+       "t": 0.72,
+       "e": 0.9
+      },
+      {
+       "w": "draft",
+       "t": 0.9,
+       "e": 1.14
+      },
+      {
+       "w": "while",
+       "t": 1.14,
+       "e": 1.48
+      },
+      {
+       "w": "you",
+       "t": 1.48,
+       "e": 1.62
+      },
+      {
+       "w": "work.",
+       "t": 1.62,
+       "e": 1.84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Highlight the exact section you want to change in Canvas.",
+     "file": "gs018/vo/c_b1_elbb5a9ea9_mc4b58.mp3",
+     "dur": 2.996,
+     "words": [
+      {
+       "w": "highlight",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "the",
+       "t": 0.2,
+       "e": 0.42
+      },
+      {
+       "w": "exact",
+       "t": 0.42,
+       "e": 0.64
+      },
+      {
+       "w": "section",
+       "t": 0.64,
+       "e": 1.16
+      },
+      {
+       "w": "you",
+       "t": 1.16,
+       "e": 1.3
+      },
+      {
+       "w": "want",
+       "t": 1.3,
+       "e": 1.44
+      },
+      {
+       "w": "to",
+       "t": 1.44,
+       "e": 1.56
+      },
+      {
+       "w": "change",
+       "t": 1.56,
+       "e": 1.78
+      },
+      {
+       "w": "in",
+       "t": 1.78,
+       "e": 1.94
+      },
+      {
+       "w": "Canvas.",
+       "t": 1.94,
+       "e": 2.38
+      }
+     ]
+    },
+    {
+     "text": "Type your instruction for ChatGPT to focus on only that part.",
+     "file": "gs018/vo/c_b2_el94d3d808_mc4b58.mp3",
+     "dur": 3.868,
+     "words": [
+      {
+       "w": "Type",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "your",
+       "t": 0.14,
+       "e": 0.28
+      },
+      {
+       "w": "instruction",
+       "t": 0.28,
+       "e": 0.56
+      },
+      {
+       "w": "for",
+       "t": 0.56,
+       "e": 0.92
+      },
+      {
+       "w": "chat",
+       "t": 0.92,
+       "e": 1.12
+      },
+      {
+       "w": "GPT",
+       "t": 1.12,
+       "e": 1.66
+      },
+      {
+       "w": "to",
+       "t": 1.66,
+       "e": 2.04
+      },
+      {
+       "w": "focus",
+       "t": 2.04,
+       "e": 2.26
+      },
+      {
+       "w": "on",
+       "t": 2.26,
+       "e": 2.54
+      },
+      {
+       "w": "only",
+       "t": 2.54,
+       "e": 2.88
+      },
+      {
+       "w": "that",
+       "t": 2.88,
+       "e": 3.08
+      },
+      {
+       "w": "part.",
+       "t": 3.08,
+       "e": 3.32
+      }
+     ]
+    },
+    {
+     "text": "Avoid unnecessary changes to the rest of your draft.",
+     "file": "gs018/vo/c_b3_elaa82b251_mc4b58.mp3",
+     "dur": 3.026,
+     "words": [
+      {
+       "w": "Avoid",
+       "t": 0.0,
+       "e": 0.26
+      },
+      {
+       "w": "unnecessary",
+       "t": 0.26,
+       "e": 0.6
+      },
+      {
+       "w": "changes",
+       "t": 0.6,
+       "e": 1.34
+      },
+      {
+       "w": "to",
+       "t": 1.34,
+       "e": 1.6
+      },
+      {
+       "w": "the",
+       "t": 1.6,
+       "e": 1.68
+      },
+      {
+       "w": "rest",
+       "t": 1.68,
+       "e": 1.9
+      },
+      {
+       "w": "of",
+       "t": 1.9,
+       "e": 2.12
+      },
+      {
+       "w": "your",
+       "t": 2.12,
+       "e": 2.2
+      },
+      {
+       "w": "draft.",
+       "t": 2.2,
+       "e": 2.42
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "ChatGPT edits just the highlighted section as you asked.",
+     "file": "gs018/vo/d_b1_el2e1954fe_mc4b58.mp3",
+     "dur": 3.612,
+     "words": [
+      {
+       "w": "Chat",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "GPT",
+       "t": 0.16,
+       "e": 0.62
+      },
+      {
+       "w": "edits",
+       "t": 0.62,
+       "e": 1.02
+      },
+      {
+       "w": "just",
+       "t": 1.02,
+       "e": 1.36
+      },
+      {
+       "w": "the",
+       "t": 1.36,
+       "e": 1.56
+      },
+      {
+       "w": "highlighted",
+       "t": 1.56,
+       "e": 1.9
+      },
+      {
+       "w": "section",
+       "t": 1.9,
+       "e": 2.28
+      },
+      {
+       "w": "as",
+       "t": 2.28,
+       "e": 2.6
+      },
+      {
+       "w": "you",
+       "t": 2.6,
+       "e": 2.72
+      },
+      {
+       "w": "asked.",
+       "t": 2.72,
+       "e": 2.96
+      }
+     ]
+    },
+    {
+     "text": "The rest of your document stays untouched.",
+     "file": "gs018/vo/d_b2_el9910b63d_mc4b58.mp3",
+     "dur": 2.403,
+     "words": [
+      {
+       "w": "The",
+       "t": 0.0,
+       "e": 0.02
+      },
+      {
+       "w": "rest",
+       "t": 0.02,
+       "e": 0.18
+      },
+      {
+       "w": "of",
+       "t": 0.18,
+       "e": 0.38
+      },
+      {
+       "w": "your",
+       "t": 0.38,
+       "e": 0.46
+      },
+      {
+       "w": "document",
+       "t": 0.46,
+       "e": 0.76
+      },
+      {
+       "w": "stays",
+       "t": 0.76,
+       "e": 1.16
+      },
+      {
+       "w": "untouched.",
+       "t": 1.16,
+       "e": 1.58
+      }
+     ]
+    },
+    {
+     "text": "Use Canvas to edit, rewrite, or review long drafts without starting over.",
+     "file": "gs018/vo/d_b3_el1debe445_mc4b58.mp3",
+     "dur": 4.487,
+     "words": [
+      {
+       "w": "Use",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "Canvas",
+       "t": 0.18,
+       "e": 0.56
+      },
+      {
+       "w": "to",
+       "t": 0.56,
+       "e": 0.76
+      },
+      {
+       "w": "edit,",
+       "t": 0.76,
+       "e": 0.98
+      },
+      {
+       "w": "rewrite,",
+       "t": 1.26,
+       "e": 1.54
+      },
+      {
+       "w": "or",
+       "t": 1.86,
+       "e": 1.92
+      },
+      {
+       "w": "review",
+       "t": 1.92,
+       "e": 2.24
+      },
+      {
+       "w": "long",
+       "t": 2.24,
+       "e": 2.52
+      },
+      {
+       "w": "drafts",
+       "t": 2.52,
+       "e": 2.82
+      },
+      {
+       "w": "without",
+       "t": 2.82,
+       "e": 3.18
+      },
+      {
+       "w": "starting",
+       "t": 3.18,
+       "e": 3.56
+      },
+      {
+       "w": "over.",
+       "t": 3.56,
+       "e": 3.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new AI tutorial every day.",
+     "file": "gs018/vo/end_b1_el8d07ed04_mc4b58.mp3",
+     "dur": 2.71,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "for",
+       "t": 0.18,
+       "e": 0.38
+      },
+      {
+       "w": "a",
+       "t": 0.38,
+       "e": 0.48
+      },
+      {
+       "w": "new",
+       "t": 0.48,
+       "e": 0.64
+      },
+      {
+       "w": "AI",
+       "t": 0.64,
+       "e": 0.92
+      },
+      {
+       "w": "tutorial",
+       "t": 0.92,
+       "e": 1.32
+      },
+      {
+       "w": "every",
+       "t": 1.32,
+       "e": 1.86
+      },
+      {
+       "w": "day.",
+       "t": 1.86,
+       "e": 2.12
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "gs017",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Set Writing Style In Claude",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude's replies sound wrong for your work.",
+    "Choose a writing style to match your needs."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Set Writing Style",
+    "line2": "For Custom Replies",
+    "sub": ""
+   },
+   "red": [
+    "wrong"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open Claude dot A I.",
+    "Pick a style for replies, like concise or explanatory."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Choose A Style",
+    "items": [
+     {
+      "t": "Concise writing",
+      "beat": 1
+     },
+     {
+      "t": "Explanatory writing",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "To use your own style, give Claude a sample of your writing."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Use this sample as my style: 'Clear, direct, no filler.'",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Claude replies in your chosen style until you switch it.",
+    "Change styles anytime if your needs change."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Style Applies To Replies",
+    "items": [
+     {
+      "t": "Your chosen style is used",
+      "beat": 0
+     },
+     {
+      "t": "Switch to another style anytime",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Writing styles in Claude",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

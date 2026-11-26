@@ -1,0 +1,407 @@
+{
+ "id": "gs017",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Claude's replies sound wrong for your work.",
+     "file": "gs017/vo/a_b1_15c19902d0_p105.mp3",
+     "dur": 2.453,
+     "words": [
+      {
+       "w": "Clods",
+       "t": 0.0,
+       "e": 0.34
+      },
+      {
+       "w": "reply",
+       "t": 0.34,
+       "e": 0.58
+      },
+      {
+       "w": "sound",
+       "t": 0.58,
+       "e": 1.08
+      },
+      {
+       "w": "wrong",
+       "t": 1.08,
+       "e": 1.32
+      },
+      {
+       "w": "for",
+       "t": 1.32,
+       "e": 1.66
+      },
+      {
+       "w": "your",
+       "t": 1.66,
+       "e": 1.78
+      },
+      {
+       "w": "work.",
+       "t": 1.78,
+       "e": 1.98
+      }
+     ]
+    },
+    {
+     "text": "Choose a writing style to match your needs.",
+     "file": "gs017/vo/a_b2_d67e1b7ab0_p105.mp3",
+     "dur": 2.832,
+     "words": [
+      {
+       "w": "Choose",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "a",
+       "t": 0.22,
+       "e": 0.5
+      },
+      {
+       "w": "writing",
+       "t": 0.5,
+       "e": 0.7
+      },
+      {
+       "w": "style",
+       "t": 0.7,
+       "e": 1.06
+      },
+      {
+       "w": "to",
+       "t": 1.06,
+       "e": 1.54
+      },
+      {
+       "w": "match",
+       "t": 1.54,
+       "e": 1.7
+      },
+      {
+       "w": "your",
+       "t": 1.7,
+       "e": 2.02
+      },
+      {
+       "w": "needs.",
+       "t": 2.02,
+       "e": 2.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open Claude dot A I.",
+     "file": "gs017/vo/b_b1_56aaaff234_p105.mp3",
+     "dur": 2.651,
+     "words": [
+      {
+       "w": "open",
+       "t": 0.0,
+       "e": 0.3
+      },
+      {
+       "w": "clawed",
+       "t": 0.3,
+       "e": 1.22
+      },
+      {
+       "w": ".ai",
+       "t": 1.22,
+       "e": 2.04
+      }
+     ]
+    },
+    {
+     "text": "Pick a style for replies, like concise or explanatory.",
+     "file": "gs017/vo/b_b2_a48d2c5d2c_p105.mp3",
+     "dur": 3.867,
+     "words": [
+      {
+       "w": "Pick",
+       "t": 0.0,
+       "e": 0.1
+      },
+      {
+       "w": "a",
+       "t": 0.1,
+       "e": 0.2
+      },
+      {
+       "w": "style",
+       "t": 0.2,
+       "e": 0.48
+      },
+      {
+       "w": "for",
+       "t": 0.48,
+       "e": 0.82
+      },
+      {
+       "w": "replies,",
+       "t": 0.82,
+       "e": 1.2
+      },
+      {
+       "w": "like",
+       "t": 1.7,
+       "e": 1.82
+      },
+      {
+       "w": "concise",
+       "t": 1.82,
+       "e": 2.22
+      },
+      {
+       "w": "or",
+       "t": 2.22,
+       "e": 2.78
+      },
+      {
+       "w": "explanatory.",
+       "t": 2.78,
+       "e": 3.28
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "To use your own style, give Claude a sample of your writing.",
+     "file": "gs017/vo/c_b1_a8faed4d56_p105.mp3",
+     "dur": 3.479,
+     "words": [
+      {
+       "w": "To",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "use",
+       "t": 0.06,
+       "e": 0.24
+      },
+      {
+       "w": "your",
+       "t": 0.24,
+       "e": 0.46
+      },
+      {
+       "w": "own",
+       "t": 0.46,
+       "e": 0.66
+      },
+      {
+       "w": "style,",
+       "t": 0.66,
+       "e": 1.0
+      },
+      {
+       "w": "give",
+       "t": 1.44,
+       "e": 1.52
+      },
+      {
+       "w": "Claude",
+       "t": 1.52,
+       "e": 1.78
+      },
+      {
+       "w": "a",
+       "t": 1.78,
+       "e": 2.18
+      },
+      {
+       "w": "sample",
+       "t": 2.18,
+       "e": 2.42
+      },
+      {
+       "w": "of",
+       "t": 2.42,
+       "e": 2.68
+      },
+      {
+       "w": "your",
+       "t": 2.68,
+       "e": 2.78
+      },
+      {
+       "w": "writing.",
+       "t": 2.78,
+       "e": 3.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Claude replies in your chosen style until you switch it.",
+     "file": "gs017/vo/d_b1_450127aa20_p105.mp3",
+     "dur": 3.287,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "replies",
+       "t": 0.24,
+       "e": 0.56
+      },
+      {
+       "w": "in",
+       "t": 0.56,
+       "e": 0.94
+      },
+      {
+       "w": "your",
+       "t": 0.94,
+       "e": 1.12
+      },
+      {
+       "w": "chosen",
+       "t": 1.12,
+       "e": 1.46
+      },
+      {
+       "w": "style",
+       "t": 1.46,
+       "e": 1.84
+      },
+      {
+       "w": "until",
+       "t": 1.84,
+       "e": 2.48
+      },
+      {
+       "w": "you",
+       "t": 2.48,
+       "e": 2.62
+      },
+      {
+       "w": "switch",
+       "t": 2.62,
+       "e": 2.8
+      },
+      {
+       "w": "it.",
+       "t": 2.8,
+       "e": 2.94
+      }
+     ]
+    },
+    {
+     "text": "Change styles anytime if your needs change.",
+     "file": "gs017/vo/d_b2_aede440672_p105.mp3",
+     "dur": 2.8,
+     "words": [
+      {
+       "w": "Change",
+       "t": 0.0,
+       "e": 0.26
+      },
+      {
+       "w": "styles",
+       "t": 0.26,
+       "e": 0.52
+      },
+      {
+       "w": "anytime",
+       "t": 0.52,
+       "e": 1.16
+      },
+      {
+       "w": "if",
+       "t": 1.16,
+       "e": 1.66
+      },
+      {
+       "w": "your",
+       "t": 1.66,
+       "e": 1.76
+      },
+      {
+       "w": "needs",
+       "t": 1.76,
+       "e": 1.94
+      },
+      {
+       "w": "change.",
+       "t": 1.94,
+       "e": 2.26
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs017/vo/end_b1_8acd70267c_p105.mp3",
+     "dur": 2.744,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "for",
+       "t": 0.2,
+       "e": 0.46
+      },
+      {
+       "w": "a",
+       "t": 0.46,
+       "e": 0.56
+      },
+      {
+       "w": "new",
+       "t": 0.56,
+       "e": 0.72
+      },
+      {
+       "w": "cloud",
+       "t": 0.72,
+       "e": 1.0
+      },
+      {
+       "w": "tutorial",
+       "t": 1.0,
+       "e": 1.46
+      },
+      {
+       "w": "every",
+       "t": 1.46,
+       "e": 2.06
+      },
+      {
+       "w": "day.",
+       "t": 2.06,
+       "e": 2.3
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

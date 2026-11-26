@@ -1,0 +1,133 @@
+{
+ "id": "gs015",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Build Custom GPTs in ChatGPT",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "ChatGPT can run with your own rules and files.",
+    "Custom GPTs let you control its instructions and knowledge.",
+    "Build one for any specific task you have in mind."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Build Custom",
+    "line2": "GPTs in ChatGPT",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open the GPT builder inside ChatGPT.",
+    "Type out what you want your GPT to do, step by step.",
+    "For example, write: Summarize legal documents in plain English."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Open GPT builder.",
+      "beat": 0
+     },
+     {
+      "k": "user",
+      "t": "Summarize legal documents in plain English.",
+      "beat": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Upload knowledge files to add more information for your GPT."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Upload legal_guides.pdf",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "When you’re done, share your custom GPT with a link."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "Share custom GPT link.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Now you have a personal version of ChatGPT with your own rules and files."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What Your Custom GPT Does",
+    "items": [
+     {
+      "t": "Follows your special rules",
+      "beat": 0
+     },
+     {
+      "t": "Uses your uploaded files",
+      "beat": 0
+     },
+     {
+      "t": "Shareable with a link",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Build a custom GPT",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}
