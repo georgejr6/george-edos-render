@@ -1,0 +1,600 @@
+{
+ "id": "gs021",
+ "engine": "eleven",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Grok answers out loud in voice mode.",
+     "file": "gs021/vo/a_b1_el4334fb4f_mc4b58.mp3",
+     "dur": 2.251,
+     "words": [
+      {
+       "w": "Grok",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "answers",
+       "t": 0.22,
+       "e": 0.46
+      },
+      {
+       "w": "out",
+       "t": 0.46,
+       "e": 0.82
+      },
+      {
+       "w": "loud",
+       "t": 0.82,
+       "e": 1.0
+      },
+      {
+       "w": "in",
+       "t": 1.0,
+       "e": 1.2
+      },
+      {
+       "w": "voice",
+       "t": 1.2,
+       "e": 1.38
+      },
+      {
+       "w": "mode.",
+       "t": 1.38,
+       "e": 1.72
+      }
+     ]
+    },
+    {
+     "text": "You can ask questions or practice real conversations.",
+     "file": "gs021/vo/a_b2_ela7445faf_mc4b58.mp3",
+     "dur": 2.99,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "can",
+       "t": 0.06,
+       "e": 0.14
+      },
+      {
+       "w": "ask",
+       "t": 0.14,
+       "e": 0.3
+      },
+      {
+       "w": "questions",
+       "t": 0.3,
+       "e": 0.74
+      },
+      {
+       "w": "or",
+       "t": 0.74,
+       "e": 1.02
+      },
+      {
+       "w": "practice",
+       "t": 1.02,
+       "e": 1.28
+      },
+      {
+       "w": "real",
+       "t": 1.28,
+       "e": 1.54
+      },
+      {
+       "w": "conversations.",
+       "t": 1.54,
+       "e": 2.04
+      }
+     ]
+    },
+    {
+     "text": "Useful for hands-free situations or language learning.",
+     "file": "gs021/vo/a_b3_elf6f9cbd9_mc4b58.mp3",
+     "dur": 2.863,
+     "words": [
+      {
+       "w": "useful",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "for",
+       "t": 0.24,
+       "e": 0.4
+      },
+      {
+       "w": "hands",
+       "t": 0.4,
+       "e": 0.62
+      },
+      {
+       "w": "-free",
+       "t": 0.62,
+       "e": 0.84
+      },
+      {
+       "w": "situations",
+       "t": 0.84,
+       "e": 1.38
+      },
+      {
+       "w": "or",
+       "t": 1.38,
+       "e": 1.68
+      },
+      {
+       "w": "language",
+       "t": 1.68,
+       "e": 1.88
+      },
+      {
+       "w": "learning.",
+       "t": 1.88,
+       "e": 2.24
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Grok has a voice mode for spoken interaction.",
+     "file": "gs021/vo/b_b1_el8eba5a1f_mc4b58.mp3",
+     "dur": 2.628,
+     "words": [
+      {
+       "w": "Grock",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "has",
+       "t": 0.14,
+       "e": 0.34
+      },
+      {
+       "w": "a",
+       "t": 0.34,
+       "e": 0.44
+      },
+      {
+       "w": "voice",
+       "t": 0.44,
+       "e": 0.64
+      },
+      {
+       "w": "mode",
+       "t": 0.64,
+       "e": 0.9
+      },
+      {
+       "w": "for",
+       "t": 0.9,
+       "e": 1.08
+      },
+      {
+       "w": "spoken",
+       "t": 1.08,
+       "e": 1.36
+      },
+      {
+       "w": "interaction.",
+       "t": 1.36,
+       "e": 1.8
+      }
+     ]
+    },
+    {
+     "text": "You talk and Grok answers out loud.",
+     "file": "gs021/vo/b_b2_elb926dc8f_mc4b58.mp3",
+     "dur": 2.318,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "talk",
+       "t": 0.06,
+       "e": 0.26
+      },
+      {
+       "w": "and",
+       "t": 0.26,
+       "e": 0.58
+      },
+      {
+       "w": "Groc",
+       "t": 0.58,
+       "e": 0.8
+      },
+      {
+       "w": "answers",
+       "t": 0.8,
+       "e": 1.16
+      },
+      {
+       "w": "out",
+       "t": 1.16,
+       "e": 1.42
+      },
+      {
+       "w": "loud.",
+       "t": 1.42,
+       "e": 1.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Speak your question to Grok.",
+     "file": "gs021/vo/c_b1_elb5e0ca61_mc4b58.mp3",
+     "dur": 1.675,
+     "words": [
+      {
+       "w": "Speak",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "your",
+       "t": 0.22,
+       "e": 0.38
+      },
+      {
+       "w": "question",
+       "t": 0.38,
+       "e": 0.6
+      },
+      {
+       "w": "to",
+       "t": 0.6,
+       "e": 0.9
+      },
+      {
+       "w": "Grot.",
+       "t": 0.9,
+       "e": 1.2
+      }
+     ]
+    },
+    {
+     "text": "For example: What's the weather today?",
+     "file": "gs021/vo/c_b2_ela73833ba_m8e44f.mp3",
+     "dur": 2.567,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "example,",
+       "t": 0.08,
+       "e": 0.36
+      },
+      {
+       "w": "what's",
+       "t": 0.78,
+       "e": 0.96
+      },
+      {
+       "w": "the",
+       "t": 0.96,
+       "e": 1.04
+      },
+      {
+       "w": "weather",
+       "t": 1.04,
+       "e": 1.2
+      },
+      {
+       "w": "today?",
+       "t": 1.2,
+       "e": 1.54
+      }
+     ]
+    },
+    {
+     "text": "Or practice: How do I order food in Spanish?",
+     "file": "gs021/vo/c_b3_el0546b54e_m8e44f.mp3",
+     "dur": 3.142,
+     "words": [
+      {
+       "w": "Or",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "practice,",
+       "t": 0.06,
+       "e": 0.48
+      },
+      {
+       "w": "how",
+       "t": 0.84,
+       "e": 0.92
+      },
+      {
+       "w": "do",
+       "t": 0.92,
+       "e": 1.02
+      },
+      {
+       "w": "I",
+       "t": 1.02,
+       "e": 1.12
+      },
+      {
+       "w": "order",
+       "t": 1.12,
+       "e": 1.36
+      },
+      {
+       "w": "food",
+       "t": 1.36,
+       "e": 1.6
+      },
+      {
+       "w": "in",
+       "t": 1.6,
+       "e": 1.76
+      },
+      {
+       "w": "Spanish?",
+       "t": 1.76,
+       "e": 2.12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Grok replies to you out loud.",
+     "file": "gs021/vo/d_b1_elc63cb559_mc4b58.mp3",
+     "dur": 1.808,
+     "words": [
+      {
+       "w": "Grock",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "replies",
+       "t": 0.18,
+       "e": 0.5
+      },
+      {
+       "w": "to",
+       "t": 0.5,
+       "e": 0.76
+      },
+      {
+       "w": "you",
+       "t": 0.76,
+       "e": 0.86
+      },
+      {
+       "w": "out",
+       "t": 0.86,
+       "e": 1.04
+      },
+      {
+       "w": "loud.",
+       "t": 1.04,
+       "e": 1.22
+      }
+     ]
+    },
+    {
+     "text": "You can use this for hands-free questions or practicing conversation.",
+     "file": "gs021/vo/d_b2_el7f71eab3_mc4b58.mp3",
+     "dur": 3.676,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.06
+      },
+      {
+       "w": "can",
+       "t": 0.06,
+       "e": 0.16
+      },
+      {
+       "w": "use",
+       "t": 0.16,
+       "e": 0.34
+      },
+      {
+       "w": "this",
+       "t": 0.34,
+       "e": 0.54
+      },
+      {
+       "w": "for",
+       "t": 0.54,
+       "e": 0.74
+      },
+      {
+       "w": "hands",
+       "t": 0.74,
+       "e": 0.94
+      },
+      {
+       "w": "-free",
+       "t": 0.94,
+       "e": 1.18
+      },
+      {
+       "w": "questions",
+       "t": 1.18,
+       "e": 1.6
+      },
+      {
+       "w": "or",
+       "t": 1.6,
+       "e": 1.88
+      },
+      {
+       "w": "practicing",
+       "t": 1.88,
+       "e": 2.2
+      },
+      {
+       "w": "conversation.",
+       "t": 2.2,
+       "e": 2.84
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    {
+     "text": "Voice mode lets you interact hands-free or practice real conversations with Grok.",
+     "file": "gs021/vo/e_b1_elab73dab0_mc4b58.mp3",
+     "dur": 4.494,
+     "words": [
+      {
+       "w": "Voice",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "Mode",
+       "t": 0.12,
+       "e": 0.36
+      },
+      {
+       "w": "lets",
+       "t": 0.36,
+       "e": 0.6
+      },
+      {
+       "w": "you",
+       "t": 0.6,
+       "e": 0.76
+      },
+      {
+       "w": "interact",
+       "t": 0.76,
+       "e": 1.08
+      },
+      {
+       "w": "hands",
+       "t": 1.08,
+       "e": 1.46
+      },
+      {
+       "w": "-free",
+       "t": 1.46,
+       "e": 1.78
+      },
+      {
+       "w": "or",
+       "t": 1.78,
+       "e": 2.08
+      },
+      {
+       "w": "practice",
+       "t": 2.08,
+       "e": 2.32
+      },
+      {
+       "w": "real",
+       "t": 2.32,
+       "e": 2.62
+      },
+      {
+       "w": "conversations",
+       "t": 2.62,
+       "e": 3.12
+      },
+      {
+       "w": "with",
+       "t": 3.12,
+       "e": 3.56
+      },
+      {
+       "w": "Grog.",
+       "t": 3.56,
+       "e": 3.82
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Grok tutorial every day.",
+     "file": "gs021/vo/end_b1_el2997b64f_mc4b58.mp3",
+     "dur": 2.651,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.2
+      },
+      {
+       "w": "for",
+       "t": 0.2,
+       "e": 0.4
+      },
+      {
+       "w": "a",
+       "t": 0.4,
+       "e": 0.5
+      },
+      {
+       "w": "new",
+       "t": 0.5,
+       "e": 0.62
+      },
+      {
+       "w": "Grog",
+       "t": 0.62,
+       "e": 0.88
+      },
+      {
+       "w": "tutorial",
+       "t": 0.88,
+       "e": 1.16
+      },
+      {
+       "w": "every",
+       "t": 1.16,
+       "e": 1.78
+      },
+      {
+       "w": "day.",
+       "t": 1.78,
+       "e": 2.04
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

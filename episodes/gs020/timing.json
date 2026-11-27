@@ -1,0 +1,496 @@
+{
+ "id": "gs020",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Surface answers miss real sources.",
+     "file": "gs020/vo/a_b1_6c016ca3cf_p105.mp3",
+     "dur": 2.717,
+     "words": [
+      {
+       "w": "Surface",
+       "t": 0.0,
+       "e": 0.36
+      },
+      {
+       "w": "answers,",
+       "t": 0.36,
+       "e": 0.82
+      },
+      {
+       "w": "miss",
+       "t": 1.24,
+       "e": 1.44
+      },
+      {
+       "w": "real",
+       "t": 1.44,
+       "e": 1.76
+      },
+      {
+       "w": "sources.",
+       "t": 1.76,
+       "e": 2.12
+      }
+     ]
+    },
+    {
+     "text": "Deep research gives you a cited report.",
+     "file": "gs020/vo/a_b2_e7d4341dd7_p105.mp3",
+     "dur": 2.67,
+     "words": [
+      {
+       "w": "Deep",
+       "t": 0.0,
+       "e": 0.16
+      },
+      {
+       "w": "Research",
+       "t": 0.16,
+       "e": 0.52
+      },
+      {
+       "w": "gives",
+       "t": 0.52,
+       "e": 1.18
+      },
+      {
+       "w": "you",
+       "t": 1.18,
+       "e": 1.38
+      },
+      {
+       "w": "a",
+       "t": 1.38,
+       "e": 1.48
+      },
+      {
+       "w": "cited",
+       "t": 1.48,
+       "e": 1.72
+      },
+      {
+       "w": "report.",
+       "t": 1.72,
+       "e": 2.14
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Turn on deep research before asking your question.",
+     "file": "gs020/vo/b_b1_8111a0d35a_p105.mp3",
+     "dur": 2.651,
+     "words": [
+      {
+       "w": "Turn",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "on",
+       "t": 0.18,
+       "e": 0.32
+      },
+      {
+       "w": "deep",
+       "t": 0.32,
+       "e": 0.6
+      },
+      {
+       "w": "research",
+       "t": 0.6,
+       "e": 1.0
+      },
+      {
+       "w": "before",
+       "t": 1.0,
+       "e": 1.36
+      },
+      {
+       "w": "asking",
+       "t": 1.36,
+       "e": 1.72
+      },
+      {
+       "w": "your",
+       "t": 1.72,
+       "e": 1.88
+      },
+      {
+       "w": "question.",
+       "t": 1.88,
+       "e": 2.18
+      }
+     ]
+    },
+    {
+     "text": "Check that deep research is enabled before you continue.",
+     "file": "gs020/vo/b_b2_5766b91a3b_p105.mp3",
+     "dur": 3.124,
+     "words": [
+      {
+       "w": "Check",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "that",
+       "t": 0.18,
+       "e": 0.36
+      },
+      {
+       "w": "deep",
+       "t": 0.36,
+       "e": 0.64
+      },
+      {
+       "w": "research",
+       "t": 0.64,
+       "e": 1.02
+      },
+      {
+       "w": "is",
+       "t": 1.02,
+       "e": 1.34
+      },
+      {
+       "w": "enabled",
+       "t": 1.34,
+       "e": 1.6
+      },
+      {
+       "w": "before",
+       "t": 1.6,
+       "e": 2.16
+      },
+      {
+       "w": "you",
+       "t": 2.16,
+       "e": 2.32
+      },
+      {
+       "w": "continue.",
+       "t": 2.32,
+       "e": 2.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Type your real research question.",
+     "file": "gs020/vo/c_b1_8864d8927f_p105.mp3",
+     "dur": 1.965,
+     "words": [
+      {
+       "w": "Type",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "your",
+       "t": 0.14,
+       "e": 0.36
+      },
+      {
+       "w": "real",
+       "t": 0.36,
+       "e": 0.58
+      },
+      {
+       "w": "research",
+       "t": 0.58,
+       "e": 1.02
+      },
+      {
+       "w": "question.",
+       "t": 1.02,
+       "e": 1.5
+      }
+     ]
+    },
+    {
+     "text": "For example, 'What are the latest treatments for migraine?'",
+     "file": "gs020/vo/c_b2_0491a6909f_p105.mp3",
+     "dur": 2.935,
+     "words": [
+      {
+       "w": "For",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "example,",
+       "t": 0.08,
+       "e": 0.36
+      },
+      {
+       "w": "what",
+       "t": 0.9,
+       "e": 1.12
+      },
+      {
+       "w": "are",
+       "t": 1.12,
+       "e": 1.2
+      },
+      {
+       "w": "the",
+       "t": 1.2,
+       "e": 1.32
+      },
+      {
+       "w": "latest",
+       "t": 1.32,
+       "e": 1.54
+      },
+      {
+       "w": "treatments",
+       "t": 1.54,
+       "e": 1.8
+      },
+      {
+       "w": "for",
+       "t": 1.8,
+       "e": 2.12
+      },
+      {
+       "w": "migraine?",
+       "t": 2.12,
+       "e": 2.26
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "ChatGPT runs a multi-step web search and writes a report.",
+     "file": "gs020/vo/d_b1_f4160f65b8_p105.mp3",
+     "dur": 3.729,
+     "words": [
+      {
+       "w": "Chat",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "GPT",
+       "t": 0.12,
+       "e": 0.6
+      },
+      {
+       "w": "runs",
+       "t": 0.6,
+       "e": 1.1
+      },
+      {
+       "w": "a",
+       "t": 1.1,
+       "e": 1.26
+      },
+      {
+       "w": "multi",
+       "t": 1.26,
+       "e": 1.44
+      },
+      {
+       "w": "-step",
+       "t": 1.44,
+       "e": 1.76
+      },
+      {
+       "w": "web",
+       "t": 1.76,
+       "e": 1.98
+      },
+      {
+       "w": "search",
+       "t": 1.98,
+       "e": 2.26
+      },
+      {
+       "w": "and",
+       "t": 2.26,
+       "e": 2.7
+      },
+      {
+       "w": "writes",
+       "t": 2.7,
+       "e": 2.88
+      },
+      {
+       "w": "a",
+       "t": 2.88,
+       "e": 3.04
+      },
+      {
+       "w": "report.",
+       "t": 3.04,
+       "e": 3.26
+      }
+     ]
+    },
+    {
+     "text": "The report includes citations to its sources.",
+     "file": "gs020/vo/d_b2_be14a9bba1_p105.mp3",
+     "dur": 2.504,
+     "words": [
+      {
+       "w": "The",
+       "t": 0.0,
+       "e": 0.08
+      },
+      {
+       "w": "report",
+       "t": 0.08,
+       "e": 0.3
+      },
+      {
+       "w": "includes",
+       "t": 0.3,
+       "e": 0.62
+      },
+      {
+       "w": "citations",
+       "t": 0.62,
+       "e": 1.14
+      },
+      {
+       "w": "to",
+       "t": 1.14,
+       "e": 1.56
+      },
+      {
+       "w": "its",
+       "t": 1.56,
+       "e": 1.66
+      },
+      {
+       "w": "sources.",
+       "t": 1.66,
+       "e": 1.88
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e",
+   "beats": [
+    {
+     "text": "Get a detailed, sourced answer for your research.",
+     "file": "gs020/vo/e_b1_56688fcba1_p105.mp3",
+     "dur": 3.282,
+     "words": [
+      {
+       "w": "Get",
+       "t": 0.0,
+       "e": 0.14
+      },
+      {
+       "w": "a",
+       "t": 0.14,
+       "e": 0.48
+      },
+      {
+       "w": "detailed,",
+       "t": 0.48,
+       "e": 0.82
+      },
+      {
+       "w": "sourced",
+       "t": 1.18,
+       "e": 1.48
+      },
+      {
+       "w": "answer",
+       "t": 1.48,
+       "e": 1.88
+      },
+      {
+       "w": "for",
+       "t": 1.88,
+       "e": 2.34
+      },
+      {
+       "w": "your",
+       "t": 2.34,
+       "e": 2.48
+      },
+      {
+       "w": "research.",
+       "t": 2.48,
+       "e": 2.78
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new AI tutorial every day.",
+     "file": "gs020/vo/end_b1_5e0395d60f_p105.mp3",
+     "dur": 2.999,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "for",
+       "t": 0.28,
+       "e": 0.58
+      },
+      {
+       "w": "a",
+       "t": 0.58,
+       "e": 0.66
+      },
+      {
+       "w": "new",
+       "t": 0.66,
+       "e": 0.84
+      },
+      {
+       "w": "AI",
+       "t": 0.84,
+       "e": 1.14
+      },
+      {
+       "w": "tutorial,",
+       "t": 1.14,
+       "e": 1.64
+      },
+      {
+       "w": "every",
+       "t": 2.14,
+       "e": 2.3
+      },
+      {
+       "w": "day.",
+       "t": 2.3,
+       "e": 2.54
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

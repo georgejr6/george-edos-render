@@ -1,0 +1,131 @@
+{
+ "id": "gs021",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "grok",
+ "title": "Use Grok Voice Mode Hands-Free",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Grok answers out loud in voice mode.",
+    "You can ask questions or practice real conversations.",
+    "Useful for hands-free situations or language learning."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "GROK TIP",
+    "line1": "Voice Mode",
+    "line2": "Hands-Free Answers",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "Grok voice mode",
+     "beat": 0
+    },
+    {
+     "text": "hands-free, out loud",
+     "beat": 1
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Grok has a voice mode for spoken interaction.",
+    "You talk and Grok answers out loud."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "voice mode",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Speak your question to Grok.",
+    "For example: What's the weather today?",
+    "Or practice: How do I order food in Spanish?"
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "user",
+      "t": "How do I order food in Spanish?",
+      "beat": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Grok replies to you out loud.",
+    "You can use this for hands-free questions or practicing conversation."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "grok",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "Grok answers out loud.",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Voice mode lets you interact hands-free or practice real conversations with Grok."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What You Get",
+    "items": [
+     {
+      "t": "Hands-free questions",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Practice real conversations",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Grok tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Grok voice mode",
+ "angle": "how-to",
+ "writer": "gpt-4.1"
+}

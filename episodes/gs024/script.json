@@ -1,0 +1,115 @@
+{
+ "id": "gs024",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Add Hooks In Claude Code",
+ "music": "music/investigation_beginning.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Claude Code can run commands for you automatically.",
+    "Hooks trigger shell commands when you edit or save files.",
+    "That means you never need to run formatters by hand again."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE TIP",
+    "line1": "Automate Tasks",
+    "line2": "With Code Hooks",
+    "sub": ""
+   }
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open your settings.json file in Claude Code.",
+    "This is where all hooks are configured."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "settings.json",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "open settings.json",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Add a hook to run after every file edit.",
+    "Paste this line to format with Prettier automatically.",
+    "You can replace the command with any shell command you prefer."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "settings.json",
+    "lines": [
+     {
+      "k": "file",
+      "t": "\"hooks\": { \"afterEdit\": \"prettier --write $CLAUDE_FILE\" }",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Hooks let you automate formatting or any shell command after edits.",
+    "You can also use hooks before or after Claude tools.",
+    "Configure as many commands as your workflow needs."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What You Get",
+    "items": [
+     {
+      "t": "Automatic formatting after saves",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Run any shell command as a hook",
+      "beat": 1
+     },
+     {
+      "t": "Works with Claude tool events",
+      "beat": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Hooks in Claude Code",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

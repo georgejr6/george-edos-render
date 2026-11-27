@@ -1,0 +1,121 @@
+{
+ "id": "gs022",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "claude",
+ "title": "Connect Tools To Claude Code",
+ "music": "music/investigation_air.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Connect your tools to Claude Code with MCP.",
+    "This lets Claude use your server's tools in tasks."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CLAUDE CODE TIP",
+    "line1": "Connect Tools",
+    "line2": "With MCP",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "MCP",
+     "beat": 0,
+     "tone": "green"
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open your terminal.",
+    "Type claude mcp add to add your server."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "terminal",
+    "lines": [
+     {
+      "k": "cmd",
+      "t": "claude mcp add",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "MCP stands for Model Context Protocol.",
+    "It's an open standard for connecting tools to AI apps."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What Is MCP?",
+    "items": [
+     {
+      "t": "Model Context Protocol",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Open standard for tools",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "Once added, Claude can call that server's tools during a task."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "claude",
+    "lines": [
+     {
+      "k": "user",
+      "t": "Use my server's math tool.",
+      "beat": 0
+     }
+    ]
+   },
+   "pills": [
+    {
+     "text": "Tools Connected",
+     "beat": 0,
+     "tone": "green"
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new Claude tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Connect tools to Claude Code with MCP",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

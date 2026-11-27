@@ -1,0 +1,137 @@
+{
+ "id": "gs023",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Start ChatGPT Temporary Chat",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Temporary chats never show up in chat history.",
+    "They also do not use any memories."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Temporary chats",
+    "line2": "no chat history",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "No chat history",
+     "beat": 0,
+     "tone": "red"
+    },
+    {
+     "text": "No memory used",
+     "beat": 1
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Open ChatGPT. Start a new temporary chat."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Start a Temporary Chat",
+    "items": [
+     {
+      "t": "Open ChatGPT",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Start temporary chat",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Type your question as usual. For example:",
+    "How do I export a PDF in Photoshop?"
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "How do I export a PDF in Photoshop?",
+      "beat": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "This chat will not appear in your history.",
+    "No memories are created from this chat."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What Happens Now",
+    "items": [
+     {
+      "t": "Not saved in chat history",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "No memory created",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Use temporary chats for one-off questions you do not want saved."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Ask one-off",
+    "line2": "unsaved questions",
+    "sub": ""
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Temporary chat in ChatGPT",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

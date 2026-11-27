@@ -18,6 +18,11 @@ import { Video as C_gs017, built as b_gs017 } from "../episodes/gs017/Video";
 import { Video as C_gs018, built as b_gs018 } from "../episodes/gs018/Video";
 import { Video as C_gs019, built as b_gs019 } from "../episodes/gs019/Video";
 import { GS02 as C_gs02, built as b_gs02 } from "../episodes/gs02/Video";
+import { Video as C_gs020, built as b_gs020 } from "../episodes/gs020/Video";
+import { Video as C_gs021, built as b_gs021 } from "../episodes/gs021/Video";
+import { Video as C_gs022, built as b_gs022 } from "../episodes/gs022/Video";
+import { Video as C_gs023, built as b_gs023 } from "../episodes/gs023/Video";
+import { Video as C_gs024, built as b_gs024 } from "../episodes/gs024/Video";
 import { GS03 as C_gs03, built as b_gs03 } from "../episodes/gs03/Video";
 import { FPS } from "./kit/timeline";
 
@@ -41,6 +46,11 @@ export const Root: React.FC = () => (
     <Composition id="GS018" component={C_gs018} durationInFrames={b_gs018.total} fps={FPS} width={1080} height={1920} />
     <Composition id="GS019" component={C_gs019} durationInFrames={b_gs019.total} fps={FPS} width={1080} height={1920} />
     <Composition id="GS02" component={C_gs02} durationInFrames={b_gs02.total} fps={FPS} width={1080} height={1920} />
+    <Composition id="GS020" component={C_gs020} durationInFrames={b_gs020.total} fps={FPS} width={1080} height={1920} />
+    <Composition id="GS021" component={C_gs021} durationInFrames={b_gs021.total} fps={FPS} width={1080} height={1920} />
+    <Composition id="GS022" component={C_gs022} durationInFrames={b_gs022.total} fps={FPS} width={1080} height={1920} />
+    <Composition id="GS023" component={C_gs023} durationInFrames={b_gs023.total} fps={FPS} width={1080} height={1920} />
+    <Composition id="GS024" component={C_gs024} durationInFrames={b_gs024.total} fps={FPS} width={1080} height={1920} />
     <Composition id="GS03" component={C_gs03} durationInFrames={b_gs03.total} fps={FPS} width={1080} height={1920} />
   </>
 );

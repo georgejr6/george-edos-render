@@ -1,0 +1,147 @@
+{
+ "id": "gs020",
+ "format": "tutorial-short",
+ "kind": "short",
+ "tool": "chatgpt",
+ "title": "Use ChatGPT Deep Research",
+ "music": "music/resolution_dreams.mp3",
+ "musicVol": 0.12,
+ "url": "https://george-edos-skills.vercel.app",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    "Surface answers miss real sources.",
+    "Deep research gives you a cited report."
+   ],
+   "card": {
+    "type": "title",
+    "kicker": "CHATGPT TIP",
+    "line1": "Deep Research",
+    "line2": "Cited Answers",
+    "sub": ""
+   },
+   "pills": [
+    {
+     "text": "No sources in normal mode",
+     "beat": 0,
+     "tone": "red"
+    },
+    {
+     "text": "Citations in deep research",
+     "beat": 1,
+     "tone": "green"
+    }
+   ],
+   "red": [
+    "miss",
+    "real sources"
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    "Turn on deep research before asking your question.",
+    "Check that deep research is enabled before you continue."
+   ],
+   "card": {
+    "type": "list",
+    "title": "Start Deep Research",
+    "items": [
+     {
+      "t": "Turn on deep research",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Check deep research is enabled",
+      "beat": 1,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "c",
+   "beats": [
+    "Type your real research question.",
+    "For example, 'What are the latest treatments for migraine?'"
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "user",
+      "t": "What are the latest treatments for migraine?",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "d",
+   "beats": [
+    "ChatGPT runs a multi-step web search and writes a report.",
+    "The report includes citations to its sources."
+   ],
+   "card": {
+    "type": "terminal",
+    "title": "chatgpt",
+    "lines": [
+     {
+      "k": "claude",
+      "t": "Here is a summary with citations to sources:",
+      "beat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "e",
+   "beats": [
+    "Get a detailed, sourced answer for your research."
+   ],
+   "card": {
+    "type": "list",
+    "title": "What You Get",
+    "items": [
+     {
+      "t": "Multi-step web research",
+      "beat": 0,
+      "ok": true
+     },
+     {
+      "t": "Citations to sources",
+      "beat": 0,
+      "ok": true
+     }
+    ]
+   }
+  },
+  {
+   "id": "end",
+   "beats": [
+    "Follow for a new AI tutorial every day."
+   ],
+   "card": {
+    "type": "cta",
+    "line1": "Daily AI tutorials",
+    "line2": "george-edos-skills.vercel.app",
+    "tag": "FREE SKILL PACK IN THE DESCRIPTION",
+    "items": []
+   },
+   "hold": 0.8
+  }
+ ],
+ "topic": "Deep research in ChatGPT",
+ "angle": "how-to",
+ "writer": "gpt-4.1",
+ "voice": {
+  "provider": "openai",
+  "model": "gpt-4o-mini-tts",
+  "voice": "cedar",
+  "pace": 1.05,
+  "instructions": "Calm, clear tech tutorial narrator. Confident and friendly, natural conversational delivery, slightly brisk pace."
+ }
+}

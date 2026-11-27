@@ -1,5 +1,5 @@
 {
- "next": 20,
+ "next": 25,
  "done": [
   "CLAUDE.md project memory in Claude Code|how-to",
   "DeepSearch in Grok|how-to",
@@ -15,7 +15,12 @@
   "Grok Imagine|how-to",
   "Writing styles in Claude|how-to",
   "Canvas in ChatGPT|how-to",
-  "Artifacts in Claude|how-to"
+  "Artifacts in Claude|how-to",
+  "Deep research in ChatGPT|how-to",
+  "Grok voice mode|how-to",
+  "Connect tools to Claude Code with MCP|how-to",
+  "Temporary chat in ChatGPT|how-to",
+  "Hooks in Claude Code|how-to"
  ],
  "rot": 1,
  "fails": {}

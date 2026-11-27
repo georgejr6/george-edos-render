@@ -1,0 +1,660 @@
+{
+ "id": "gs024",
+ "engine": "openai",
+ "scenes": [
+  {
+   "id": "a",
+   "beats": [
+    {
+     "text": "Claude Code can run commands for you automatically.",
+     "file": "gs024/vo/a_b1_2e77cf348b_p105.mp3",
+     "dur": 2.935,
+     "words": [
+      {
+       "w": "Claude",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "code",
+       "t": 0.18,
+       "e": 0.46
+      },
+      {
+       "w": "can",
+       "t": 0.46,
+       "e": 0.74
+      },
+      {
+       "w": "run",
+       "t": 0.74,
+       "e": 0.98
+      },
+      {
+       "w": "commands",
+       "t": 0.98,
+       "e": 1.24
+      },
+      {
+       "w": "for",
+       "t": 1.24,
+       "e": 1.66
+      },
+      {
+       "w": "you",
+       "t": 1.66,
+       "e": 1.82
+      },
+      {
+       "w": "automatically.",
+       "t": 1.82,
+       "e": 2.34
+      }
+     ]
+    },
+    {
+     "text": "Hooks trigger shell commands when you edit or save files.",
+     "file": "gs024/vo/a_b2_90d82283a5_p105.mp3",
+     "dur": 4.097,
+     "words": [
+      {
+       "w": "Hooks",
+       "t": 0.0,
+       "e": 0.42
+      },
+      {
+       "w": "trigger",
+       "t": 0.42,
+       "e": 1.02
+      },
+      {
+       "w": "shell",
+       "t": 1.02,
+       "e": 1.4
+      },
+      {
+       "w": "commands",
+       "t": 1.4,
+       "e": 1.66
+      },
+      {
+       "w": "when",
+       "t": 1.66,
+       "e": 2.3
+      },
+      {
+       "w": "you",
+       "t": 2.3,
+       "e": 2.4
+      },
+      {
+       "w": "edit",
+       "t": 2.4,
+       "e": 2.64
+      },
+      {
+       "w": "or",
+       "t": 2.64,
+       "e": 2.94
+      },
+      {
+       "w": "save",
+       "t": 2.94,
+       "e": 3.26
+      },
+      {
+       "w": "files.",
+       "t": 3.26,
+       "e": 3.64
+      }
+     ]
+    },
+    {
+     "text": "That means you never need to run formatters by hand again.",
+     "file": "gs024/vo/a_b3_9b78692b2e_p105.mp3",
+     "dur": 3.073,
+     "words": [
+      {
+       "w": "That",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "means",
+       "t": 0.12,
+       "e": 0.32
+      },
+      {
+       "w": "you",
+       "t": 0.32,
+       "e": 0.6
+      },
+      {
+       "w": "never",
+       "t": 0.6,
+       "e": 0.82
+      },
+      {
+       "w": "need",
+       "t": 0.82,
+       "e": 1.06
+      },
+      {
+       "w": "to",
+       "t": 1.06,
+       "e": 1.18
+      },
+      {
+       "w": "run",
+       "t": 1.18,
+       "e": 1.36
+      },
+      {
+       "w": "formatters",
+       "t": 1.36,
+       "e": 1.8
+      },
+      {
+       "w": "by",
+       "t": 1.8,
+       "e": 2.04
+      },
+      {
+       "w": "hand",
+       "t": 2.04,
+       "e": 2.3
+      },
+      {
+       "w": "again.",
+       "t": 2.3,
+       "e": 2.56
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "b",
+   "beats": [
+    {
+     "text": "Open your settings.json file in Claude Code.",
+     "file": "gs024/vo/b_b1_38cb27b782_p105.mp3",
+     "dur": 3.355,
+     "words": [
+      {
+       "w": "Open",
+       "t": 0.0,
+       "e": 0.26
+      },
+      {
+       "w": "your",
+       "t": 0.26,
+       "e": 0.42
+      },
+      {
+       "w": "settings",
+       "t": 0.42,
+       "e": 0.74
+      },
+      {
+       "w": ".json",
+       "t": 0.74,
+       "e": 1.4
+      },
+      {
+       "w": "file",
+       "t": 1.4,
+       "e": 1.98
+      },
+      {
+       "w": "in",
+       "t": 1.98,
+       "e": 2.26
+      },
+      {
+       "w": "Claude",
+       "t": 2.26,
+       "e": 2.52
+      },
+      {
+       "w": "Code.",
+       "t": 2.52,
+       "e": 2.94
+      }
+     ]
+    },
+    {
+     "text": "This is where all hooks are configured.",
+     "file": "gs024/vo/b_b2_45ccf82448_p105.mp3",
+     "dur": 2.127,
+     "words": [
+      {
+       "w": "This",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "is",
+       "t": 0.18,
+       "e": 0.32
+      },
+      {
+       "w": "where",
+       "t": 0.32,
+       "e": 0.48
+      },
+      {
+       "w": "all",
+       "t": 0.48,
+       "e": 0.72
+      },
+      {
+       "w": "hooks",
+       "t": 0.72,
+       "e": 1.02
+      },
+      {
+       "w": "are",
+       "t": 1.02,
+       "e": 1.24
+      },
+      {
+       "w": "configured.",
+       "t": 1.24,
+       "e": 1.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c",
+   "beats": [
+    {
+     "text": "Add a hook to run after every file edit.",
+     "file": "gs024/vo/c_b1_022d3a0136_p105.mp3",
+     "dur": 3.111,
+     "words": [
+      {
+       "w": "Add",
+       "t": 0.0,
+       "e": 0.22
+      },
+      {
+       "w": "a",
+       "t": 0.22,
+       "e": 0.54
+      },
+      {
+       "w": "hook",
+       "t": 0.54,
+       "e": 0.8
+      },
+      {
+       "w": "to",
+       "t": 0.8,
+       "e": 1.16
+      },
+      {
+       "w": "run",
+       "t": 1.16,
+       "e": 1.36
+      },
+      {
+       "w": "after",
+       "t": 1.36,
+       "e": 1.7
+      },
+      {
+       "w": "every",
+       "t": 1.7,
+       "e": 2.08
+      },
+      {
+       "w": "file",
+       "t": 2.08,
+       "e": 2.34
+      },
+      {
+       "w": "edit.",
+       "t": 2.34,
+       "e": 2.66
+      }
+     ]
+    },
+    {
+     "text": "Paste this line to format with Prettier automatically.",
+     "file": "gs024/vo/c_b2_bd62c6e658_p105.mp3",
+     "dur": 3.038,
+     "words": [
+      {
+       "w": "Paste",
+       "t": 0.0,
+       "e": 0.18
+      },
+      {
+       "w": "this",
+       "t": 0.18,
+       "e": 0.42
+      },
+      {
+       "w": "line",
+       "t": 0.42,
+       "e": 0.72
+      },
+      {
+       "w": "to",
+       "t": 0.72,
+       "e": 0.92
+      },
+      {
+       "w": "format",
+       "t": 0.92,
+       "e": 1.2
+      },
+      {
+       "w": "with",
+       "t": 1.2,
+       "e": 1.5
+      },
+      {
+       "w": "prettier",
+       "t": 1.5,
+       "e": 1.92
+      },
+      {
+       "w": "automatically.",
+       "t": 1.92,
+       "e": 2.38
+      }
+     ]
+    },
+    {
+     "text": "You can replace the command with any shell command you prefer.",
+     "file": "gs024/vo/c_b3_1f2a32baf0_p105.mp3",
+     "dur": 3.279,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.12
+      },
+      {
+       "w": "can",
+       "t": 0.12,
+       "e": 0.26
+      },
+      {
+       "w": "replace",
+       "t": 0.26,
+       "e": 0.52
+      },
+      {
+       "w": "the",
+       "t": 0.52,
+       "e": 0.82
+      },
+      {
+       "w": "command",
+       "t": 0.82,
+       "e": 1.04
+      },
+      {
+       "w": "with",
+       "t": 1.04,
+       "e": 1.38
+      },
+      {
+       "w": "any",
+       "t": 1.38,
+       "e": 1.66
+      },
+      {
+       "w": "shell",
+       "t": 1.66,
+       "e": 1.96
+      },
+      {
+       "w": "command",
+       "t": 1.96,
+       "e": 2.26
+      },
+      {
+       "w": "you",
+       "t": 2.26,
+       "e": 2.52
+      },
+      {
+       "w": "prefer.",
+       "t": 2.52,
+       "e": 2.72
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d",
+   "beats": [
+    {
+     "text": "Hooks let you automate formatting or any shell command after edits.",
+     "file": "gs024/vo/d_b1_4247d10af6_p105.mp3",
+     "dur": 3.953,
+     "words": [
+      {
+       "w": "Hooks",
+       "t": 0.0,
+       "e": 0.28
+      },
+      {
+       "w": "let",
+       "t": 0.28,
+       "e": 0.44
+      },
+      {
+       "w": "you",
+       "t": 0.44,
+       "e": 0.58
+      },
+      {
+       "w": "automate",
+       "t": 0.58,
+       "e": 0.86
+      },
+      {
+       "w": "formatting",
+       "t": 0.86,
+       "e": 1.4
+      },
+      {
+       "w": "or",
+       "t": 1.4,
+       "e": 1.96
+      },
+      {
+       "w": "any",
+       "t": 1.96,
+       "e": 2.2
+      },
+      {
+       "w": "shell",
+       "t": 2.2,
+       "e": 2.44
+      },
+      {
+       "w": "command",
+       "t": 2.44,
+       "e": 2.66
+      },
+      {
+       "w": "after",
+       "t": 2.66,
+       "e": 3.1
+      },
+      {
+       "w": "edits.",
+       "t": 3.1,
+       "e": 3.44
+      }
+     ]
+    },
+    {
+     "text": "You can also use hooks before or after Claude tools.",
+     "file": "gs024/vo/d_b2_b73bfc1b7b_p105.mp3",
+     "dur": 3.95,
+     "words": [
+      {
+       "w": "You",
+       "t": 0.0,
+       "e": 0.1
+      },
+      {
+       "w": "can",
+       "t": 0.1,
+       "e": 0.24
+      },
+      {
+       "w": "also",
+       "t": 0.24,
+       "e": 0.48
+      },
+      {
+       "w": "use",
+       "t": 0.48,
+       "e": 0.84
+      },
+      {
+       "w": "hooks",
+       "t": 0.84,
+       "e": 1.14
+      },
+      {
+       "w": "before",
+       "t": 1.14,
+       "e": 1.78
+      },
+      {
+       "w": "or",
+       "t": 1.78,
+       "e": 2.22
+      },
+      {
+       "w": "after",
+       "t": 2.22,
+       "e": 2.6
+      },
+      {
+       "w": "clawed",
+       "t": 2.6,
+       "e": 3.2
+      },
+      {
+       "w": "tools.",
+       "t": 3.2,
+       "e": 3.4
+      }
+     ]
+    },
+    {
+     "text": "Configure as many commands as your workflow needs.",
+     "file": "gs024/vo/d_b3_ec2b7e2082_p105.mp3",
+     "dur": 2.725,
+     "words": [
+      {
+       "w": "Configure",
+       "t": 0.0,
+       "e": 0.44
+      },
+      {
+       "w": "as",
+       "t": 0.44,
+       "e": 0.62
+      },
+      {
+       "w": "many",
+       "t": 0.62,
+       "e": 0.84
+      },
+      {
+       "w": "commands",
+       "t": 0.84,
+       "e": 1.16
+      },
+      {
+       "w": "as",
+       "t": 1.16,
+       "e": 1.5
+      },
+      {
+       "w": "your",
+       "t": 1.5,
+       "e": 1.62
+      },
+      {
+       "w": "workflow",
+       "t": 1.62,
+       "e": 1.88
+      },
+      {
+       "w": "needs.",
+       "t": 1.88,
+       "e": 2.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "beats": [
+    {
+     "text": "Follow for a new Claude tutorial every day.",
+     "file": "gs024/vo/end_b1_8acd70267c_p105.mp3",
+     "dur": 2.427,
+     "words": [
+      {
+       "w": "Follow",
+       "t": 0.0,
+       "e": 0.24
+      },
+      {
+       "w": "for",
+       "t": 0.24,
+       "e": 0.44
+      },
+      {
+       "w": "a",
+       "t": 0.44,
+       "e": 0.52
+      },
+      {
+       "w": "new",
+       "t": 0.52,
+       "e": 0.66
+      },
+      {
+       "w": "claw",
+       "t": 0.66,
+       "e": 0.9
+      },
+      {
+       "w": "tutorial",
+       "t": 0.9,
+       "e": 1.16
+      },
+      {
+       "w": "every",
+       "t": 1.16,
+       "e": 1.76
+      },
+      {
+       "w": "day.",
+       "t": 1.76,
+       "e": 2.0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
